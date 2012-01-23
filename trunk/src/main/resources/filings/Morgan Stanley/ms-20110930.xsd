@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!-- Prepared by Clarity FSR  v6.6.0.17 using Fujitsu Interstage XWand -->
+
+<schema targetNamespace="http://www.morganstanley.com/20110930" elementFormDefault="qualified"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:ms="http://www.morganstanley.com/20110930"
+        xmlns:xbrli="http://www.xbrl.org/2003/instance"
+        xmlns:link="http://www.xbrl.org/2003/linkbase"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric"
+        xmlns:num="http://www.xbrl.org/dtr/type/numeric"
+        xmlns:xbrldt="http://xbrl.org/2005/xbrldt">
+
+  <annotation>
+    <appinfo>
+      <link:linkbaseRef xlink:type="simple" xlink:href="ms-20110930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="ms-20110930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="ms-20110930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="ms-20110930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:roleType roleURI="http://www.morganstanley.com/role/StatementCondensedConsolidatedStatementsOfFinancialCondition" id="StatementCondensedConsolidatedStatementsOfFinancialCondition">
+        <link:definition>000100 - Statement - Condensed Consolidated Statements Of Financial Condition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/StatementCondensedConsolidatedStatementsOfIncome" id="StatementCondensedConsolidatedStatementsOfIncome">
+        <link:definition>000200 - Statement - Condensed Consolidated Statements Of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/StatementCondensedConsolidatedStatementsOfComprehensiveIncome" id="StatementCondensedConsolidatedStatementsOfComprehensiveIncome">
+        <link:definition>000300 - Statement - Condensed Consolidated Statements Of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/StatementConsolidatedStatementsOfCashFlows" id="StatementConsolidatedStatementsOfCashFlows">
+        <link:definition>000400 - Statement - Consolidated Statements Of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureFairValueDisclosuresAssetsMeasuredAtFairValueOnANonRecurringBasisDetails" id="DisclosureFairValueDisclosuresAssetsMeasuredAtFairValueOnNonRecurringBasisDetails">
+        <link:definition>040308 - Disclosure - Fair Value Disclosures (Assets Measured At Fair Value On A Non-Recurring Basis) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureSecuritiesAvailableForSaleScheduleOfAmortizedCostAndFairValueOfAvailableForSaleDebtSecuritiesByContractualDateDetails" id="DisclosureSecuritiesAvailableForSaleScheduleOfAmortizedCostAndFairValueOfAvailableForSaleDebtSecuritiesByContractualDateDetails">
+        <link:definition>040403 - Disclosure - Securities Available For Sale (Schedule Of Amortized Cost And Fair Value Of Available For Sale Debt Securities By Contractual Date) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureCollateralizedTransactionsCashAndSecuritiesDepositedWithClearingOrganizationsOrSegregatedUnderFederalAndOtherRegulationsOrRequirementsDetails" id="DisclosureCollateralizedTransactionsCashAndSecuritiesDepositedWithClearingOrganizationsOrSegregatedUnderFederalAndOtherRegulationsOrRequirementsDetails">
+        <link:definition>040503 - Disclosure - Collateralized Transactions (Cash And Securities Deposited With Clearing Organizations Or Segregated Under Federal And Other Regulations Or Requirements) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureGoodwillAndNetIntangibleAssetsChangesInCarryingAmountOfIntangibleAssetsDetails" id="DisclosureGoodwillAndNetIntangibleAssetsChangesInCarryingAmountOfIntangibleAssetsDetails">
+        <link:definition>040802 - Disclosure - Goodwill And Net Intangible Assets (Changes In Carrying Amount Of Intangible Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureLongTermBorrowingsAndOtherSecuredFinancingsComponentsOfLongTermBorrowingsDetails" id="DisclosureLongTermBorrowingsAndOtherSecuredFinancingsComponentsOfLongTermBorrowingsDetails">
+        <link:definition>040902 - Disclosure - Long-Term Borrowings And Other Secured Financings (Components Of Long-Term Borrowings) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureDerivativeInstrumentsAndHedgingActivitiesFairValueOfDerivativeInstrumentsDesignatedAndNotDesignatedAsAccountingHedgesByTypeOfDerivativeContractOnAGrossBasisDetails" id="DisclosureDerivativeInstrumentsAndHedgingActivitiesFairValueOfDerivativeInstrumentsDesignatedAndNotDesignatedAsAccountingHedgesByTypeOfDerivativeContractOnGrossBasisDetails">
+        <link:definition>041004 - Disclosure - Derivative Instruments And Hedging Activities (Fair Value Of Derivative Instruments Designated And Not Designated As Accounting Hedges By Type Of Derivative Contract On A Gross Basis) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureDerivativeInstrumentsAndHedgingActivitiesSummaryOfGainsOrLossesReportedOnDerivativeInstrumentsDesignatedAndNotDesignatedAsAccountingHedgesDetails" id="DisclosureDerivativeInstrumentsAndHedgingActivitiesSummaryOfGainsOrLossesReportedOnDerivativeInstrumentsDesignatedAndNotDesignatedAsAccountingHedgesDetails">
+        <link:definition>041005 - Disclosure - Derivative Instruments And Hedging Activities (Summary Of Gains Or Losses Reported On Derivative Instruments Designated And Not Designated As Accounting Hedges) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureEarningsPerCommonShareCalculationOfBasicAndDilutedEPSDetails" id="DisclosureEarningsPerCommonShareCalculationOfBasicAndDilutedEpsDetails">
+        <link:definition>041401 - Disclosure - Earnings Per Common Share (Calculation Of Basic And Diluted EPS) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureInterestIncomeAndInterestExpenseDetails" id="DisclosureInterestIncomeAndInterestExpenseDetails">
+        <link:definition>041501 - Disclosure - Interest Income And Interest Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureEmployeeBenefitPlansComponentsOfNetPeriodicBenefitExpenseDetails" id="DisclosureEmployeeBenefitPlansComponentsOfNetPeriodicBenefitExpenseDetails">
+        <link:definition>041601 - Disclosure - Employee Benefit Plans (Components Of Net Periodic Benefit Expense) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DocumentDocumentAndEntityInformation" id="DocumentDocumentAndEntityInformation">
+        <link:definition>000090 - Document - Document And Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/StatementCondensedConsolidatedStatementsOfFinancialConditionParenthetical" id="StatementCondensedConsolidatedStatementsOfFinancialConditionParenthetical">
+        <link:definition>000105 - Statement - Condensed Consolidated Statements Of Financial Condition (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/StatementCondensedConsolidatedStatementsOfComprehensiveIncomeParenthetical" id="StatementCondensedConsolidatedStatementsOfComprehensiveIncomeParenthetical">
+        <link:definition>000305 - Statement - Condensed Consolidated Statements Of Comprehensive Income (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/StatementConsolidatedStatementsOfCashFlowsParenthetical" id="StatementConsolidatedStatementsOfCashFlowsParenthetical">
+        <link:definition>000405 - Statement - Consolidated Statements Of Cash Flows (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/StatementCondensedConsolidatedStatementsOfChangesInTotalEquity" id="StatementCondensedConsolidatedStatementsOfChangesInTotalEquity">
+        <link:definition>000500 - Statement - Condensed Consolidated Statements Of Changes In Total Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureIntroductionAndBasisOfPresentation" id="DisclosureIntroductionAndBasisOfPresentation">
+        <link:definition>010101 - Disclosure - Introduction And Basis Of Presentation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureSignificantAccountingPolicies" id="DisclosureSignificantAccountingPolicies">
+        <link:definition>010201 - Disclosure - Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureFairValueDisclosures" id="DisclosureFairValueDisclosures">
+        <link:definition>010301 - Disclosure - Fair Value Disclosures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureSecuritiesAvailableForSale" id="DisclosureSecuritiesAvailableForSale">
+        <link:definition>010401 - Disclosure - Securities Available For Sale</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureCollateralizedTransactions" id="DisclosureCollateralizedTransactions">
+        <link:definition>010501 - Disclosure - Collateralized Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureVariableInterestEntitiesAndSecuritizationActivities" id="DisclosureVariableInterestEntitiesAndSecuritizationActivities">
+        <link:definition>010601 - Disclosure - Variable Interest Entities And Securitization Activities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureFinancingReceivables" id="DisclosureFinancingReceivables">
+        <link:definition>010701 - Disclosure - Financing Receivables</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureGoodwillAndNetIntangibleAssets" id="DisclosureGoodwillAndNetIntangibleAssets">
+        <link:definition>010801 - Disclosure - Goodwill And Net Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureLongTermBorrowingsAndOtherSecuredFinancings" id="DisclosureLongTermBorrowingsAndOtherSecuredFinancings">
+        <link:definition>010901 - Disclosure - Long-Term Borrowings And Other Secured Financings</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureDerivativeInstrumentsAndHedgingActivities" id="DisclosureDerivativeInstrumentsAndHedgingActivities">
+        <link:definition>011001 - Disclosure - Derivative Instruments And Hedging Activities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureCommitmentsGuaranteesAndContingencies" id="DisclosureCommitmentsGuaranteesAndContingencies">
+        <link:definition>011101 - Disclosure - Commitments, Guarantees And Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureRegulatoryRequirements" id="DisclosureRegulatoryRequirements">
+        <link:definition>011201 - Disclosure - Regulatory Requirements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureTotalEquity" id="DisclosureTotalEquity">
+        <link:definition>011301 - Disclosure - Total Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureEarningsPerCommonShare" id="DisclosureEarningsPerCommonShare">
+        <link:definition>011401 - Disclosure - Earnings Per Common Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureInterestIncomeAndInterestExpense" id="DisclosureInterestIncomeAndInterestExpense">
+        <link:definition>011501 - Disclosure - Interest Income And Interest Expense</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureEmployeeBenefitPlans" id="DisclosureEmployeeBenefitPlans">
+        <link:definition>011601 - Disclosure - Employee Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureIncomeTaxes" id="DisclosureIncomeTaxes">
+        <link:definition>011701 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureSegmentAndGeographicInformation" id="DisclosureSegmentAndGeographicInformation">
+        <link:definition>011801 - Disclosure - Segment And Geographic Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureEquityMethodInvestments" id="DisclosureEquityMethodInvestments">
+        <link:definition>011901 - Disclosure - Equity Method Investments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureDiscontinuedOperations" id="DisclosureDiscontinuedOperations">
+        <link:definition>012001 - Disclosure - Discontinued Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureSubsequentEvents" id="DisclosureSubsequentEvents">
+        <link:definition>012101 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureSignificantAccountingPoliciesPolicy" id="DisclosureSignificantAccountingPoliciesPolicy">
+        <link:definition>020201 - Disclosure - Significant Accounting Policies (Policy)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureFairValueDisclosuresTables" id="DisclosureFairValueDisclosuresTables">
+        <link:definition>030303 - Disclosure - Fair Value Disclosures (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureSecuritiesAvailableForSaleTables" id="DisclosureSecuritiesAvailableForSaleTables">
+        <link:definition>030403 - Disclosure - Securities Available For Sale (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureCollateralizedTransactionsTables" id="DisclosureCollateralizedTransactionsTables">
+        <link:definition>030503 - Disclosure - Collateralized Transactions (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureVariableInterestEntitiesAndSecuritizationActivitiesTables" id="DisclosureVariableInterestEntitiesAndSecuritizationActivitiesTables">
+        <link:definition>030603 - Disclosure - Variable Interest Entities And Securitization Activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureFinancingReceivablesTables" id="DisclosureFinancingReceivablesTables">
+        <link:definition>030703 - Disclosure - Financing Receivables (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureGoodwillAndNetIntangibleAssetsTables" id="DisclosureGoodwillAndNetIntangibleAssetsTables">
+        <link:definition>030803 - Disclosure - Goodwill And Net Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureLongTermBorrowingsAndOtherSecuredFinancingsTables" id="DisclosureLongTermBorrowingsAndOtherSecuredFinancingsTables">
+        <link:definition>030903 - Disclosure - Long-Term Borrowings And Other Secured Financings (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureDerivativeInstrumentsAndHedgingActivitiesTables" id="DisclosureDerivativeInstrumentsAndHedgingActivitiesTables">
+        <link:definition>031003 - Disclosure - Derivative Instruments And Hedging Activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureCommitmentsGuaranteesAndContingenciesTables" id="DisclosureCommitmentsGuaranteesAndContingenciesTables">
+        <link:definition>031103 - Disclosure - Commitments, Guarantees And Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureRegulatoryRequirementsTables" id="DisclosureRegulatoryRequirementsTables">
+        <link:definition>031203 - Disclosure - Regulatory Requirements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureTotalEquityTables" id="DisclosureTotalEquityTables">
+        <link:definition>031303 - Disclosure - Total Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureEarningsPerCommonShareTables" id="DisclosureEarningsPerCommonShareTables">
+        <link:definition>031403 - Disclosure - Earnings Per Common Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureInterestIncomeAndInterestExpenseTables" id="DisclosureInterestIncomeAndInterestExpenseTables">
+        <link:definition>031503 - Disclosure - Interest Income And Interest Expense (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureEmployeeBenefitPlansTables" id="DisclosureEmployeeBenefitPlansTables">
+        <link:definition>031603 - Disclosure - Employee Benefit Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureSegmentAndGeographicInformationTables" id="DisclosureSegmentAndGeographicInformationTables">
+        <link:definition>031803 - Disclosure - Segment And Geographic Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureDiscontinuedOperationsTables" id="DisclosureDiscontinuedOperationsTables">
+        <link:definition>032003 - Disclosure - Discontinued Operations (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureIntroductionAndBasisOfPresentationDetails" id="DisclosureIntroductionAndBasisOfPresentationDetails">
+        <link:definition>040101 - Disclosure - Introduction And Basis Of Presentation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureSignificantAccountingPoliciesDetails" id="DisclosureSignificantAccountingPoliciesDetails">
+        <link:definition>040201 - Disclosure - Significant Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureFairValueDisclosuresNarrativeDetails" id="DisclosureFairValueDisclosuresNarrativeDetails">
+        <link:definition>040301 - Disclosure - Fair Value Disclosures (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureFairValueDisclosuresAssetsAndLiabilitiesMeasuredAtFairValueOnARecurringBasisDetails" id="DisclosureFairValueDisclosuresAssetsAndLiabilitiesMeasuredAtFairValueOnRecurringBasisDetails">
+        <link:definition>040302 - Disclosure - Fair Value Disclosures (Assets And Liabilities Measured At Fair Value On A Recurring Basis) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureFairValueDisclosuresChangesInLevel3AssetsAndLiabilitiesMeasuredAtFairValueOnARecurringBasisDetails" id="DisclosureFairValueDisclosuresChangesInLevel3AssetsAndLiabilitiesMeasuredAtFairValueOnRecurringBasisDetails">
+        <link:definition>040303 - Disclosure - Fair Value Disclosures (Changes In Level 3 Assets And Liabilities Measured At Fair Value On A Recurring Basis) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureFairValueDisclosuresFairValueOfInvestmentsThatCalculateNetAssetValueDetails" id="DisclosureFairValueDisclosuresFairValueOfInvestmentsThatCalculateNetAssetValueDetails">
+        <link:definition>040304 - Disclosure - Fair Value Disclosures (Fair Value Of Investments That Calculate Net Asset Value) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureFairValueDisclosuresNetGainsLossesDueToChangesInFairValueForItemsMeasuredAtFairValuePursuantToFairValueOptionElectionDetails" id="DisclosureFairValueDisclosuresNetGainsLossesDueToChangesInFairValueForItemsMeasuredAtFairValuePursuantToFairValueOptionElectionDetails">
+        <link:definition>040305 - Disclosure - Fair Value Disclosures (Net Gains (Losses) Due To Changes In Fair Value For Items Measured At Fair Value Pursuant To The Fair Value Option Election) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureFairValueDisclosuresGainsLossesDueToChangesInInstrumentSpecificCreditRiskDetails" id="DisclosureFairValueDisclosuresGainsLossesDueToChangesInInstrumentSpecificCreditRiskDetails">
+        <link:definition>040306 - Disclosure - Fair Value Disclosures (Gains (Losses) Due To Changes In Instrument Specific Credit Risk) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureFairValueDisclosuresAmountByWhichContractualPrincipalAmountExceedsFairValueDetails" id="DisclosureFairValueDisclosuresAmountByWhichContractualPrincipalAmountExceedsFairValueDetails">
+        <link:definition>040307 - Disclosure - Fair Value Disclosures (Amount By Which Contractual Principal Amount Exceeds Fair Value) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureSecuritiesAvailableForSaleScheduleOfAvailableForSaleSecuritiesDetails" id="DisclosureSecuritiesAvailableForSaleScheduleOfAvailableForSaleSecuritiesDetails">
+        <link:definition>040401 - Disclosure - Securities Available For Sale (Schedule Of Available For Sale Securities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureSecuritiesAvailableForSaleScheduleOfAvailableForSaleSecuritiesInAnUnrealizedLossPositionDetails" id="DisclosureSecuritiesAvailableForSaleScheduleOfAvailableForSaleSecuritiesInUnrealizedLossPositionDetails">
+        <link:definition>040402 - Disclosure - Securities Available For Sale (Schedule Of Available For Sale Securities In An Unrealized Loss Position) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureSecuritiesAvailableForSaleScheduleOfProceedsOfSaleOfSecuritiesAvailableForSaleDetails" id="DisclosureSecuritiesAvailableForSaleScheduleOfProceedsOfSaleOfSecuritiesAvailableForSaleDetails">
+        <link:definition>040404 - Disclosure - Securities Available For Sale (Schedule Of Proceeds Of Sale Of Securities Available For Sale) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureCollateralizedTransactionsNarrativeDetails" id="DisclosureCollateralizedTransactionsNarrativeDetails">
+        <link:definition>040501 - Disclosure - Collateralized Transactions (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureCollateralizedTransactionsFinancialInstrumentsOwnedThatHaveBeenLoanedOrPledgedToCounterpartiesDetails" id="DisclosureCollateralizedTransactionsFinancialInstrumentsOwnedThatHaveBeenLoanedOrPledgedToCounterpartiesDetails">
+        <link:definition>040502 - Disclosure - Collateralized Transactions (Financial Instruments Owned That Have Been Loaned Or Pledged To Counterparties) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureVariableInterestEntitiesAndSecuritizationActivitiesNarrativeDetails" id="DisclosureVariableInterestEntitiesAndSecuritizationActivitiesNarrativeDetails">
+        <link:definition>040601 - Disclosure - Variable Interest Entities And Securitization Activities (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureVariableInterestEntitiesAndSecuritizationActivitiesConsolidatedVIEsDetails" id="DisclosureVariableInterestEntitiesAndSecuritizationActivitiesConsolidatedViesDetails">
+        <link:definition>040602 - Disclosure - Variable Interest Entities And Securitization Activities (Consolidated VIEs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureVariableInterestEntitiesAndSecuritizationActivitiesNonConsolidatedViesDetails" id="DisclosureVariableInterestEntitiesAndSecuritizationActivitiesNonConsolidatedViesDetails">
+        <link:definition>040603 - Disclosure - Variable Interest Entities And Securitization Activities (Non-Consolidated VIEs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureVariableInterestEntitiesAndSecuritizationActivitiesInformationRegardingSPEsDetails" id="DisclosureVariableInterestEntitiesAndSecuritizationActivitiesInformationRegardingSpesDetails">
+        <link:definition>040604 - Disclosure - Variable Interest Entities And Securitization Activities (Information Regarding SPEs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureVariableInterestEntitiesAndSecuritizationActivitiesFairValueOfAssetsAndLiabilitiesDetails" id="DisclosureVariableInterestEntitiesAndSecuritizationActivitiesFairValueOfAssetsAndLiabilitiesDetails">
+        <link:definition>040605 - Disclosure - Variable Interest Entities And Securitization Activities (Fair Value Of Assets And Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureVariableInterestEntitiesAndSecuritizationActivitiesTransfersOfAssetsTreatedAsSecuredFinancingsDetails" id="DisclosureVariableInterestEntitiesAndSecuritizationActivitiesTransfersOfAssetsTreatedAsSecuredFinancingsDetails">
+        <link:definition>040606 - Disclosure - Variable Interest Entities And Securitization Activities (Transfers Of Assets Treated As Secured Financings) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureVariableInterestEntitiesAndSecuritizationActivitiesMortgageServicingActivitiesForSPEsDetails" id="DisclosureVariableInterestEntitiesAndSecuritizationActivitiesMortgageServicingActivitiesForSpesDetails">
+        <link:definition>040607 - Disclosure - Variable Interest Entities And Securitization Activities (Mortgage Servicing Activities For SPEs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureFinancingReceivablesNarrativeDetails" id="DisclosureFinancingReceivablesNarrativeDetails">
+        <link:definition>040701 - Disclosure - Financing Receivables (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureFinancingReceivablesSummaryOfFinancingReceivablesDetails" id="DisclosureFinancingReceivablesSummaryOfFinancingReceivablesDetails">
+        <link:definition>040702 - Disclosure - Financing Receivables (Summary Of Financing Receivables) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureGoodwillAndNetIntangibleAssetsChangesInCarryingAmountOfGoodwillDetails" id="DisclosureGoodwillAndNetIntangibleAssetsChangesInCarryingAmountOfGoodwillDetails">
+        <link:definition>040801 - Disclosure - Goodwill And Net Intangible Assets (Changes In Carrying Amount Of Goodwill) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureLongTermBorrowingsAndOtherSecuredFinancingsNarrativeDetails" id="DisclosureLongTermBorrowingsAndOtherSecuredFinancingsNarrativeDetails">
+        <link:definition>040901 - Disclosure - Long-Term Borrowings And Other Secured Financings (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureLongTermBorrowingsAndOtherSecuredFinancingsOtherSecuredFinancingsDetails" id="DisclosureLongTermBorrowingsAndOtherSecuredFinancingsOtherSecuredFinancingsDetails">
+        <link:definition>040903 - Disclosure - Long-Term Borrowings And Other Secured Financings (Other Secured Financings) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureDerivativeInstrumentsAndHedgingActivitiesNarrativeDetails" id="DisclosureDerivativeInstrumentsAndHedgingActivitiesNarrativeDetails">
+        <link:definition>041001 - Disclosure - Derivative Instruments And Hedging Activities (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureDerivativeInstrumentsAndHedgingActivitiesDerivativesOnNetOfCounterpartyAndCashCollateralBasisDetails" id="DisclosureDerivativeInstrumentsAndHedgingActivitiesDerivativesOnNetOfCounterpartyAndCashCollateralBasisDetails">
+        <link:definition>041002 - Disclosure - Derivative Instruments And Hedging Activities (Derivatives On A Net Of Counterparty And Cash Collateral Basis) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureDerivativeInstrumentsAndHedgingActivitiesSummaryByCounterpartyCreditRatingAndRemainingContractMaturityOfTheFairValueOfOTCDerivativesInAGainPositionDetails" id="DisclosureDerivativeInstrumentsAndHedgingActivitiesSummaryByCounterpartyCreditRatingAndRemainingContractMaturityOfFairValueOfOtcDerivativesInGainPositionDetails">
+        <link:definition>041003 - Disclosure - Derivative Instruments And Hedging Activities (Summary By Counterparty Credit Rating And Remaining Contract Maturity Of The Fair Value Of OTC Derivatives In A Gain Position) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureDerivativeInstrumentsAndHedgingActivitiesProtectionSoldThroughCreditDefaultSwapsAndCreditLinkedNotesDetails" id="DisclosureDerivativeInstrumentsAndHedgingActivitiesProtectionSoldThroughCreditDefaultSwapsAndCreditLinkedNotesDetails">
+        <link:definition>041006 - Disclosure - Derivative Instruments And Hedging Activities (Protection Sold Through Credit Default Swaps And Credit-Linked Notes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureCommitmentsGuaranteesAndContingenciesNarrativeDetails" id="DisclosureCommitmentsGuaranteesAndContingenciesNarrativeDetails">
+        <link:definition>041101 - Disclosure - Commitments, Guarantees And Contingencies (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureCommitmentsGuaranteesAndContingenciesCommitmentsByPeriodOfExpirationDetails" id="DisclosureCommitmentsGuaranteesAndContingenciesCommitmentsByPeriodOfExpirationDetails">
+        <link:definition>041102 - Disclosure - Commitments, Guarantees And Contingencies (Commitments By Period Of Expiration) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureCommitmentsGuaranteesAndContingenciesObligationsUnderGuaranteeArrangementsDetails" id="DisclosureCommitmentsGuaranteesAndContingenciesObligationsUnderGuaranteeArrangementsDetails">
+        <link:definition>041103 - Disclosure - Commitments, Guarantees And Contingencies (Obligations Under Guarantee Arrangements) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureRegulatoryRequirementsNarrativeDetails" id="DisclosureRegulatoryRequirementsNarrativeDetails">
+        <link:definition>041201 - Disclosure - Regulatory Requirements (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureRegulatoryRequirementsCapitalMeasuresDetails" id="DisclosureRegulatoryRequirementsCapitalMeasuresDetails">
+        <link:definition>041202 - Disclosure - Regulatory Requirements (Capital Measures) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureRegulatoryRequirementsSignificantUSBankOperatingSubsidiariesCapitalDetails" id="DisclosureRegulatoryRequirementsSignificantUSBankOperatingSubsidiariesCapitalDetails">
+        <link:definition>041203 - Disclosure - Regulatory Requirements (Significant U.S. Bank Operating Subsidiaries' Capital) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureTotalEquityNarrativeDetails" id="DisclosureTotalEquityNarrativeDetails">
+        <link:definition>041301 - Disclosure - Total Equity (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureTotalEquityChangesInOwnershipOfSubsidiariesDetails" id="DisclosureTotalEquityChangesInOwnershipOfSubsidiariesDetails">
+        <link:definition>041302 - Disclosure - Total Equity (Changes In Ownership Of Subsidiaries) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureEarningsPerCommonShareAntidilutiveSecuritiesExcludedFromTheComputationOfDilutedEPSDetails" id="DisclosureEarningsPerCommonShareAntidilutiveSecuritiesExcludedFromComputationOfDilutedEpsDetails">
+        <link:definition>041402 - Disclosure - Earnings Per Common Share (Antidilutive Securities Excluded From The Computation Of Diluted EPS) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureIncomeTaxesDetails" id="DisclosureIncomeTaxesDetails">
+        <link:definition>041701 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureSegmentAndGeographicInformationSelectedFinancialInformationBySegmentsDetails" id="DisclosureSegmentAndGeographicInformationSelectedFinancialInformationBySegmentsDetails">
+        <link:definition>041801 - Disclosure - Segment And Geographic Information (Selected Financial Information By Segments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureSegmentAndGeographicInformationNetInterestBySegmentsDetails" id="DisclosureSegmentAndGeographicInformationNetInterestBySegmentsDetails">
+        <link:definition>041802 - Disclosure - Segment And Geographic Information (Net Interest By Segments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureSegmentAndGeographicInformationAssetsBySegmentsDetails" id="DisclosureSegmentAndGeographicInformationAssetsBySegmentsDetails">
+        <link:definition>041803 - Disclosure - Segment And Geographic Information (Assets By Segments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureSegmentAndGeographicInformationNetRevenuesByGeographicAreaDetails" id="DisclosureSegmentAndGeographicInformationNetRevenuesByGeographicAreaDetails">
+        <link:definition>041804 - Disclosure - Segment And Geographic Information (Net Revenues By Geographic Area) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureEquityMethodInvestmentsDetails" id="DisclosureEquityMethodInvestmentsDetails">
+        <link:definition>041901 - Disclosure - Equity Method Investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureDiscontinuedOperationsDetails" id="DisclosureDiscontinuedOperationsDetails">
+        <link:definition>042001 - Disclosure - Discontinued Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureSubsequentEventsDetails" id="DisclosureSubsequentEventsDetails">
+        <link:definition>042101 - Disclosure - Subsequent Events (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/OtherRevenues" id="ms_ELRID_OtherRevenues">
+        <link:definition>011551 - Disclosure - Other Revenues</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/OtherRevenuesTables" id="ms_ELRID_OtherRevenuesTables">
+        <link:definition>031553 - Disclosure - Other Revenues (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/EmployeeStockBasedCompensationPlans" id="ms_ELRID_EmployeeStockBasedCompensationPlans">
+        <link:definition>011561 - Disclosure - Employee Stock-Based Compensation Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/DisclosureEmployeeStockBasedCompensationPlansTables" id="ms_ELRID_EmployeeStockBasedCompensationPlansTables">
+        <link:definition>031563 - Disclosure - Employee Stock-Based Compensation Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.morganstanley.com/role/EmployeeStockBasedCompensationPlansNarrativeDetails" id="ms_ELRID_EmployeeStockBasedCompensationPlansNarrativeDetails">
+        <link:definition>041561 - Disclosure - Employee Stock-Based Compensation Plans (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2011-01-31" schemaLocation="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2011-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd" />
+  <element name="AAACreditRatingMember" id="ms_AAACreditRatingMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="AACreditRatingMember" id="ms_AACreditRatingMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ACreditRatingMember" id="ms_ACreditRatingMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="AdditionalCreditDowngradeMember" id="ms_AdditionalCreditDowngradeMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="AdjustedAverageAssets" id="ms_AdjustedAverageAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="AsiaMember" id="ms_AsiaMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="AssetManagementSegmentMember" id="ms_AssetManagementSegmentMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="BBBCreditRatingMember" id="ms_BBBCreditRatingMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CarryingValueOfExposureToLossMember" id="ms_CarryingValueOfExposureToLossMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CashCashEquivalentsAndMarketableSecuritiesAxis" id="ms_CashCashEquivalentsAndMarketableSecuritiesAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CashCashEquivalentsAndMarketableSecuritiesDomain" id="ms_CashCashEquivalentsAndMarketableSecuritiesDomain" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CommercialMortgageLoansMember" id="ms_CommercialMortgageLoansMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CommonStockIssuedToEmployeeTrustMember" id="ms_CommonStockIssuedToEmployeeTrustMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CorporateAndOtherDebtSecuritiesMember" id="ms_CorporateAndOtherDebtSecuritiesMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CorporateEquitiesMember" id="ms_CorporateEquitiesMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CreditDerivativeProtectionPurchasedNotionalAmount" id="ms_CreditDerivativeProtectionPurchasedNotionalAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="CreditDerivativeProtectionPurchasedToHedgeLoansAndLendingCommitmentsFairValue" id="ms_CreditDerivativeProtectionPurchasedToHedgeLoansAndLendingCommitmentsFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="CreditDerivativeProtectionPurchasedToHedgeLoansAndLendingCommitmentsNotionalAmount" id="ms_CreditDerivativeProtectionPurchasedToHedgeLoansAndLendingCommitmentsNotionalAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="CreditDerivativeProtectionSoldNotionalAmount" id="ms_CreditDerivativeProtectionSoldNotionalAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="CreditDerivativeProtectionSoldToHedgeLoansAndLendingCommitmentsFairValue" id="ms_CreditDerivativeProtectionSoldToHedgeLoansAndLendingCommitmentsFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="CreditDerivativeProtectionSoldToHedgeLoansAndLendingCommitmentsNotionalAmount" id="ms_CreditDerivativeProtectionSoldToHedgeLoansAndLendingCommitmentsNotionalAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="CreditDerivativesByMaturityAxis" id="ms_CreditDerivativesByMaturityAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CreditDerivativesByMaturityDomain" id="ms_CreditDerivativesByMaturityDomain" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CreditDowngradeMember" id="ms_CreditDowngradeMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CreditLinkedNotesMember" id="ms_CreditLinkedNotesMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DebtAndEquityInterestsMember" id="ms_DebtAndEquityInterestsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DepositsAtFairValue" id="ms_DepositsAtFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="DerivativeAndOtherContractsMember" id="ms_DerivativeAndOtherContractsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DerivativeAssetCashCollateralNettingFairValue" id="ms_DerivativeAssetCashCollateralNettingFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="DerivativeAssetCounterpartyNettingFairValue" id="ms_DerivativeAssetCounterpartyNettingFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="DerivativeAssetDesignatedAsHedgingInstrumentNotionalAmount" id="ms_DerivativeAssetDesignatedAsHedgingInstrumentNotionalAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="DerivativeAssetNotDesignatedAsHedgingInstrumentNotionalAmount" id="ms_DerivativeAssetNotDesignatedAsHedgingInstrumentNotionalAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="DerivativeAssetNotionalAmountAbstract" id="ms_DerivativeAssetNotionalAmountAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DerivativeGrossNotionalAmountOfDerivativeAsset" id="ms_DerivativeGrossNotionalAmountOfDerivativeAsset" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="DerivativeLiabilityCashCollateralNettingFairValue" id="ms_DerivativeLiabilityCashCollateralNettingFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="DerivativeLiabilityCounterpartyNettingFairValue" id="ms_DerivativeLiabilityCounterpartyNettingFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="DerivativeLiabilityDesignatedAsHedgingInstrumentNotionalAmount" id="ms_DerivativeLiabilityDesignatedAsHedgingInstrumentNotionalAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="DerivativeLiabilityGrossNotionalAmount" id="ms_DerivativeLiabilityGrossNotionalAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="DerivativeLiabilityNotDesignatedAsHedgingInstrumentNotionalAmount" id="ms_DerivativeLiabilityNotDesignatedAsHedgingInstrumentNotionalAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="DerivativeLiabilityNotionalAmountAbstract" id="ms_DerivativeLiabilityNotionalAmountAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DerivativesByDerivativeInstrumentContractAxis" id="ms_DerivativesByDerivativeInstrumentContractAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DerivativesByDerivativeInstrumentContractDomain" id="ms_DerivativesByDerivativeInstrumentContractDomain" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DerivativesFairValueByCreditEstimatesAxis" id="ms_DerivativesFairValueByCreditEstimatesAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DerivativesFairValueByCreditEstimatesDomain" id="ms_DerivativesFairValueByCreditEstimatesDomain" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DiscoverMember" id="ms_DiscoverMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="EmbeddedDerivativeNotionalAmount" id="ms_EmbeddedDerivativeNotionalAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="EuropeMiddleEastAndAfricaMember" id="ms_EuropeMiddleEastAndAfricaMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="EventDrivenFundsMember" id="ms_EventDrivenFundsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisUnobservableInputReconciliationByMajorTypeAxis" id="ms_FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisUnobservableInputReconciliationByMajorTypeAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisUnobservableInputReconciliationByMajorTypesDomain" id="ms_FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisUnobservableInputReconciliationByMajorTypesDomain" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisUnobservableInputReconciliationBySecondaryGroupTypeAxis" id="ms_FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisUnobservableInputReconciliationBySecondaryGroupTypeAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisUnobservableInputReconciliationBySecondaryGroupTypesDomain" id="ms_FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisUnobservableInputReconciliationBySecondaryGroupTypesDomain" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisUnobservableInputReconciliationTextBlock" id="ms_FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisUnobservableInputReconciliationTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="FairValueAssetsMeasuredOnRecurringBasisSecuritiesReceivedAsCollateral" id="ms_FairValueAssetsMeasuredOnRecurringBasisSecuritiesReceivedAsCollateral" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetAndLiabilitiesLevel3TransfersInto" id="ms_FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetAndLiabilitiesLevel3TransfersInto" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="FairValueOfInvestmentsThatCalculateNetAssetValueDisclosureTextBlock" id="ms_FairValueOfInvestmentsThatCalculateNetAssetValueDisclosureTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="FairValueOfOverCounterDerivativesTextBlock" id="ms_FairValueOfOverCounterDerivativesTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="FairValueOptionAggregateDifferencesDebt" id="ms_FairValueOptionAggregateDifferencesDebt" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="FairValueOptionAggregateDifferencesLoans" id="ms_FairValueOptionAggregateDifferencesLoans" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="FairValueOptionPercentageOfLoansHeldAsAssets90DaysOrMorePastDue" id="ms_FairValueOptionPercentageOfLoansHeldAsAssets90DaysOrMorePastDue" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="FinancialInstrumentsSoldNotYetPurchasedDerivativesAndOtherContracts" id="ms_FinancialInstrumentsSoldNotYetPurchasedDerivativesAndOtherContracts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="FiniteLivedIntangibleAssetsDisposedDuringPeriod" id="ms_FiniteLivedIntangibleAssetsDisposedDuringPeriod" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <element name="FiniteLivedIntangibleAssetsForeignCurrencyTranslationAdjustmentsAndOther" id="ms_FiniteLivedIntangibleAssetsForeignCurrencyTranslationAdjustmentsAndOther" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="FundsLiquidatedBetweenFiveToTenYearsPercentage" id="ms_FundsLiquidatedBetweenFiveToTenYearsPercentage" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="FundsLiquidatedGreaterThanTenYearsPercentage" id="ms_FundsLiquidatedGreaterThanTenYearsPercentage" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="FundsLiquidatedWithinNextFiveYearsPercentage" id="ms_FundsLiquidatedWithinNextFiveYearsPercentage" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="GeneralPartnerGuaranteeMember" id="ms_GeneralPartnerGuaranteeMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="GlobalWealthManagementGroupMember" id="ms_GlobalWealthManagementGroupMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="GuarantorObligationsCollateralAndRecourse" id="ms_GuarantorObligationsCollateralAndRecourse" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="HedgingRelationshipDeemedEffectiveRangeLowerLimit" id="ms_HedgingRelationshipDeemedEffectiveRangeLowerLimit" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="HedgingRelationshipDeemedEffectiveRangeUpperLimit" id="ms_HedgingRelationshipDeemedEffectiveRangeUpperLimit" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="IncreaseDecreaseInCashAndSecuritiesSegregatedUnderFederalAndOtherRegulations" id="ms_IncreaseDecreaseInCashAndSecuritiesSegregatedUnderFederalAndOtherRegulations" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <element name="IncreaseDecreaseInNoncontrollingInterestRelatedToConsolidationOfFundsSponsoredByParent" id="ms_IncreaseDecreaseInNoncontrollingInterestRelatedToConsolidationOfFundsSponsoredByParent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <element name="IncreaseDecreaseInSecuritiesPurchasedUnderAgreementsToResell" id="ms_IncreaseDecreaseInSecuritiesPurchasedUnderAgreementsToResell" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <element name="IndexAndBasketMember" id="ms_IndexAndBasketMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="InstitutionalSecuritiesSegmentMember" id="ms_InstitutionalSecuritiesSegmentMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="IntangibleAssetsMember" id="ms_IntangibleAssetsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="InvestmentGradeMember" id="ms_InvestmentGradeMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="InvestmentsThatCannotBeRedeemedDueToCertainInitialPeriodLockUpRestrictionsPercentage" id="ms_InvestmentsThatCannotBeRedeemedDueToCertainInitialPeriodLockUpRestrictionsPercentage" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="InvestmentsThatCannotBeRedeemedDueToExitRestrictionImposedByHedgeFundManagerPercentage" id="ms_InvestmentsThatCannotBeRedeemedDueToExitRestrictionImposedByHedgeFundManagerPercentage" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="LiquidityFacilitiesGuaranteeMember" id="ms_LiquidityFacilitiesGuaranteeMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="LoanRepaymentTermsMaximum" id="ms_LoanRepaymentTermsMaximum" type="xbrli:decimalItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="LoanRepaymentTermsMinimum" id="ms_LoanRepaymentTermsMinimum" type="xbrli:decimalItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="MoreThanOneAndWithinThreeYearsFromBalanceSheetDateMember" id="ms_MoreThanOneAndWithinThreeYearsFromBalanceSheetDateMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="MoreThanThreeAndWithinFiveYearsFromBalanceSheetDateMember" id="ms_MoreThanThreeAndWithinFiveYearsFromBalanceSheetDateMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="MorganStanleyBankNAMember" id="ms_MorganStanleyBankNAMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="MorganStanleySmithBarneyHoldingsLLCMember" id="ms_MorganStanleySmithBarneyHoldingsLLCMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="MortgageServicingActivitiesForSpecialPurposeEntitiesTextBlock" id="ms_MortgageServicingActivitiesForSpecialPurposeEntitiesTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="MortgageServicingRights" id="ms_MortgageServicingRights" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="MSAndCoMember" id="ms_MSAndCoMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="MultiStrategyFundsMember" id="ms_MultiStrategyFundsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="NetExposurePostCashCollateralMember" id="ms_NetExposurePostCashCollateralMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="NetPaymentsForFinancingActivitiesAbstract" id="ms_NetPaymentsForFinancingActivitiesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="NetPaymentsForProceedsFromFinancingActivitiesAbstract" id="ms_NetPaymentsForProceedsFromFinancingActivitiesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="NetPaymentsForProceedsFromInvestingActivitiesAbstract" id="ms_NetPaymentsForProceedsFromInvestingActivitiesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="NetProceedsFromFinancingActivitiesAbstract" id="ms_NetProceedsFromFinancingActivitiesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="NoninvestmentGradeMember" id="ms_NoninvestmentGradeMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="NotificationRequirementsForNetCapital" id="ms_NotificationRequirementsForNetCapital" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="ObligationAmountContributedToFund" id="ms_ObligationAmountContributedToFund" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="ObligationToIncreaseAmountContributedToFund" id="ms_ObligationToIncreaseAmountContributedToFund" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="ObligationToReturnSecuritiesReceivedAsCollateralMember" id="ms_ObligationToReturnSecuritiesReceivedAsCollateralMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="OtherEntityMember" id="ms_OtherEntityMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="OtherObligationsMember" id="ms_OtherObligationsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="OtherSecuredFinancingsMember" id="ms_OtherSecuredFinancingsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="OverCounterDerivativesFairValue" id="ms_OverCounterDerivativesFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="PrincipalAmountOfLongTermDebtIssuedNetOfRepayments" id="ms_PrincipalAmountOfLongTermDebtIssuedNetOfRepayments" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="PrincipalTransactionsTradingMember" id="ms_PrincipalTransactionsTradingMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ProceedsFromRepaymentsOfOtherSecuredFinancings" id="ms_ProceedsFromRepaymentsOfOtherSecuredFinancings" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="ReconciliationOfNetInterestFromSegmentsToConsolidatedTextBlock" id="ms_ReconciliationOfNetInterestFromSegmentsToConsolidatedTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="RestrictionsOnSubsidiaryBankDisclosureTextBlock" id="ms_RestrictionsOnSubsidiaryBankDisclosureTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="RetailAssetManagementSegmentMember" id="ms_RetailAssetManagementSegmentMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ScheduleOfCustomerSecuritiesForWhichEntityDoesNotHaveRightToSellOrRepledgeTextBlock" id="ms_ScheduleOfCustomerSecuritiesForWhichEntityDoesNotHaveRightToSellOrRepledgeTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="ScheduleOfNonConsolidatedVariableInterestEntitiesTextBlock" id="ms_ScheduleOfNonConsolidatedVariableInterestEntitiesTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="SecuritiesOwnedMember" id="ms_SecuritiesOwnedMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="SecuritiesReceivedAsCollateralMember" id="ms_SecuritiesReceivedAsCollateralMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="SettledWithinThreeDaysMember" id="ms_SettledWithinThreeDaysMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="SingleNameMember" id="ms_SingleNameMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="SpecialPurposeEntitiesMember" id="ms_SpecialPurposeEntitiesMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="TemporaryLiquidityGuaranteeProgramMember" id="ms_TemporaryLiquidityGuaranteeProgramMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="VariationMargin" id="ms_VariationMargin" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="DocumentAndEntityInformationAbstract" id="ms_DocumentAndEntityInformationAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="IntroductionAndBasisOfPresentationAbstract" id="ms_IntroductionAndBasisOfPresentationAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="SummaryOfSignificantAccountingPoliciesAbstract" id="ms_SummaryOfSignificantAccountingPoliciesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="SecuritizationActivitiesAndVariableInterestEntitiesAbstract" id="ms_SecuritizationActivitiesAndVariableInterestEntitiesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DetailsOfInterestAndDividendsRevenueAndInterestExpenseDisclosureTextBlock" id="ms_DetailsOfInterestAndDividendsRevenueAndInterestExpenseDisclosureTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="SegmentAndGeographicInformationAbstract" id="ms_SegmentAndGeographicInformationAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CommitmentsGuaranteesAndContingenciesAbstract" id="ms_CommitmentsGuaranteesAndContingenciesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisDisclosureItemsAxis" id="ms_FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisDisclosureItemsAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisDisclosureItemsDomain" id="ms_FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisDisclosureItemsDomain" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisPrimaryTypeAxis" id="ms_FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisPrimaryTypeAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisPrimaryTypeDomain" id="ms_FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisPrimaryTypeDomain" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="LongFuturesContractsMember" id="ms_LongFuturesContractsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ShortFuturesContractsMember" id="ms_ShortFuturesContractsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ReceivablesFromBrokersDealersAndClearingOrganizationsMember" id="ms_ReceivablesFromBrokersDealersAndClearingOrganizationsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="PayablesToBrokersDealersAndClearingOrganizationsMember" id="ms_PayablesToBrokersDealersAndClearingOrganizationsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="GuaranteeObligationsAccruedLoss" id="ms_GuaranteeObligationsAccruedLoss" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="OtherSecuredFinancingsAtFairValue" id="ms_OtherSecuredFinancingsAtFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="SubsidiaryTransaction" id="ms_SubsidiaryTransaction" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="GainLossOnSubsidiaryTransaction" id="ms_GainLossOnSubsidiaryTransaction" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="SharesReceivedFromDivestitureOfBusinesses" id="ms_SharesReceivedFromDivestitureOfBusinesses" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="RevelEntertainmentGroupLlcMember" id="ms_RevelEntertainmentGroupLlcMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DisposalGroupIncludingDiscontinuedOperationGainLossOnWriteDowns" id="ms_DisposalGroupIncludingDiscontinuedOperationGainLossOnWriteDowns" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="CreditContractsMember" id="ms_CreditContractsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="NettingMember" id="ms_NettingMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="PrincipalInvestmentsMember" id="ms_PrincipalInvestmentsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="SecuritiesSoldUnderAgreementToRepurchase" id="ms_SecuritiesSoldUnderAgreementToRepurchase" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="ScheduleOfProceedsOfSaleOfSecuritiesAvailableForSaleTextBlock" id="ms_ScheduleOfProceedsOfSaleOfSecuritiesAvailableForSaleTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="AvailableForSaleSecuritiesDebtMaturitiesWithOneYearAverageYield" id="ms_AvailableForSaleSecuritiesDebtMaturitiesWithOneYearAverageYield" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsAverageYield" id="ms_AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsAverageYield" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="AvailableForSaleSecuritiesDebtMaturitiesAverageYield" id="ms_AvailableForSaleSecuritiesDebtMaturitiesAverageYield" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="PercentageOfLongShortEquityHedgeFundsRedeemableQuarterly" id="ms_PercentageOfLongShortEquityHedgeFundsRedeemableQuarterly" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="PercentageOfLongShortEquityHedgeFundsRedeemableEverySixMonths" id="ms_PercentageOfLongShortEquityHedgeFundsRedeemableEverySixMonths" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="PercentageOfLongShortEquityHedgeFundsRedeemableOverSixMonths" id="ms_PercentageOfLongShortEquityHedgeFundsRedeemableOverSixMonths" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="NoncontrollingInterestOwnershipPercentage" id="ms_NoncontrollingInterestOwnershipPercentage" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="EquityMethodInvestmentPercentageOfVotingInterest" id="ms_EquityMethodInvestmentPercentageOfVotingInterest" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="NoncontrollingInterestPercentageOfVotingInterest" id="ms_NoncontrollingInterestPercentageOfVotingInterest" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="MitsubishiUfjMorganStanleySecuritiesCoLtdMember" id="ms_MitsubishiUfjMorganStanleySecuritiesCoLtdMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="MsmsMember" id="ms_MsmsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CmbMember" id="ms_CmbMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="RevelMember" id="ms_RevelMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ScheduleOfOtherSecuredFinancingTextBlock" id="ms_ScheduleOfOtherSecuredFinancingTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="ManagedRealEstateMember" id="ms_ManagedRealEstateMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DerivativesOnNetOfCounterpartyAndCashCollateralBasisTextBlock" id="ms_DerivativesOnNetOfCounterpartyAndCashCollateralBasisTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="UnderwritingCommitmentsMember" id="ms_UnderwritingCommitmentsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CitibankNAMember" id="ms_CitibankNAMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="AllocationOfEarningsFromContinuingOperationsToParticipatingRestrictedStockUnits" id="ms_AllocationOfEarningsFromContinuingOperationsToParticipatingRestrictedStockUnits" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <element name="AllocationOfEarningsFromDiscontinuedOperationsToParticipatingRestrictedStockUnits" id="ms_AllocationOfEarningsFromDiscontinuedOperationsToParticipatingRestrictedStockUnits" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <element name="AllocationOfUndistributedEarningsToEquityUnitsAbstract" id="ms_AllocationOfUndistributedEarningsToEquityUnitsAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="AllocationOfUndistributedEarningsFromContinuingOperationsToEquityUnits" id="ms_AllocationOfUndistributedEarningsFromContinuingOperationsToEquityUnits" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <element name="AllocationOfUndistributedEarningsFromDiscontinuedOperationsToEquityUnits" id="ms_AllocationOfUndistributedEarningsFromDiscontinuedOperationsToEquityUnits" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <element name="MorganStanleyTrustPrivateBankNationalAssociationMember" id="ms_MorganStanleyTrustPrivateBankNationalAssociationMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="AssumedConversionOfEquityUnitsAbstract" id="ms_AssumedConversionOfEquityUnitsAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="AssumedConversionOfEquityUnitsFromContinuingOperations" id="ms_AssumedConversionOfEquityUnitsFromContinuingOperations" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <element name="AssumedConversionOfEquityUnitsFromDiscontinuedOperations" id="ms_AssumedConversionOfEquityUnitsFromDiscontinuedOperations" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <element name="SpecialPurposeEntityCarryingAmountOfCollateralizedAssets" id="ms_SpecialPurposeEntityCarryingAmountOfCollateralizedAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="CreditLinkedNotesAndOtherMember" id="ms_CreditLinkedNotesAndOtherMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="TransferedAssetsWithContinuingInvolvmentByLevelOfFairValueInputsAxis" id="ms_TransferedAssetsWithContinuingInvolvmentByLevelOfFairValueInputsAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="TransferedAssetsWithContinuingInvolvmentByLevelOfFairValueInputsDomain" id="ms_TransferedAssetsWithContinuingInvolvmentByLevelOfFairValueInputsDomain" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="EquityLinkedNotesMember" id="ms_EquityLinkedNotesMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="UnconsolidatedSpecialPurposeEntitiesMember" id="ms_UnconsolidatedSpecialPurposeEntitiesMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ConsolidatedSpecialPurposeEntitiesMember" id="ms_ConsolidatedSpecialPurposeEntitiesMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="VariableInterestAdditionalMaximumExposureToLoss" id="ms_VariableInterestAdditionalMaximumExposureToLoss" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="SpecialPurposeEntitiesSecuritiesIssued" id="ms_SpecialPurposeEntitiesSecuritiesIssued" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="FinancingReceivablesAbstract" id="ms_FinancingReceivablesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="SummaryOfFinancingReceivablesTextBlock" id="ms_SummaryOfFinancingReceivablesTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="CommercialAndIndustrialMember" id="ms_CommercialAndIndustrialMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="WholesaleRealEstateMember" id="ms_WholesaleRealEstateMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="LoansReceivableGrossAmountOfLoansCollectivelyEvaluatedForImpairment" id="ms_LoansReceivableGrossAmountOfLoansCollectivelyEvaluatedForImpairment" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="LoansReceivableGrossAmountOfLoansIndividuallyEvaluatedForImpairment" id="ms_LoansReceivableGrossAmountOfLoansIndividuallyEvaluatedForImpairment" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <element name="LoansReceivableInternallyGradedDoubtfulAmount" id="ms_LoansReceivableInternallyGradedDoubtfulAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="DueFromEmployeesAllowance" id="ms_DueFromEmployeesAllowance" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="VariableInterestEntityNoncontrollingInterest" id="ms_VariableInterestEntityNoncontrollingInterest" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="ValueOfPerformanceBasedFeeRevenueAtRisk" id="ms_ValueOfPerformanceBasedFeeRevenueAtRisk" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="VoluntaryContributionToNonConsolidatedMoneyMarketFunds" id="ms_VoluntaryContributionToNonConsolidatedMoneyMarketFunds" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="OriginalMaturitiesOneYearOrLessMember" id="ms_OriginalMaturitiesOneYearOrLessMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="OriginalMaturitiesGreaterThanOneYearMember" id="ms_OriginalMaturitiesGreaterThanOneYearMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ExchangeTradedDerivativeProductsMember" id="ms_ExchangeTradedDerivativeProductsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="OtcDerivativeProductsMember" id="ms_OtcDerivativeProductsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="AvailableForSaleSecuritiesDebtMaturitiesAfterFiveYearsAmortizedCost" id="ms_AvailableForSaleSecuritiesDebtMaturitiesAfterFiveYearsAmortizedCost" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="AvailableForSaleSecuritiesDebtMaturitiesAfterFiveYearsFairValue" id="ms_AvailableForSaleSecuritiesDebtMaturitiesAfterFiveYearsFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="AvailableForSaleSecuritiesDebtMaturitiesAfterFiveYearsAverageYield" id="ms_AvailableForSaleSecuritiesDebtMaturitiesAfterFiveYearsAverageYield" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="VariableInterestEntityAssetsMember" id="ms_VariableInterestEntityAssetsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="SecuritizationsRepresentationsAndGuaranteesMember" id="ms_SecuritizationsRepresentationsAndGuaranteesMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="EffectOfCashAndCashEquivalentsRelatedToVariableInterestEntities" id="ms_EffectOfCashAndCashEquivalentsRelatedToVariableInterestEntities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="PercentOfLoansWhichAreCurrent" id="ms_PercentOfLoansWhichAreCurrent" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="PensionAndPostretirementMember" id="ms_PensionAndPostretirementMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CommitmentsGuaranteesAndContingenciesTable" id="ms_CommitmentsGuaranteesAndContingenciesTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="LongTermDebtWeightedAverageMaturity" id="ms_LongTermDebtWeightedAverageMaturity" type="xbrli:decimalItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="CommitmentsGuaranteesAndOtherMember" id="ms_CommitmentsGuaranteesAndOtherMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="OtherConsumerAndCommercialLoansMember" id="ms_OtherConsumerAndCommercialLoansMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DfsMember" id="ms_DfsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ScheduleOfServicingAssetsAndLiabilitiesAtFairValueTextBlock" id="ms_ScheduleOfServicingAssetsAndLiabilitiesAtFairValueTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="AmericasMember" id="ms_AmericasMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="AggregationOfVariableInterestEntityDisclosuresTableTextBlock" id="ms_AggregationOfVariableInterestEntityDisclosuresTableTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="QualifyingSpecialPurposeEntityClassificationAxis" id="ms_QualifyingSpecialPurposeEntityClassificationAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="QualifyingSpecialPurposeEntitiesClassificationDomain" id="ms_QualifyingSpecialPurposeEntitiesClassificationDomain" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DerivativeAssetsFairValueAbstract" id="ms_DerivativeAssetsFairValueAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="DerivativeLiabilitiesFairValueAbstract" id="ms_DerivativeLiabilitiesFairValueAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="VariableInterestEntityByTypeAxis" id="ms_VariableInterestEntityByTypeAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="TypeOfVariableInterestEntityDomain" id="ms_TypeOfVariableInterestEntityDomain" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="VariableInterestEntityTypesAxis" id="ms_VariableInterestEntityTypesAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="VairableInterestEntityTypesDomain" id="ms_VairableInterestEntityTypesDomain" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="MortgageAndAssetBackedSecuritiesMember" id="ms_MortgageAndAssetBackedSecuritiesMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="MunicipalTenderOptionBondsMember" id="ms_MunicipalTenderOptionBondsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisUnobservableInputReconciliationTable" id="ms_FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisUnobservableInputReconciliationTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ScheduleOfFairValueOfInvestmentsThatCalculateNetAssetValueTable" id="ms_ScheduleOfFairValueOfInvestmentsThatCalculateNetAssetValueTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="IntangibleAssetsByMajorClassTable" id="ms_IntangibleAssetsByMajorClassTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CashFlowsBetweenTransfereeAndTransferorServicingFeeAdvancesReserves" id="ms_CashFlowsBetweenTransfereeAndTransferorServicingFeeAdvancesReserves" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="CommonStockDividendPercentage" id="ms_CommonStockDividendPercentage" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="MufgStockConversionMember" id="ms_MufgStockConversionMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="PreferredStockStockDividends" id="ms_PreferredStockStockDividends" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="CashContributedByPartner" id="ms_CashContributedByPartner" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="DiscontinuedOperationsLossFromWriteDownsAndRelatedCosts" id="ms_DiscontinuedOperationsLossFromWriteDownsAndRelatedCosts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="AbuDhabiCommercialBankEtAlMember" id="ms_AbuDhabiCommercialBankEtAlMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ValueOfSecuritiesIssued" id="ms_ValueOfSecuritiesIssued" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="ChinaDevelopmentIndustrialBankMember" id="ms_ChinaDevelopmentIndustrialBankMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ReceivableFromChinaDevelopmentIndustrialBankMember" id="ms_ReceivableFromChinaDevelopmentIndustrialBankMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="WholeLoanSalesRepresentationsAndWarrantiesMember" id="ms_WholeLoanSalesRepresentationsAndWarrantiesMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="EquityMethodTransactionFairValueOfConsideration" id="ms_EquityMethodTransactionFairValueOfConsideration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="IncreaseDecreaseInNoncontrollingInterestsRelatedToSubsidiaryTransaction" id="ms_IncreaseDecreaseInNoncontrollingInterestsRelatedToSubsidiaryTransaction" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="StockConversionRelatedToSubsidiary" id="ms_StockConversionRelatedToSubsidiary" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="MorganStanleyAndHuaxinSecuritiesJointVentureMember" id="ms_MorganStanleyAndHuaxinSecuritiesJointVentureMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="JointVentureInterest" id="ms_JointVentureInterest" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="FrontpointMember" id="ms_FrontpointMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ContributionsFromAndDistributionsToNoncontrollingInterests" id="ms_ContributionsFromAndDistributionsToNoncontrollingInterests" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <element name="ChangesInOwnershipInterestInSubsidiariesAxis" id="ms_ChangesInOwnershipInterestInSubsidiariesAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ChangesInOwnershipInterestInSubsidiariesDomain" id="ms_ChangesInOwnershipInterestInSubsidiariesDomain" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ChangesFromNetIncomeAttributableToParentAndTransfersFromToNoncontrollingInterests" id="ms_ChangesFromNetIncomeAttributableToParentAndTransfersFromToNoncontrollingInterests" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <element name="ChangesInCompanysOwnershipInterestInSubsidiariesTable" id="ms_ChangesInCompanysOwnershipInterestInSubsidiariesTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="TranchedIndicesAndBasketsMember" id="ms_TranchedIndicesAndBasketsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="FinancialInstrumentsOwnedCorporateDebtAtCarryingValue" id="ms_FinancialInstrumentsOwnedCorporateDebtAtCarryingValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="FinancialInstrumentsOwnedPhysicalCommoditiesAtCarryingValue" id="ms_FinancialInstrumentsOwnedPhysicalCommoditiesAtCarryingValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="NoncashOrPartNoncashAcquisitionValueOfEquitySecuritiesIssued" id="ms_NoncashOrPartNoncashAcquisitionValueOfEquitySecuritiesIssued" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="StockIssuedDuringPeriodValueConversionOfConvertibleSecuritiesCarryingValue" id="ms_StockIssuedDuringPeriodValueConversionOfConvertibleSecuritiesCarryingValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="IncreaseDecreaseInEquityMethodOfInvestmentCarryingValue" id="ms_IncreaseDecreaseInEquityMethodOfInvestmentCarryingValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="MumssMember" id="ms_MumssMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="IncreaseDecreaseInEquityMethodInvestmentOwnershipPercentage" id="ms_IncreaseDecreaseInEquityMethodInvestmentOwnershipPercentage" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="IncreaseDecreaseInPaidInCapital" id="ms_IncreaseDecreaseInPaidInCapital" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="LossOnWriteDownOfMinorityInterestInEquityMethodInvestment" id="ms_LossOnWriteDownOfMinorityInterestInEquityMethodInvestment" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="LoansReceivableGainLossFromFairValueAdjustment" id="ms_LoansReceivableGainLossFromFairValueAdjustment" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="FinancingObligationsOtherSecuredFinancingsCarryingValue" id="ms_FinancingObligationsOtherSecuredFinancingsCarryingValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="ImpactOfForeignLegislationExpectedBankLevyExpense" id="ms_ImpactOfForeignLegislationExpectedBankLevyExpense" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="MbiaInsuranceCorpMember" id="ms_MbiaInsuranceCorpMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ResidentialMortgageBackedSecuritiesInsuredByContract" id="ms_ResidentialMortgageBackedSecuritiesInsuredByContract" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="OtherRevenueDisclosureTextBlock" id="ms_OtherRevenueDisclosureTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="InterestExpenseOtherContraExpense" id="ms_InterestExpenseOtherContraExpense" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <element name="MufgStockConversionAmount" id="ms_MufgStockConversionAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="RestrictedShareActivityDisclosureTextBlock" id="ms_RestrictedShareActivityDisclosureTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="UnvestedRestrictedStockUnitsDisclosureTextBlock" id="ms_UnvestedRestrictedStockUnitsDisclosureTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="ScheduleOfShareBasedCompensationOptionsActivityTextBlock" id="ms_ScheduleOfShareBasedCompensationOptionsActivityTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsMethodUsedTextBlock" id="ms_ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsMethodUsedTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="AwardsGrantedTargetAmount" id="ms_AwardsGrantedTargetAmount" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriodWeightedAverageExercisePrice" id="ms_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriodWeightedAverageExercisePrice" type="num:perShareItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsConversionsInPeriodTotalFairValue" id="ms_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsConversionsInPeriodTotalFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonvestedAggregateIntrinsicValue" id="ms_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonvestedAggregateIntrinsicValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardsOtherThanOptionsOutstandingMultiplier" id="ms_ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardsOtherThanOptionsOutstandingMultiplier" type="xbrli:decimalItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <element name="ShareBasedAwardsTermsOfAwardAxis" id="ms_ShareBasedAwardsTermsOfAwardAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ShareBasedAwardsTermsOfAwardDomain" id="ms_ShareBasedAwardsTermsOfAwardDomain" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="ReturnOnAverageShareholdersEquityGreaterThan180Member" id="ms_ReturnOnAverageShareholdersEquityGreaterThan180Member" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="CrescentMember" id="ms_CrescentMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="MortgagePassThroughCertificateBackedBySecuritizationTrustsAmount" id="ms_MortgagePassThroughCertificateBackedBySecuritizationTrustsAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <element name="MortgagePassThroughCertificateBackedBySecuritizationTrustsUnpaidAmount" id="ms_MortgagePassThroughCertificateBackedBySecuritizationTrustsUnpaidAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <element name="PreviousGuidanceFromFederalReserveMember" id="ms_PreviousGuidanceFromFederalReserveMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="RegulatoryRequirementsLineItems" id="ms_RegulatoryRequirementsLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="FederalHomeLoanBankOfSanFranciscoMember" id="ms_FederalHomeLoanBankOfSanFranciscoMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element name="TotalIndexAndBasketCreditDefaultSwapsMember" id="ms_TotalIndexAndBasketCreditDefaultSwapsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+</schema>

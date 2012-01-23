@@ -1,0 +1,30 @@
+
+
+Trying to resolve label for domain ck0001527728:DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember
+
+  (Axis is us-gaap_StatementEquityComponentsAxis)
+
+Schema file gives us:
+
+  <element name="DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember"
+             id="ck0001527728_DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember"
+           type="nonnum:domainItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/>
+
+(i.e. Is redundant)
+
+Label file gives us:
+
+  <loc      xlink:type="locator"
+            xlink:href="ck0001527728-20110930.xsd#ck0001527728_DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember"
+            xlink:label="ck0001527728_DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember"/>                        <----
+
+  <labelArc xlink:type="arc"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+            xlink:from="ck0001527728_DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember"                           <----
+            xlink:to="ck0001527728_DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember_lbl"/>                       <----
+
+  <label    xlink:type="resource"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xlink:label="ck0001527728_DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember_lbl"
+            xml:lang="en-US">Deficit Accumulated During the Development Stage</label>                                                    <----
+

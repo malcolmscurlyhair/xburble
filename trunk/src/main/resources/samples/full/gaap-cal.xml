@@ -1,0 +1,3153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Calculation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 1.0.0.0 (2008-04-11 10:37).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2008 UBmatrix inc., All Rights Reserved
+Produced on 2008-04-16 08:51:33
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#BalanceSheetSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/BalanceSheetSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#IncomeStatementSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/IncomeStatementSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#CashFlowDirectSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/CashFlowDirectSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#CashFlowFromOperatingActivitiesIndirectSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/CashFlowFromOperatingActivitiesIndirectSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#CashFlowIndirectSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/CashFlowIndirectSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#StatementOfEquitySchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/StatementOfEquitySchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#StatementOfEquityPreferredTopic"
+    roleURI="http://xasb.org/gaap/role/schedule/StatementOfEquityPreferredSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#StatementOfCommonEquityTopic"
+    roleURI="http://xasb.org/gaap/role/schedule/StatementOfEquityCommonSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#StatementOfEquitySchedule2"
+    roleURI="http://xasb.org/gaap/role/support/StatementOfEquitySupport" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#BalanceSheetDepositoryAndLendingInstitutionsSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/BalanceSheetDepositoryAndLendingInstitutionsSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#IncomeStatementDepositoryAndLendingInstitutionsSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/IncomeStatementDepositoryAndLendingInstitutionsSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#CashFlowsDepositoryAndLendingInstitutionsSchedule"
+    roleURI="http://xasb.org/gaap/role/topic/schedule/CashFlowsDepositoryAndLendingInstitutionsSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#CashCashEquivalentsSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/CashCashEquivalentsSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#ReceivablesCNB"
+    roleURI="http://xasb.org/gaap/role/suppport/ReceivablesCNB" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#ReceivablesGNB"
+    roleURI="http://xasb.org/gaap/role/support/ReceivablesGNB" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#ReceivablesCOM"
+    roleURI="http://xasb.org/gaap/role/support/ReceivablesCOM" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#PropertyPlantAndEquipmentSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/PropertyPlantAndEquipmentSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#PropertyPlantAndEquipmentSupport"
+    roleURI="http://xasb.org/gaap/role/support/PropertyPlantAndEquipmentSupport" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#PropertyPlantAndEquipmentMovementsSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/PropertyPlantAndEquipmentMovementsSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#OtherAssetsSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/OtherAssetsSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#PayablesAndAccrualsSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/PayablesAndAccrualsSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#DebtSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/DebtSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#LongTermDebtMaturitiesSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/LongTermDebtMaturitiesSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#DebtCNB"
+    roleURI="http://xasb.org/gaap/role/support/DebtCNB" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#OtherLiabilitiesSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/OtherLiabilitiesSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#IncomeTaxesSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/IncomeTaxesSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#BusinessSegmentsSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/BusinessSegmentsSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#DirectorCompensationSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/DirectorCompensationSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#ShareOwnershipPlansSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/ShareOwnershipPlansSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#PortfolioOfInvestmentsSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/PortfolioOfInvestmentsSchedule" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#OtherMattersSchedule"
+    roleURI="http://xasb.org/gaap/role/schedule/ReconciliationOfCashSummarySchedule" />
+  <documentation>Calculations.</documentation>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/BalanceSheetSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_Assets"
+      xlink:href="gaap.xsd#gaap_Assets" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AssetsCurrent"
+      xlink:href="gaap.xsd#gaap_AssetsCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Assets" xlink:to="gaap_AssetsCurrent"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashAndCashEquivalents"
+      xlink:href="gaap.xsd#gaap_CashAndCashEquivalents" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AssetsCurrent" xlink:to="gaap_CashAndCashEquivalents"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashUnrestricted"
+      xlink:href="gaap.xsd#gaap_CashUnrestricted" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashAndCashEquivalents" xlink:to="gaap_CashUnrestricted"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashRestricted"
+      xlink:href="gaap.xsd#gaap_CashRestricted" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashAndCashEquivalents" xlink:to="gaap_CashRestricted"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ShortTermInvestments"
+      xlink:href="gaap.xsd#gaap_ShortTermInvestments" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashAndCashEquivalents" xlink:to="gaap_ShortTermInvestments"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherCashAndCashEquivalents"
+      xlink:href="gaap.xsd#gaap_OtherCashAndCashEquivalents" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashAndCashEquivalents" xlink:to="gaap_OtherCashAndCashEquivalents"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ReceivablesNetCurrent"
+      xlink:href="gaap.xsd#gaap_ReceivablesNetCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AssetsCurrent" xlink:to="gaap_ReceivablesNetCurrent"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_TradeReceivablesNetCurrent"
+      xlink:href="gaap.xsd#gaap_TradeReceivablesNetCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_ReceivablesNetCurrent" xlink:to="gaap_TradeReceivablesNetCurrent"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FinanceLeaseReceivablesNetCurrent"
+      xlink:href="gaap.xsd#gaap_FinanceLeaseReceivablesNetCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_ReceivablesNetCurrent" xlink:to="gaap_FinanceLeaseReceivablesNetCurrent"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherReceivablesNetCurrent"
+      xlink:href="gaap.xsd#gaap_OtherReceivablesNetCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_ReceivablesNetCurrent" xlink:to="gaap_OtherReceivablesNetCurrent"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Inventory"
+      xlink:href="gaap.xsd#gaap_Inventory" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AssetsCurrent" xlink:to="gaap_Inventory"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PrepaidExpenses"
+      xlink:href="gaap.xsd#gaap_PrepaidExpenses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AssetsCurrent" xlink:to="gaap_PrepaidExpenses"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherAssetsCurrent"
+      xlink:href="gaap.xsd#gaap_OtherAssetsCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AssetsCurrent" xlink:to="gaap_OtherAssetsCurrent"
+      order="5"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AssetsNoncurrent"
+      xlink:href="gaap.xsd#gaap_AssetsNoncurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Assets" xlink:to="gaap_AssetsNoncurrent"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PropertyPlantAndEquipmentNet"
+      xlink:href="gaap.xsd#gaap_PropertyPlantAndEquipmentNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AssetsNoncurrent" xlink:to="gaap_PropertyPlantAndEquipmentNet"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Land"
+      xlink:href="gaap.xsd#gaap_Land" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNet" xlink:to="gaap_Land"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_BuildingsNet"
+      xlink:href="gaap.xsd#gaap_BuildingsNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNet" xlink:to="gaap_BuildingsNet"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FurnitureAndFixturesNet"
+      xlink:href="gaap.xsd#gaap_FurnitureAndFixturesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNet" xlink:to="gaap_FurnitureAndFixturesNet"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherPropertyPlantAndEquipmentNet"
+      xlink:href="gaap.xsd#gaap_OtherPropertyPlantAndEquipmentNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNet" xlink:to="gaap_OtherPropertyPlantAndEquipmentNet"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_InvestmentInAffiliates"
+      xlink:href="gaap.xsd#gaap_InvestmentInAffiliates" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AssetsNoncurrent" xlink:to="gaap_InvestmentInAffiliates"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ReceivablesNetNoncurrent"
+      xlink:href="gaap.xsd#gaap_ReceivablesNetNoncurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AssetsNoncurrent" xlink:to="gaap_ReceivablesNetNoncurrent"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherAssetsNoncurrent"
+      xlink:href="gaap.xsd#gaap_OtherAssetsNoncurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AssetsNoncurrent" xlink:to="gaap_OtherAssetsNoncurrent"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LiabilitiesAndEquity"
+      xlink:href="gaap.xsd#gaap_LiabilitiesAndEquity" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Liabilities"
+      xlink:href="gaap.xsd#gaap_Liabilities" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LiabilitiesAndEquity" xlink:to="gaap_Liabilities"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LiabilitiesCurrent"
+      xlink:href="gaap.xsd#gaap_LiabilitiesCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Liabilities" xlink:to="gaap_LiabilitiesCurrent"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PayablesAndAccruals"
+      xlink:href="gaap.xsd#gaap_PayablesAndAccruals" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LiabilitiesCurrent" xlink:to="gaap_PayablesAndAccruals"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AccountsPayable"
+      xlink:href="gaap.xsd#gaap_AccountsPayable" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PayablesAndAccruals" xlink:to="gaap_AccountsPayable"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AccruedInterestPayable"
+      xlink:href="gaap.xsd#gaap_AccruedInterestPayable" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PayablesAndAccruals" xlink:to="gaap_AccruedInterestPayable"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AccruedExpenses"
+      xlink:href="gaap.xsd#gaap_AccruedExpenses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PayablesAndAccruals" xlink:to="gaap_AccruedExpenses"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherPayablesAndAccruals"
+      xlink:href="gaap.xsd#gaap_OtherPayablesAndAccruals" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PayablesAndAccruals" xlink:to="gaap_OtherPayablesAndAccruals"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtCurrent"
+      xlink:href="gaap.xsd#gaap_LongTermDebtCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LiabilitiesCurrent" xlink:to="gaap_LongTermDebtCurrent"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherLiabilitiesCurrent"
+      xlink:href="gaap.xsd#gaap_OtherLiabilitiesCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LiabilitiesCurrent" xlink:to="gaap_OtherLiabilitiesCurrent"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LiabilitiesNoncurrent"
+      xlink:href="gaap.xsd#gaap_LiabilitiesNoncurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Liabilities" xlink:to="gaap_LiabilitiesNoncurrent"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtNoncurrent"
+      xlink:href="gaap.xsd#gaap_LongTermDebtNoncurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LiabilitiesNoncurrent" xlink:to="gaap_LongTermDebtNoncurrent"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherLiabilitiesNoncurrent"
+      xlink:href="gaap.xsd#gaap_OtherLiabilitiesNoncurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LiabilitiesNoncurrent" xlink:to="gaap_OtherLiabilitiesNoncurrent"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Equity"
+      xlink:href="gaap.xsd#gaap_Equity" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LiabilitiesAndEquity" xlink:to="gaap_Equity"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OwnersEquity"
+      xlink:href="gaap.xsd#gaap_OwnersEquity" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Equity" xlink:to="gaap_OwnersEquity"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PartnersEquity"
+      xlink:href="gaap.xsd#gaap_PartnersEquity" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Equity" xlink:to="gaap_PartnersEquity"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_MembersEquity"
+      xlink:href="gaap.xsd#gaap_MembersEquity" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Equity" xlink:to="gaap_MembersEquity"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStock"
+      xlink:href="gaap.xsd#gaap_PreferredStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Equity" xlink:to="gaap_PreferredStock"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStock"
+      xlink:href="gaap.xsd#gaap_CommonStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Equity" xlink:to="gaap_CommonStock"
+      order="5"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AdditionalPaidInCapital"
+      xlink:href="gaap.xsd#gaap_AdditionalPaidInCapital" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Equity" xlink:to="gaap_AdditionalPaidInCapital"
+      order="6"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_RetainedEarningsAccumulatedLosses"
+      xlink:href="gaap.xsd#gaap_RetainedEarningsAccumulatedLosses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Equity" xlink:to="gaap_RetainedEarningsAccumulatedLosses"
+      order="7"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/IncomeStatementSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_NetIncomeLoss"
+      xlink:href="gaap.xsd#gaap_NetIncomeLoss" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeLossFromContinuingOperations"
+      xlink:href="gaap.xsd#gaap_IncomeLossFromContinuingOperations" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_NetIncomeLoss" xlink:to="gaap_IncomeLossFromContinuingOperations"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes"
+      xlink:href="gaap.xsd#gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeLossFromContinuingOperations" xlink:to="gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OperatingIncomeLoss"
+      xlink:href="gaap.xsd#gaap_OperatingIncomeLoss" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes" xlink:to="gaap_OperatingIncomeLoss"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OperatingExpenses"
+      xlink:href="gaap.xsd#gaap_OperatingExpenses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OperatingIncomeLoss" xlink:to="gaap_OperatingExpenses"
+      order="1"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OperatingIncome"
+      xlink:href="gaap.xsd#gaap_OperatingIncome" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OperatingIncomeLoss" xlink:to="gaap_OperatingIncome"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_GrossProfitLoss"
+      xlink:href="gaap.xsd#gaap_GrossProfitLoss" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OperatingIncomeLoss" xlink:to="gaap_GrossProfitLoss"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_RevenuesNet"
+      xlink:href="gaap.xsd#gaap_RevenuesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_GrossProfitLoss" xlink:to="gaap_RevenuesNet"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ReturnsAndAllowances"
+      xlink:href="gaap.xsd#gaap_ReturnsAndAllowances" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_RevenuesNet" xlink:to="gaap_ReturnsAndAllowances"
+      order="1"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_RevenuesGross"
+      xlink:href="gaap.xsd#gaap_RevenuesGross" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_RevenuesNet" xlink:to="gaap_RevenuesGross"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CostOfSales"
+      xlink:href="gaap.xsd#gaap_CostOfSales" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_GrossProfitLoss" xlink:to="gaap_CostOfSales"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_NonoperatingIncomeLoss"
+      xlink:href="gaap.xsd#gaap_NonoperatingIncomeLoss" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes" xlink:to="gaap_NonoperatingIncomeLoss"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_InterestExpenseIncome"
+      xlink:href="gaap.xsd#gaap_InterestExpenseIncome" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_NonoperatingIncomeLoss" xlink:to="gaap_InterestExpenseIncome"
+      order="1"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherNonoperatingExpensesIncome"
+      xlink:href="gaap.xsd#gaap_OtherNonoperatingExpensesIncome" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_NonoperatingIncomeLoss" xlink:to="gaap_OtherNonoperatingExpensesIncome"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeTaxExpenseBenefit"
+      xlink:href="gaap.xsd#gaap_IncomeTaxExpenseBenefit" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeLossFromContinuingOperations" xlink:to="gaap_IncomeTaxExpenseBenefit"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeLossFromDiscontinuedOperationsNet"
+      xlink:href="gaap.xsd#gaap_IncomeLossFromDiscontinuedOperationsNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_NetIncomeLoss" xlink:to="gaap_IncomeLossFromDiscontinuedOperationsNet"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/CashFlowDirectSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowNet"
+      xlink:href="gaap.xsd#gaap_CashFlowNet" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet"
+      xlink:href="gaap.xsd#gaap_CashFlowProvidedByUsedInOperatingActivitiesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowNet" xlink:to="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ProceedsFromCollectionOfRevenues"
+      xlink:href="gaap.xsd#gaap_ProceedsFromCollectionOfRevenues" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet" xlink:to="gaap_ProceedsFromCollectionOfRevenues"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PaymentsOfOperatingExpenses"
+      xlink:href="gaap.xsd#gaap_PaymentsOfOperatingExpenses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet" xlink:to="gaap_PaymentsOfOperatingExpenses"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PaymentsOfInterest"
+      xlink:href="gaap.xsd#gaap_PaymentsOfInterest" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet" xlink:to="gaap_PaymentsOfInterest"
+      order="3"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet"
+      xlink:href="gaap.xsd#gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowNet" xlink:to="gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PaymentsForPurchasesOfPropertyPlantAndEquipment"
+      xlink:href="gaap.xsd#gaap_PaymentsForPurchasesOfPropertyPlantAndEquipment" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet" xlink:to="gaap_PaymentsForPurchasesOfPropertyPlantAndEquipment"
+      order="1"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ProceedsFromSaleOfPropertyPlantAndEquipment"
+      xlink:href="gaap.xsd#gaap_ProceedsFromSaleOfPropertyPlantAndEquipment" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet" xlink:to="gaap_ProceedsFromSaleOfPropertyPlantAndEquipment"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet"
+      xlink:href="gaap.xsd#gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowNet" xlink:to="gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PaymentsOfLongTermDebt"
+      xlink:href="gaap.xsd#gaap_PaymentsOfLongTermDebt" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet" xlink:to="gaap_PaymentsOfLongTermDebt"
+      order="1"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ProceedsFromAdditionalLongTermDebt"
+      xlink:href="gaap.xsd#gaap_ProceedsFromAdditionalLongTermDebt" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet" xlink:to="gaap_ProceedsFromAdditionalLongTermDebt"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/CashFlowFromOperatingActivitiesIndirectSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowProvidedByUsedInOperations"
+      xlink:href="gaap.xsd#gaap_CashFlowProvidedByUsedInOperations" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_NetIncomeLoss"
+      xlink:href="gaap.xsd#gaap_NetIncomeLoss" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowProvidedByUsedInOperations" xlink:to="gaap_NetIncomeLoss"
+      order="1"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations"
+      xlink:href="gaap.xsd#gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowProvidedByUsedInOperations" xlink:to="gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_DepreciationAndAmortization"
+      xlink:href="gaap.xsd#gaap_DepreciationAndAmortization" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations" xlink:to="gaap_DepreciationAndAmortization"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Depreciation"
+      xlink:href="gaap.xsd#gaap_Depreciation" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_DepreciationAndAmortization" xlink:to="gaap_Depreciation"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Amortization"
+      xlink:href="gaap.xsd#gaap_Amortization" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_DepreciationAndAmortization" xlink:to="gaap_Amortization"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_MinorityInterestInNetIncomeLossNet"
+      xlink:href="gaap.xsd#gaap_MinorityInterestInNetIncomeLossNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations" xlink:to="gaap_MinorityInterestInNetIncomeLossNet"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherAdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations"
+      xlink:href="gaap.xsd#gaap_OtherAdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations" xlink:to="gaap_OtherAdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations"
+      order="3"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/CashFlowIndirectSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowNet"
+      xlink:href="gaap.xsd#gaap_CashFlowNet" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet"
+      xlink:href="gaap.xsd#gaap_CashFlowProvidedByUsedInOperatingActivitiesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowNet" xlink:to="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowProvidedByUsedInOperations"
+      xlink:href="gaap.xsd#gaap_CashFlowProvidedByUsedInOperations" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet" xlink:to="gaap_CashFlowProvidedByUsedInOperations"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_NetIncomeLoss"
+      xlink:href="gaap.xsd#gaap_NetIncomeLoss" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowProvidedByUsedInOperations" xlink:to="gaap_NetIncomeLoss"
+      order="1"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations"
+      xlink:href="gaap.xsd#gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowProvidedByUsedInOperations" xlink:to="gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_DepreciationAndAmortization"
+      xlink:href="gaap.xsd#gaap_DepreciationAndAmortization" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations" xlink:to="gaap_DepreciationAndAmortization"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Depreciation"
+      xlink:href="gaap.xsd#gaap_Depreciation" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_DepreciationAndAmortization" xlink:to="gaap_Depreciation"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Amortization"
+      xlink:href="gaap.xsd#gaap_Amortization" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_DepreciationAndAmortization" xlink:to="gaap_Amortization"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_MinorityInterestInNetIncomeLossNet"
+      xlink:href="gaap.xsd#gaap_MinorityInterestInNetIncomeLossNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations" xlink:to="gaap_MinorityInterestInNetIncomeLossNet"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherAdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations"
+      xlink:href="gaap.xsd#gaap_OtherAdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations" xlink:to="gaap_OtherAdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncreaseDecreaseInWorkingCapital"
+      xlink:href="gaap.xsd#gaap_IncreaseDecreaseInWorkingCapital" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet" xlink:to="gaap_IncreaseDecreaseInWorkingCapital"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncreaseDecreaseInReceivablesNet"
+      xlink:href="gaap.xsd#gaap_IncreaseDecreaseInReceivablesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncreaseDecreaseInWorkingCapital" xlink:to="gaap_IncreaseDecreaseInReceivablesNet"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncreaseDecreaseInInventory"
+      xlink:href="gaap.xsd#gaap_IncreaseDecreaseInInventory" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncreaseDecreaseInWorkingCapital" xlink:to="gaap_IncreaseDecreaseInInventory"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncreaseDecreaseInPrepaidExpenses"
+      xlink:href="gaap.xsd#gaap_IncreaseDecreaseInPrepaidExpenses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncreaseDecreaseInWorkingCapital" xlink:to="gaap_IncreaseDecreaseInPrepaidExpenses"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncreaseDecreaseInOtherAssetsCurrent"
+      xlink:href="gaap.xsd#gaap_IncreaseDecreaseInOtherAssetsCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncreaseDecreaseInWorkingCapital" xlink:to="gaap_IncreaseDecreaseInOtherAssetsCurrent"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncreaseDecreaseInAccountsPayable"
+      xlink:href="gaap.xsd#gaap_IncreaseDecreaseInAccountsPayable" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncreaseDecreaseInWorkingCapital" xlink:to="gaap_IncreaseDecreaseInAccountsPayable"
+      order="5"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncreaseDecreaseInAccruedExpenses"
+      xlink:href="gaap.xsd#gaap_IncreaseDecreaseInAccruedExpenses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncreaseDecreaseInWorkingCapital" xlink:to="gaap_IncreaseDecreaseInAccruedExpenses"
+      order="6"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncreaseDecreaseInOtherLiabilitiesCurrent"
+      xlink:href="gaap.xsd#gaap_IncreaseDecreaseInOtherLiabilitiesCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncreaseDecreaseInWorkingCapital" xlink:to="gaap_IncreaseDecreaseInOtherLiabilitiesCurrent"
+      order="7"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowFromUsedInOtherOperatingActivities"
+      xlink:href="gaap.xsd#gaap_CashFlowFromUsedInOtherOperatingActivities" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet" xlink:to="gaap_CashFlowFromUsedInOtherOperatingActivities"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ProceedsFromIncomeTaxesRefunded"
+      xlink:href="gaap.xsd#gaap_ProceedsFromIncomeTaxesRefunded" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowFromUsedInOtherOperatingActivities" xlink:to="gaap_ProceedsFromIncomeTaxesRefunded"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PaymentsOfIncomeTaxes"
+      xlink:href="gaap.xsd#gaap_PaymentsOfIncomeTaxes" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowFromUsedInOtherOperatingActivities" xlink:to="gaap_PaymentsOfIncomeTaxes"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherCashFlowFromUsedInOtherOperatingActivities"
+      xlink:href="gaap.xsd#gaap_OtherCashFlowFromUsedInOtherOperatingActivities" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowFromUsedInOtherOperatingActivities" xlink:to="gaap_OtherCashFlowFromUsedInOtherOperatingActivities"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet"
+      xlink:href="gaap.xsd#gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowNet" xlink:to="gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PaymentsForPurchasesOfPropertyPlantAndEquipment"
+      xlink:href="gaap.xsd#gaap_PaymentsForPurchasesOfPropertyPlantAndEquipment" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet" xlink:to="gaap_PaymentsForPurchasesOfPropertyPlantAndEquipment"
+      order="1"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ProceedsFromSaleOfPropertyPlantAndEquipment"
+      xlink:href="gaap.xsd#gaap_ProceedsFromSaleOfPropertyPlantAndEquipment" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet" xlink:to="gaap_ProceedsFromSaleOfPropertyPlantAndEquipment"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet"
+      xlink:href="gaap.xsd#gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowNet" xlink:to="gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PaymentsOfLongTermDebt"
+      xlink:href="gaap.xsd#gaap_PaymentsOfLongTermDebt" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet" xlink:to="gaap_PaymentsOfLongTermDebt"
+      order="1"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ProceedsFromAdditionalLongTermDebt"
+      xlink:href="gaap.xsd#gaap_ProceedsFromAdditionalLongTermDebt" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet" xlink:to="gaap_ProceedsFromAdditionalLongTermDebt"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/StatementOfEquitySchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_AdditionalPaidInCapitalPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_AdditionalPaidInCapitalPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AdditionalPaidInCapitalAddedFromIssuanceOfPreferredStock"
+      xlink:href="gaap.xsd#gaap_AdditionalPaidInCapitalAddedFromIssuanceOfPreferredStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AdditionalPaidInCapitalPeriodIncreaseDecrease" xlink:to="gaap_AdditionalPaidInCapitalAddedFromIssuanceOfPreferredStock"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AdditionalPaidInCapitalAddedFromIssuanceOfCommonStock"
+      xlink:href="gaap.xsd#gaap_AdditionalPaidInCapitalAddedFromIssuanceOfCommonStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AdditionalPaidInCapitalPeriodIncreaseDecrease" xlink:to="gaap_AdditionalPaidInCapitalAddedFromIssuanceOfCommonStock"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AdditionalPaidInCapitalRemovedFromBuybacksOfPreferredStock"
+      xlink:href="gaap.xsd#gaap_AdditionalPaidInCapitalRemovedFromBuybacksOfPreferredStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AdditionalPaidInCapitalPeriodIncreaseDecrease" xlink:to="gaap_AdditionalPaidInCapitalRemovedFromBuybacksOfPreferredStock"
+      order="3"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInAdditionalPaidInCapital"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInAdditionalPaidInCapital" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_AdditionalPaidInCapitalPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInAdditionalPaidInCapital"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_CommonStockPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockIssued"
+      xlink:href="gaap.xsd#gaap_CommonStockIssued" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CommonStockPeriodIncreaseDecrease" xlink:to="gaap_CommonStockIssued"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockOptionsExercised"
+      xlink:href="gaap.xsd#gaap_CommonStockOptionsExercised" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CommonStockPeriodIncreaseDecrease" xlink:to="gaap_CommonStockOptionsExercised"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInCommonStock"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInCommonStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CommonStockPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInCommonStock"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockSharesPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_CommonStockSharesPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockSharesAdditionalSharesIssued"
+      xlink:href="gaap.xsd#gaap_CommonStockSharesAdditionalSharesIssued" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CommonStockSharesPeriodIncreaseDecrease" xlink:to="gaap_CommonStockSharesAdditionalSharesIssued"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockSharesOptionsExercised"
+      xlink:href="gaap.xsd#gaap_CommonStockSharesOptionsExercised" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CommonStockSharesPeriodIncreaseDecrease" xlink:to="gaap_CommonStockSharesOptionsExercised"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInCommonStockShares"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInCommonStockShares" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CommonStockSharesPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInCommonStockShares"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_EquityPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_EquityPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_NetIncomeLoss"
+      xlink:href="gaap.xsd#gaap_NetIncomeLoss" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_EquityPeriodIncreaseDecrease" xlink:to="gaap_NetIncomeLoss"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_DividendsPaid"
+      xlink:href="gaap.xsd#gaap_DividendsPaid" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_EquityPeriodIncreaseDecrease" xlink:to="gaap_DividendsPaid"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockAndAdditionalPaidInCapitalIssuanceOfPreferredStock"
+      xlink:href="gaap.xsd#gaap_PreferredStockAndAdditionalPaidInCapitalIssuanceOfPreferredStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_EquityPeriodIncreaseDecrease" xlink:to="gaap_PreferredStockAndAdditionalPaidInCapitalIssuanceOfPreferredStock"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockAndAdditionalPaidInCapitalIssuanceOfCommonStock"
+      xlink:href="gaap.xsd#gaap_CommonStockAndAdditionalPaidInCapitalIssuanceOfCommonStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_EquityPeriodIncreaseDecrease" xlink:to="gaap_CommonStockAndAdditionalPaidInCapitalIssuanceOfCommonStock"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockAndAdditionalPaidInCapitalRemovedBuybacksOfPreferredStock"
+      xlink:href="gaap.xsd#gaap_PreferredStockAndAdditionalPaidInCapitalRemovedBuybacksOfPreferredStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_EquityPeriodIncreaseDecrease" xlink:to="gaap_PreferredStockAndAdditionalPaidInCapitalRemovedBuybacksOfPreferredStock"
+      order="5"
+      weight="-1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_EquityPeriodIncreaseDecrease" xlink:to="gaap_CommonStockOptionsExercised"
+      order="6"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInEquity"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInEquity" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_EquityPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInEquity"
+      order="7"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_PreferredStockPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockIssued"
+      xlink:href="gaap.xsd#gaap_PreferredStockIssued" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockPeriodIncreaseDecrease" xlink:to="gaap_PreferredStockIssued"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockBuybacks"
+      xlink:href="gaap.xsd#gaap_PreferredStockBuybacks" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockPeriodIncreaseDecrease" xlink:to="gaap_PreferredStockBuybacks"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInPreferredStock"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInPreferredStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInPreferredStock"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockSharesPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_PreferredStockSharesPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockSharesAdditionalSharesIssued"
+      xlink:href="gaap.xsd#gaap_PreferredStockSharesAdditionalSharesIssued" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockSharesPeriodIncreaseDecrease" xlink:to="gaap_PreferredStockSharesAdditionalSharesIssued"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockSharesBuybacks"
+      xlink:href="gaap.xsd#gaap_PreferredStockSharesBuybacks" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockSharesPeriodIncreaseDecrease" xlink:to="gaap_PreferredStockSharesBuybacks"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInPreferredStockShares"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInPreferredStockShares" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockSharesPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInPreferredStockShares"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease" xlink:to="gaap_NetIncomeLoss"
+      order="1"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease" xlink:to="gaap_DividendsPaid"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInRetainedEarningsAccumulatedLosses"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInRetainedEarningsAccumulatedLosses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInRetainedEarningsAccumulatedLosses"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_RetainedEarningsAccumulatedLossesPriorPeriodAdjustments"
+      xlink:href="gaap.xsd#gaap_RetainedEarningsAccumulatedLossesPriorPeriodAdjustments" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_RetainedEarningsAccumulatedLossesPriorPeriodErrors"
+      xlink:href="gaap.xsd#gaap_RetainedEarningsAccumulatedLossesPriorPeriodErrors" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_RetainedEarningsAccumulatedLossesPriorPeriodAdjustments" xlink:to="gaap_RetainedEarningsAccumulatedLossesPriorPeriodErrors"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_RetainedEarningsAccumulatedLossesChangesInAccountingPolicies"
+      xlink:href="gaap.xsd#gaap_RetainedEarningsAccumulatedLossesChangesInAccountingPolicies" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_RetainedEarningsAccumulatedLossesPriorPeriodAdjustments" xlink:to="gaap_RetainedEarningsAccumulatedLossesChangesInAccountingPolicies"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/StatementOfEquityPreferredSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_PreferredStockPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockIssued"
+      xlink:href="gaap.xsd#gaap_PreferredStockIssued" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockPeriodIncreaseDecrease" xlink:to="gaap_PreferredStockIssued"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockBuybacks"
+      xlink:href="gaap.xsd#gaap_PreferredStockBuybacks" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockPeriodIncreaseDecrease" xlink:to="gaap_PreferredStockBuybacks"
+      order="5"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInPreferredStock"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInPreferredStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInPreferredStock"
+      order="6"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockSharesPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_PreferredStockSharesPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockSharesAdditionalSharesIssued"
+      xlink:href="gaap.xsd#gaap_PreferredStockSharesAdditionalSharesIssued" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockSharesPeriodIncreaseDecrease" xlink:to="gaap_PreferredStockSharesAdditionalSharesIssued"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockSharesBuybacks"
+      xlink:href="gaap.xsd#gaap_PreferredStockSharesBuybacks" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockSharesPeriodIncreaseDecrease" xlink:to="gaap_PreferredStockSharesBuybacks"
+      order="5"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInPreferredStockShares"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInPreferredStockShares" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockSharesPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInPreferredStockShares"
+      order="6"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/StatementOfEquityCommonSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_CommonStockPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockIssued"
+      xlink:href="gaap.xsd#gaap_CommonStockIssued" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CommonStockPeriodIncreaseDecrease" xlink:to="gaap_CommonStockIssued"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockOptionsExercised"
+      xlink:href="gaap.xsd#gaap_CommonStockOptionsExercised" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CommonStockPeriodIncreaseDecrease" xlink:to="gaap_CommonStockOptionsExercised"
+      order="5"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInCommonStock"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInCommonStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CommonStockPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInCommonStock"
+      order="6"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockSharesPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_CommonStockSharesPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockSharesAdditionalSharesIssued"
+      xlink:href="gaap.xsd#gaap_CommonStockSharesAdditionalSharesIssued" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CommonStockSharesPeriodIncreaseDecrease" xlink:to="gaap_CommonStockSharesAdditionalSharesIssued"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockSharesOptionsExercised"
+      xlink:href="gaap.xsd#gaap_CommonStockSharesOptionsExercised" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CommonStockSharesPeriodIncreaseDecrease" xlink:to="gaap_CommonStockSharesOptionsExercised"
+      order="5"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInCommonStockShares"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInCommonStockShares" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CommonStockSharesPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInCommonStockShares"
+      order="6"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/support/StatementOfEquitySupport">
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockAndAdditionalPaidInCapitalIssuanceOfCommonStock"
+      xlink:href="gaap.xsd#gaap_CommonStockAndAdditionalPaidInCapitalIssuanceOfCommonStock" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStockIssued"
+      xlink:href="gaap.xsd#gaap_CommonStockIssued" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CommonStockAndAdditionalPaidInCapitalIssuanceOfCommonStock" xlink:to="gaap_CommonStockIssued"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AdditionalPaidInCapitalAddedFromIssuanceOfCommonStock"
+      xlink:href="gaap.xsd#gaap_AdditionalPaidInCapitalAddedFromIssuanceOfCommonStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CommonStockAndAdditionalPaidInCapitalIssuanceOfCommonStock" xlink:to="gaap_AdditionalPaidInCapitalAddedFromIssuanceOfCommonStock"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInEquity"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInEquity" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInCommonStock"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInCommonStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherIncreaseDecreaseInEquity" xlink:to="gaap_OtherIncreaseDecreaseInCommonStock"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInPreferredStock"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInPreferredStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherIncreaseDecreaseInEquity" xlink:to="gaap_OtherIncreaseDecreaseInPreferredStock"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInAdditionalPaidInCapital"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInAdditionalPaidInCapital" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherIncreaseDecreaseInEquity" xlink:to="gaap_OtherIncreaseDecreaseInAdditionalPaidInCapital"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInRetainedEarningsAccumulatedLosses"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInRetainedEarningsAccumulatedLosses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherIncreaseDecreaseInEquity" xlink:to="gaap_OtherIncreaseDecreaseInRetainedEarningsAccumulatedLosses"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockAndAdditionalPaidInCapitalIssuanceOfPreferredStock"
+      xlink:href="gaap.xsd#gaap_PreferredStockAndAdditionalPaidInCapitalIssuanceOfPreferredStock" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockIssued"
+      xlink:href="gaap.xsd#gaap_PreferredStockIssued" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockAndAdditionalPaidInCapitalIssuanceOfPreferredStock" xlink:to="gaap_PreferredStockIssued"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AdditionalPaidInCapitalAddedFromIssuanceOfPreferredStock"
+      xlink:href="gaap.xsd#gaap_AdditionalPaidInCapitalAddedFromIssuanceOfPreferredStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockAndAdditionalPaidInCapitalIssuanceOfPreferredStock" xlink:to="gaap_AdditionalPaidInCapitalAddedFromIssuanceOfPreferredStock"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockAndAdditionalPaidInCapitalRemovedBuybacksOfPreferredStock"
+      xlink:href="gaap.xsd#gaap_PreferredStockAndAdditionalPaidInCapitalRemovedBuybacksOfPreferredStock" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStockBuybacks"
+      xlink:href="gaap.xsd#gaap_PreferredStockBuybacks" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockAndAdditionalPaidInCapitalRemovedBuybacksOfPreferredStock" xlink:to="gaap_PreferredStockBuybacks"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AdditionalPaidInCapitalRemovedFromBuybacksOfPreferredStock"
+      xlink:href="gaap.xsd#gaap_AdditionalPaidInCapitalRemovedFromBuybacksOfPreferredStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PreferredStockAndAdditionalPaidInCapitalRemovedBuybacksOfPreferredStock" xlink:to="gaap_AdditionalPaidInCapitalRemovedFromBuybacksOfPreferredStock"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/BalanceSheetDepositoryAndLendingInstitutionsSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_Assets"
+      xlink:href="gaap.xsd#gaap_Assets" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Loans"
+      xlink:href="gaap.xsd#gaap_Loans" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Assets" xlink:to="gaap_Loans"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Investments"
+      xlink:href="gaap.xsd#gaap_Investments" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Assets" xlink:to="gaap_Investments"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_InvestmentInAffiliates"
+      xlink:href="gaap.xsd#gaap_InvestmentInAffiliates" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Assets" xlink:to="gaap_InvestmentInAffiliates"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PropertyPlantAndEquipmentNet"
+      xlink:href="gaap.xsd#gaap_PropertyPlantAndEquipmentNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Assets" xlink:to="gaap_PropertyPlantAndEquipmentNet"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ReceivablesNet"
+      xlink:href="gaap.xsd#gaap_ReceivablesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Assets" xlink:to="gaap_ReceivablesNet"
+      order="5"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherAssets"
+      xlink:href="gaap.xsd#gaap_OtherAssets" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Assets" xlink:to="gaap_OtherAssets"
+      order="6"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LiabilitiesAndEquity"
+      xlink:href="gaap.xsd#gaap_LiabilitiesAndEquity" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Liabilities"
+      xlink:href="gaap.xsd#gaap_Liabilities" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LiabilitiesAndEquity" xlink:to="gaap_Liabilities"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PayablesAndAccruals"
+      xlink:href="gaap.xsd#gaap_PayablesAndAccruals" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Liabilities" xlink:to="gaap_PayablesAndAccruals"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Deposits"
+      xlink:href="gaap.xsd#gaap_Deposits" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Liabilities" xlink:to="gaap_Deposits"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherLiabilities"
+      xlink:href="gaap.xsd#gaap_OtherLiabilities" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Liabilities" xlink:to="gaap_OtherLiabilities"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Equity"
+      xlink:href="gaap.xsd#gaap_Equity" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LiabilitiesAndEquity" xlink:to="gaap_Equity"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PreferredStock"
+      xlink:href="gaap.xsd#gaap_PreferredStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Equity" xlink:to="gaap_PreferredStock"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CommonStock"
+      xlink:href="gaap.xsd#gaap_CommonStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Equity" xlink:to="gaap_CommonStock"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AdditionalPaidInCapital"
+      xlink:href="gaap.xsd#gaap_AdditionalPaidInCapital" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Equity" xlink:to="gaap_AdditionalPaidInCapital"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_RetainedEarningsAccumulatedLosses"
+      xlink:href="gaap.xsd#gaap_RetainedEarningsAccumulatedLosses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Equity" xlink:to="gaap_RetainedEarningsAccumulatedLosses"
+      order="4"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/IncomeStatementDepositoryAndLendingInstitutionsSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_NetIncomeLoss"
+      xlink:href="gaap.xsd#gaap_NetIncomeLoss" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeLossFromContinuingOperations"
+      xlink:href="gaap.xsd#gaap_IncomeLossFromContinuingOperations" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_NetIncomeLoss" xlink:to="gaap_IncomeLossFromContinuingOperations"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes"
+      xlink:href="gaap.xsd#gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeLossFromContinuingOperations" xlink:to="gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OperatingIncomeLoss"
+      xlink:href="gaap.xsd#gaap_OperatingIncomeLoss" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes" xlink:to="gaap_OperatingIncomeLoss"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_InterestIncomeExpenseNetFinancialInstitutions"
+      xlink:href="gaap.xsd#gaap_InterestIncomeExpenseNetFinancialInstitutions" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OperatingIncomeLoss" xlink:to="gaap_InterestIncomeExpenseNetFinancialInstitutions"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_InterestIncomeFinancialInstitutions"
+      xlink:href="gaap.xsd#gaap_InterestIncomeFinancialInstitutions" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_InterestIncomeExpenseNetFinancialInstitutions" xlink:to="gaap_InterestIncomeFinancialInstitutions"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_InterestExpenseFinancialInstitutions"
+      xlink:href="gaap.xsd#gaap_InterestExpenseFinancialInstitutions" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_InterestIncomeExpenseNetFinancialInstitutions" xlink:to="gaap_InterestExpenseFinancialInstitutions"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FeesAndCommissionNet"
+      xlink:href="gaap.xsd#gaap_FeesAndCommissionNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OperatingIncomeLoss" xlink:to="gaap_FeesAndCommissionNet"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FeesAndCommissionIncome"
+      xlink:href="gaap.xsd#gaap_FeesAndCommissionIncome" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_FeesAndCommissionNet" xlink:to="gaap_FeesAndCommissionIncome"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FeesAndCommissionExpense"
+      xlink:href="gaap.xsd#gaap_FeesAndCommissionExpense" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_FeesAndCommissionNet" xlink:to="gaap_FeesAndCommissionExpense"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_NonoperatingIncomeLoss"
+      xlink:href="gaap.xsd#gaap_NonoperatingIncomeLoss" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes" xlink:to="gaap_NonoperatingIncomeLoss"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_InterestExpenseIncome"
+      xlink:href="gaap.xsd#gaap_InterestExpenseIncome" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_NonoperatingIncomeLoss" xlink:to="gaap_InterestExpenseIncome"
+      order="1"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherNonoperatingExpensesIncome"
+      xlink:href="gaap.xsd#gaap_OtherNonoperatingExpensesIncome" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_NonoperatingIncomeLoss" xlink:to="gaap_OtherNonoperatingExpensesIncome"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeTaxExpenseBenefit"
+      xlink:href="gaap.xsd#gaap_IncomeTaxExpenseBenefit" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeLossFromContinuingOperations" xlink:to="gaap_IncomeTaxExpenseBenefit"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeLossFromDiscontinuedOperationsNet"
+      xlink:href="gaap.xsd#gaap_IncomeLossFromDiscontinuedOperationsNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_NetIncomeLoss" xlink:to="gaap_IncomeLossFromDiscontinuedOperationsNet"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/topic/schedule/CashFlowsDepositoryAndLendingInstitutionsSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowNet"
+      xlink:href="gaap.xsd#gaap_CashFlowNet" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet"
+      xlink:href="gaap.xsd#gaap_CashFlowProvidedByUsedInOperatingActivitiesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowNet" xlink:to="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ProceedsFromCollectionOfInterestIncome"
+      xlink:href="gaap.xsd#gaap_ProceedsFromCollectionOfInterestIncome" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet" xlink:to="gaap_ProceedsFromCollectionOfInterestIncome"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ProceedsFromFeesAndCommissions"
+      xlink:href="gaap.xsd#gaap_ProceedsFromFeesAndCommissions" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet" xlink:to="gaap_ProceedsFromFeesAndCommissions"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PaymentsOfInterest"
+      xlink:href="gaap.xsd#gaap_PaymentsOfInterest" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet" xlink:to="gaap_PaymentsOfInterest"
+      order="3"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PaymentsOfOperatingExpenses"
+      xlink:href="gaap.xsd#gaap_PaymentsOfOperatingExpenses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet" xlink:to="gaap_PaymentsOfOperatingExpenses"
+      order="4"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet"
+      xlink:href="gaap.xsd#gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowNet" xlink:to="gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PaymentsForPurchasesOfPropertyPlantAndEquipment"
+      xlink:href="gaap.xsd#gaap_PaymentsForPurchasesOfPropertyPlantAndEquipment" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet" xlink:to="gaap_PaymentsForPurchasesOfPropertyPlantAndEquipment"
+      order="1"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ProceedsFromSaleOfPropertyPlantAndEquipment"
+      xlink:href="gaap.xsd#gaap_ProceedsFromSaleOfPropertyPlantAndEquipment" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet" xlink:to="gaap_ProceedsFromSaleOfPropertyPlantAndEquipment"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet"
+      xlink:href="gaap.xsd#gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowNet" xlink:to="gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PaymentsOfLongTermDebt"
+      xlink:href="gaap.xsd#gaap_PaymentsOfLongTermDebt" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet" xlink:to="gaap_PaymentsOfLongTermDebt"
+      order="1"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ProceedsFromAdditionalLongTermDebt"
+      xlink:href="gaap.xsd#gaap_ProceedsFromAdditionalLongTermDebt" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet" xlink:to="gaap_ProceedsFromAdditionalLongTermDebt"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/CashCashEquivalentsSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashAndCashEquivalents"
+      xlink:href="gaap.xsd#gaap_CashAndCashEquivalents" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashUnrestricted"
+      xlink:href="gaap.xsd#gaap_CashUnrestricted" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashAndCashEquivalents" xlink:to="gaap_CashUnrestricted"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashRestricted"
+      xlink:href="gaap.xsd#gaap_CashRestricted" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashAndCashEquivalents" xlink:to="gaap_CashRestricted"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ShortTermInvestments"
+      xlink:href="gaap.xsd#gaap_ShortTermInvestments" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashAndCashEquivalents" xlink:to="gaap_ShortTermInvestments"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherCashAndCashEquivalents"
+      xlink:href="gaap.xsd#gaap_OtherCashAndCashEquivalents" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashAndCashEquivalents" xlink:to="gaap_OtherCashAndCashEquivalents"
+      order="4"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/suppport/ReceivablesCNB">
+    <loc xlink:type="locator"
+      xlink:label="gaap_ReceivablesNet"
+      xlink:href="gaap.xsd#gaap_ReceivablesNet" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ReceivablesNetCurrent"
+      xlink:href="gaap.xsd#gaap_ReceivablesNetCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_ReceivablesNet" xlink:to="gaap_ReceivablesNetCurrent"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ReceivablesNetNoncurrent"
+      xlink:href="gaap.xsd#gaap_ReceivablesNetNoncurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_ReceivablesNet" xlink:to="gaap_ReceivablesNetNoncurrent"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/support/ReceivablesGNB">
+    <loc xlink:type="locator"
+      xlink:label="gaap_ReceivablesNet"
+      xlink:href="gaap.xsd#gaap_ReceivablesNet" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ReceivablesGross"
+      xlink:href="gaap.xsd#gaap_ReceivablesGross" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_ReceivablesNet" xlink:to="gaap_ReceivablesGross"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AllowanceForDoubtfulAccountsReceivables"
+      xlink:href="gaap.xsd#gaap_AllowanceForDoubtfulAccountsReceivables" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_ReceivablesNet" xlink:to="gaap_AllowanceForDoubtfulAccountsReceivables"
+      order="2"
+      weight="-1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/support/ReceivablesCOM">
+    <loc xlink:type="locator"
+      xlink:label="gaap_ReceivablesNetCurrent"
+      xlink:href="gaap.xsd#gaap_ReceivablesNetCurrent" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_TradeReceivablesNetCurrent"
+      xlink:href="gaap.xsd#gaap_TradeReceivablesNetCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_ReceivablesNetCurrent" xlink:to="gaap_TradeReceivablesNetCurrent"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FinanceLeaseReceivablesNetCurrent"
+      xlink:href="gaap.xsd#gaap_FinanceLeaseReceivablesNetCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_ReceivablesNetCurrent" xlink:to="gaap_FinanceLeaseReceivablesNetCurrent"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherReceivablesNetCurrent"
+      xlink:href="gaap.xsd#gaap_OtherReceivablesNetCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_ReceivablesNetCurrent" xlink:to="gaap_OtherReceivablesNetCurrent"
+      order="3"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/PropertyPlantAndEquipmentSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_PropertyPlantAndEquipmentNet"
+      xlink:href="gaap.xsd#gaap_PropertyPlantAndEquipmentNet" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Land"
+      xlink:href="gaap.xsd#gaap_Land" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNet" xlink:to="gaap_Land"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_BuildingsNet"
+      xlink:href="gaap.xsd#gaap_BuildingsNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNet" xlink:to="gaap_BuildingsNet"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FurnitureAndFixturesNet"
+      xlink:href="gaap.xsd#gaap_FurnitureAndFixturesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNet" xlink:to="gaap_FurnitureAndFixturesNet"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherPropertyPlantAndEquipmentNet"
+      xlink:href="gaap.xsd#gaap_OtherPropertyPlantAndEquipmentNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNet" xlink:to="gaap_OtherPropertyPlantAndEquipmentNet"
+      order="4"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/support/PropertyPlantAndEquipmentSupport">
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInLand"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInLand" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet" xlink:to="gaap_OtherIncreaseDecreaseInLand"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInBuildingsNet"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInBuildingsNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet" xlink:to="gaap_OtherIncreaseDecreaseInBuildingsNet"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInFurnitureAndFixturesNet"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInFurnitureAndFixturesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet" xlink:to="gaap_OtherIncreaseDecreaseInFurnitureAndFixturesNet"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInOtherPropertyPlantAndEquipmentNet"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInOtherPropertyPlantAndEquipmentNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet" xlink:to="gaap_OtherIncreaseDecreaseInOtherPropertyPlantAndEquipmentNet"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PropertyPlantAndEquipmentNetAdditions"
+      xlink:href="gaap.xsd#gaap_PropertyPlantAndEquipmentNetAdditions" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_BuildingsNetAdditions"
+      xlink:href="gaap.xsd#gaap_BuildingsNetAdditions" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetAdditions" xlink:to="gaap_BuildingsNetAdditions"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LandAdditions"
+      xlink:href="gaap.xsd#gaap_LandAdditions" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetAdditions" xlink:to="gaap_LandAdditions"
+      order="0.5"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FurnitureAndFixturesNetAdditions"
+      xlink:href="gaap.xsd#gaap_FurnitureAndFixturesNetAdditions" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetAdditions" xlink:to="gaap_FurnitureAndFixturesNetAdditions"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherPropertyPlantAndEquipmentNetAdditions"
+      xlink:href="gaap.xsd#gaap_OtherPropertyPlantAndEquipmentNetAdditions" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetAdditions" xlink:to="gaap_OtherPropertyPlantAndEquipmentNetAdditions"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PropertyPlantAndEquipmentNetDisposals"
+      xlink:href="gaap.xsd#gaap_PropertyPlantAndEquipmentNetDisposals" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_BuildingsNetDisposals"
+      xlink:href="gaap.xsd#gaap_BuildingsNetDisposals" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetDisposals" xlink:to="gaap_BuildingsNetDisposals"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LandDisposals"
+      xlink:href="gaap.xsd#gaap_LandDisposals" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetDisposals" xlink:to="gaap_LandDisposals"
+      order="0.5"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FurnitureAndFixturesNetDisposals"
+      xlink:href="gaap.xsd#gaap_FurnitureAndFixturesNetDisposals" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetDisposals" xlink:to="gaap_FurnitureAndFixturesNetDisposals"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherPropertyPlantAndEquipmentNetDisposals"
+      xlink:href="gaap.xsd#gaap_OtherPropertyPlantAndEquipmentNetDisposals" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetDisposals" xlink:to="gaap_OtherPropertyPlantAndEquipmentNetDisposals"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_BuildingsNetPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_BuildingsNetPeriodIncreaseDecrease" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" xlink:to="gaap_BuildingsNetPeriodIncreaseDecrease"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LandPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_LandPeriodIncreaseDecrease" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" xlink:to="gaap_LandPeriodIncreaseDecrease"
+      order="0.5"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FurnitureAndFixturesNetPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_FurnitureAndFixturesNetPeriodIncreaseDecrease" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" xlink:to="gaap_FurnitureAndFixturesNetPeriodIncreaseDecrease"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" xlink:to="gaap_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PropertyPlantAndEquipmentNetTranslationDifference"
+      xlink:href="gaap.xsd#gaap_PropertyPlantAndEquipmentNetTranslationDifference" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_BuildingsNetTranslationDifference"
+      xlink:href="gaap.xsd#gaap_BuildingsNetTranslationDifference" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetTranslationDifference" xlink:to="gaap_BuildingsNetTranslationDifference"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LandTranslationDifference"
+      xlink:href="gaap.xsd#gaap_LandTranslationDifference" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetTranslationDifference" xlink:to="gaap_LandTranslationDifference"
+      order="0.5"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FurnitureAndFixturesNetTranslationDifference"
+      xlink:href="gaap.xsd#gaap_FurnitureAndFixturesNetTranslationDifference" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetTranslationDifference" xlink:to="gaap_FurnitureAndFixturesNetTranslationDifference"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherPropertyPlantAndEquipmentNetTranslationDifference"
+      xlink:href="gaap.xsd#gaap_OtherPropertyPlantAndEquipmentNetTranslationDifference" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetTranslationDifference" xlink:to="gaap_OtherPropertyPlantAndEquipmentNetTranslationDifference"
+      order="3"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/PropertyPlantAndEquipmentMovementsSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_BuildingsNetPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_BuildingsNetPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_BuildingsNetAdditions"
+      xlink:href="gaap.xsd#gaap_BuildingsNetAdditions" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_BuildingsNetPeriodIncreaseDecrease" xlink:to="gaap_BuildingsNetAdditions"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_BuildingsNetDisposals"
+      xlink:href="gaap.xsd#gaap_BuildingsNetDisposals" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_BuildingsNetPeriodIncreaseDecrease" xlink:to="gaap_BuildingsNetDisposals"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_BuildingsNetTranslationDifference"
+      xlink:href="gaap.xsd#gaap_BuildingsNetTranslationDifference" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_BuildingsNetPeriodIncreaseDecrease" xlink:to="gaap_BuildingsNetTranslationDifference"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInBuildingsNet"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInBuildingsNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_BuildingsNetPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInBuildingsNet"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FurnitureAndFixturesNetPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_FurnitureAndFixturesNetPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FurnitureAndFixturesNetAdditions"
+      xlink:href="gaap.xsd#gaap_FurnitureAndFixturesNetAdditions" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_FurnitureAndFixturesNetPeriodIncreaseDecrease" xlink:to="gaap_FurnitureAndFixturesNetAdditions"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FurnitureAndFixturesNetDisposals"
+      xlink:href="gaap.xsd#gaap_FurnitureAndFixturesNetDisposals" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_FurnitureAndFixturesNetPeriodIncreaseDecrease" xlink:to="gaap_FurnitureAndFixturesNetDisposals"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_FurnitureAndFixturesNetTranslationDifference"
+      xlink:href="gaap.xsd#gaap_FurnitureAndFixturesNetTranslationDifference" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_FurnitureAndFixturesNetPeriodIncreaseDecrease" xlink:to="gaap_FurnitureAndFixturesNetTranslationDifference"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInFurnitureAndFixturesNet"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInFurnitureAndFixturesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_FurnitureAndFixturesNetPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInFurnitureAndFixturesNet"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LandPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_LandPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LandAdditions"
+      xlink:href="gaap.xsd#gaap_LandAdditions" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LandPeriodIncreaseDecrease" xlink:to="gaap_LandAdditions"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LandDisposals"
+      xlink:href="gaap.xsd#gaap_LandDisposals" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LandPeriodIncreaseDecrease" xlink:to="gaap_LandDisposals"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LandTranslationDifference"
+      xlink:href="gaap.xsd#gaap_LandTranslationDifference" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LandPeriodIncreaseDecrease" xlink:to="gaap_LandTranslationDifference"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInLand"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInLand" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LandPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInLand"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherPropertyPlantAndEquipmentNetAdditions"
+      xlink:href="gaap.xsd#gaap_OtherPropertyPlantAndEquipmentNetAdditions" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease" xlink:to="gaap_OtherPropertyPlantAndEquipmentNetAdditions"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherPropertyPlantAndEquipmentNetDisposals"
+      xlink:href="gaap.xsd#gaap_OtherPropertyPlantAndEquipmentNetDisposals" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease" xlink:to="gaap_OtherPropertyPlantAndEquipmentNetDisposals"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherPropertyPlantAndEquipmentNetTranslationDifference"
+      xlink:href="gaap.xsd#gaap_OtherPropertyPlantAndEquipmentNetTranslationDifference" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease" xlink:to="gaap_OtherPropertyPlantAndEquipmentNetTranslationDifference"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInOtherPropertyPlantAndEquipmentNet"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInOtherPropertyPlantAndEquipmentNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInOtherPropertyPlantAndEquipmentNet"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PropertyPlantAndEquipmentNetAdditions"
+      xlink:href="gaap.xsd#gaap_PropertyPlantAndEquipmentNetAdditions" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" xlink:to="gaap_PropertyPlantAndEquipmentNetAdditions"
+      order="1"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetAdditions" xlink:to="gaap_LandAdditions"
+      order="4"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetAdditions" xlink:to="gaap_BuildingsNetAdditions"
+      order="5"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetAdditions" xlink:to="gaap_FurnitureAndFixturesNetAdditions"
+      order="6"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetAdditions" xlink:to="gaap_OtherPropertyPlantAndEquipmentNetAdditions"
+      order="7"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PropertyPlantAndEquipmentNetDisposals"
+      xlink:href="gaap.xsd#gaap_PropertyPlantAndEquipmentNetDisposals" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" xlink:to="gaap_PropertyPlantAndEquipmentNetDisposals"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetDisposals" xlink:to="gaap_LandDisposals"
+      order="4"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetDisposals" xlink:to="gaap_BuildingsNetDisposals"
+      order="5"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetDisposals" xlink:to="gaap_FurnitureAndFixturesNetDisposals"
+      order="6"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetDisposals" xlink:to="gaap_OtherPropertyPlantAndEquipmentNetDisposals"
+      order="7"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_PropertyPlantAndEquipmentNetTranslationDifference"
+      xlink:href="gaap.xsd#gaap_PropertyPlantAndEquipmentNetTranslationDifference" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" xlink:to="gaap_PropertyPlantAndEquipmentNetTranslationDifference"
+      order="3"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetTranslationDifference" xlink:to="gaap_LandTranslationDifference"
+      order="4"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetTranslationDifference" xlink:to="gaap_BuildingsNetTranslationDifference"
+      order="5"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetTranslationDifference" xlink:to="gaap_FurnitureAndFixturesNetTranslationDifference"
+      order="6"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetTranslationDifference" xlink:to="gaap_OtherPropertyPlantAndEquipmentNetTranslationDifference"
+      order="7"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet"
+      xlink:href="gaap.xsd#gaap_OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" xlink:to="gaap_OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet"
+      order="4"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet" xlink:to="gaap_OtherIncreaseDecreaseInLand"
+      order="5"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet" xlink:to="gaap_OtherIncreaseDecreaseInBuildingsNet"
+      order="6"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet" xlink:to="gaap_OtherIncreaseDecreaseInFurnitureAndFixturesNet"
+      order="7"
+      weight="1"
+      use="optional" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet" xlink:to="gaap_OtherIncreaseDecreaseInOtherPropertyPlantAndEquipmentNet"
+      order="8"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/OtherAssetsSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherAssets"
+      xlink:href="gaap.xsd#gaap_OtherAssets" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherAssetsCurrent"
+      xlink:href="gaap.xsd#gaap_OtherAssetsCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherAssets" xlink:to="gaap_OtherAssetsCurrent"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherAssetsNoncurrent"
+      xlink:href="gaap.xsd#gaap_OtherAssetsNoncurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherAssets" xlink:to="gaap_OtherAssetsNoncurrent"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/PayablesAndAccrualsSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_PayablesAndAccruals"
+      xlink:href="gaap.xsd#gaap_PayablesAndAccruals" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AccountsPayable"
+      xlink:href="gaap.xsd#gaap_AccountsPayable" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PayablesAndAccruals" xlink:to="gaap_AccountsPayable"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AccruedExpenses"
+      xlink:href="gaap.xsd#gaap_AccruedExpenses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PayablesAndAccruals" xlink:to="gaap_AccruedExpenses"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AccruedInterestPayable"
+      xlink:href="gaap.xsd#gaap_AccruedInterestPayable" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PayablesAndAccruals" xlink:to="gaap_AccruedInterestPayable"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherPayablesAndAccruals"
+      xlink:href="gaap.xsd#gaap_OtherPayablesAndAccruals" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_PayablesAndAccruals" xlink:to="gaap_OtherPayablesAndAccruals"
+      order="4"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/DebtSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebt"
+      xlink:href="gaap.xsd#gaap_LongTermDebt" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtSecured"
+      xlink:href="gaap.xsd#gaap_LongTermDebtSecured" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LongTermDebt" xlink:to="gaap_LongTermDebtSecured"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtUnsecured"
+      xlink:href="gaap.xsd#gaap_LongTermDebtUnsecured" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LongTermDebt" xlink:to="gaap_LongTermDebtUnsecured"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtSubordinated"
+      xlink:href="gaap.xsd#gaap_LongTermDebtSubordinated" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LongTermDebt" xlink:to="gaap_LongTermDebtSubordinated"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherLongTermDebt"
+      xlink:href="gaap.xsd#gaap_OtherLongTermDebt" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LongTermDebt" xlink:to="gaap_OtherLongTermDebt"
+      order="4"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/LongTermDebtMaturitiesSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebt"
+      xlink:href="gaap.xsd#gaap_LongTermDebt" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtCurrent"
+      xlink:href="gaap.xsd#gaap_LongTermDebtCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LongTermDebt" xlink:to="gaap_LongTermDebtCurrent"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtMaturingInTwoAndThreeYears"
+      xlink:href="gaap.xsd#gaap_LongTermDebtMaturingInTwoAndThreeYears" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LongTermDebt" xlink:to="gaap_LongTermDebtMaturingInTwoAndThreeYears"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtMaturingInTwoYears"
+      xlink:href="gaap.xsd#gaap_LongTermDebtMaturingInTwoYears" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LongTermDebtMaturingInTwoAndThreeYears" xlink:to="gaap_LongTermDebtMaturingInTwoYears"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtMaturingInThreeYears"
+      xlink:href="gaap.xsd#gaap_LongTermDebtMaturingInThreeYears" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LongTermDebtMaturingInTwoAndThreeYears" xlink:to="gaap_LongTermDebtMaturingInThreeYears"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtMaturingInFourAndFiveYears"
+      xlink:href="gaap.xsd#gaap_LongTermDebtMaturingInFourAndFiveYears" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LongTermDebt" xlink:to="gaap_LongTermDebtMaturingInFourAndFiveYears"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtMaturingInFourYears"
+      xlink:href="gaap.xsd#gaap_LongTermDebtMaturingInFourYears" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LongTermDebtMaturingInFourAndFiveYears" xlink:to="gaap_LongTermDebtMaturingInFourYears"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtMaturingInFiveYears"
+      xlink:href="gaap.xsd#gaap_LongTermDebtMaturingInFiveYears" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LongTermDebtMaturingInFourAndFiveYears" xlink:to="gaap_LongTermDebtMaturingInFiveYears"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtMaturingThereafter"
+      xlink:href="gaap.xsd#gaap_LongTermDebtMaturingThereafter" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LongTermDebt" xlink:to="gaap_LongTermDebtMaturingThereafter"
+      order="4"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/support/DebtCNB">
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebt"
+      xlink:href="gaap.xsd#gaap_LongTermDebt" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtCurrent"
+      xlink:href="gaap.xsd#gaap_LongTermDebtCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LongTermDebt" xlink:to="gaap_LongTermDebtCurrent"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtNoncurrent"
+      xlink:href="gaap.xsd#gaap_LongTermDebtNoncurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_LongTermDebt" xlink:to="gaap_LongTermDebtNoncurrent"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/OtherLiabilitiesSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherLiabilities"
+      xlink:href="gaap.xsd#gaap_OtherLiabilities" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherLiabilitiesCurrent"
+      xlink:href="gaap.xsd#gaap_OtherLiabilitiesCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherLiabilities" xlink:to="gaap_OtherLiabilitiesCurrent"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_OtherLiabilitiesNoncurrent"
+      xlink:href="gaap.xsd#gaap_OtherLiabilitiesNoncurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_OtherLiabilities" xlink:to="gaap_OtherLiabilitiesNoncurrent"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/IncomeTaxesSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeTaxExpenseBenefit"
+      xlink:href="gaap.xsd#gaap_IncomeTaxExpenseBenefit" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeTaxExpenseBenefitCurrent"
+      xlink:href="gaap.xsd#gaap_IncomeTaxExpenseBenefitCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeTaxExpenseBenefit" xlink:to="gaap_IncomeTaxExpenseBenefitCurrent"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeTaxExpenseBenefitCurrentForeign"
+      xlink:href="gaap.xsd#gaap_IncomeTaxExpenseBenefitCurrentForeign" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeTaxExpenseBenefitCurrent" xlink:to="gaap_IncomeTaxExpenseBenefitCurrentForeign"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeTaxExpenseBenefitCurrentDomestic"
+      xlink:href="gaap.xsd#gaap_IncomeTaxExpenseBenefitCurrentDomestic" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeTaxExpenseBenefitCurrent" xlink:to="gaap_IncomeTaxExpenseBenefitCurrentDomestic"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeTaxExpenseBenefitDeferred"
+      xlink:href="gaap.xsd#gaap_IncomeTaxExpenseBenefitDeferred" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeTaxExpenseBenefit" xlink:to="gaap_IncomeTaxExpenseBenefitDeferred"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeTaxExpenseBenefitDeferredDomestic"
+      xlink:href="gaap.xsd#gaap_IncomeTaxExpenseBenefitDeferredDomestic" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeTaxExpenseBenefitDeferred" xlink:to="gaap_IncomeTaxExpenseBenefitDeferredDomestic"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeTaxExpenseBenefitDeferredForeign"
+      xlink:href="gaap.xsd#gaap_IncomeTaxExpenseBenefitDeferredForeign" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeTaxExpenseBenefitDeferred" xlink:to="gaap_IncomeTaxExpenseBenefitDeferredForeign"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/BusinessSegmentsSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_Assets"
+      xlink:href="gaap.xsd#gaap_Assets" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AssetsSegmental"
+      xlink:href="gaap.xsd#gaap_AssetsSegmental" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Assets" xlink:to="gaap_AssetsSegmental"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_InvestmentInAffiliates"
+      xlink:href="gaap.xsd#gaap_InvestmentInAffiliates" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Assets" xlink:to="gaap_InvestmentInAffiliates"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_AssetsUnallocatedCorporate"
+      xlink:href="gaap.xsd#gaap_AssetsUnallocatedCorporate" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Assets" xlink:to="gaap_AssetsUnallocatedCorporate"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_DepreciationAndAmortization"
+      xlink:href="gaap.xsd#gaap_DepreciationAndAmortization" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Depreciation"
+      xlink:href="gaap.xsd#gaap_Depreciation" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_DepreciationAndAmortization" xlink:to="gaap_Depreciation"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Amortization"
+      xlink:href="gaap.xsd#gaap_Amortization" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_DepreciationAndAmortization" xlink:to="gaap_Amortization"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_Liabilities"
+      xlink:href="gaap.xsd#gaap_Liabilities" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LiabilitiesSegmental"
+      xlink:href="gaap.xsd#gaap_LiabilitiesSegmental" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Liabilities" xlink:to="gaap_LiabilitiesSegmental"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_LiabilitiesUnallocatedCorporate"
+      xlink:href="gaap.xsd#gaap_LiabilitiesUnallocatedCorporate" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Liabilities" xlink:to="gaap_LiabilitiesUnallocatedCorporate"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_NetIncomeLoss"
+      xlink:href="gaap.xsd#gaap_NetIncomeLoss" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeLossFromContinuingOperations"
+      xlink:href="gaap.xsd#gaap_IncomeLossFromContinuingOperations" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_NetIncomeLoss" xlink:to="gaap_IncomeLossFromContinuingOperations"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes"
+      xlink:href="gaap.xsd#gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeLossFromContinuingOperations" xlink:to="gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_SegmentResult"
+      xlink:href="gaap.xsd#gaap_SegmentResult" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes" xlink:to="gaap_SegmentResult"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_UnallocatedCorporateExpenses"
+      xlink:href="gaap.xsd#gaap_UnallocatedCorporateExpenses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes" xlink:to="gaap_UnallocatedCorporateExpenses"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeTaxExpenseBenefit"
+      xlink:href="gaap.xsd#gaap_IncomeTaxExpenseBenefit" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_IncomeLossFromContinuingOperations" xlink:to="gaap_IncomeTaxExpenseBenefit"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IncomeLossFromDiscontinuedOperationsNet"
+      xlink:href="gaap.xsd#gaap_IncomeLossFromDiscontinuedOperationsNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_NetIncomeLoss" xlink:to="gaap_IncomeLossFromDiscontinuedOperationsNet"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_RevenuesNet"
+      xlink:href="gaap.xsd#gaap_RevenuesNet" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ExternalSales"
+      xlink:href="gaap.xsd#gaap_ExternalSales" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_RevenuesNet" xlink:to="gaap_ExternalSales"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_IntersegmentalSales"
+      xlink:href="gaap.xsd#gaap_IntersegmentalSales" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_RevenuesNet" xlink:to="gaap_IntersegmentalSales"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/DirectorCompensationSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_DirectorSalaryBonusesAndFees"
+      xlink:href="gaap.xsd#gaap_DirectorSalaryBonusesAndFees" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_DirectorSalary"
+      xlink:href="gaap.xsd#gaap_DirectorSalary" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_DirectorSalaryBonusesAndFees" xlink:to="gaap_DirectorSalary"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_DirectorBonuses"
+      xlink:href="gaap.xsd#gaap_DirectorBonuses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_DirectorSalaryBonusesAndFees" xlink:to="gaap_DirectorBonuses"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_DirectorFees"
+      xlink:href="gaap.xsd#gaap_DirectorFees" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_DirectorSalaryBonusesAndFees" xlink:to="gaap_DirectorFees"
+      order="3"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/ShareOwnershipPlansSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#gaap_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ShareOwnershipPlanShareOptionsGranted"
+      xlink:href="gaap.xsd#gaap_ShareOwnershipPlanShareOptionsGranted" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease" xlink:to="gaap_ShareOwnershipPlanShareOptionsGranted"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ShareOwnershipPlanShareOptionsForfeited"
+      xlink:href="gaap.xsd#gaap_ShareOwnershipPlanShareOptionsForfeited" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease" xlink:to="gaap_ShareOwnershipPlanShareOptionsForfeited"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ShareOwnershipPlanShareOptionsExercised"
+      xlink:href="gaap.xsd#gaap_ShareOwnershipPlanShareOptionsExercised" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease" xlink:to="gaap_ShareOwnershipPlanShareOptionsExercised"
+      order="3"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ShareOwnershipPlanShareOptionsExpired"
+      xlink:href="gaap.xsd#gaap_ShareOwnershipPlanShareOptionsExpired" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease" xlink:to="gaap_ShareOwnershipPlanShareOptionsExpired"
+      order="4"
+      weight="-1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/PortfolioOfInvestmentsSchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_Investments"
+      xlink:href="gaap.xsd#gaap_Investments" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_InvestmentValueAtCost"
+      xlink:href="gaap.xsd#gaap_InvestmentValueAtCost" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_Investments" xlink:to="gaap_InvestmentValueAtCost"
+      order="1"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xasb.org/gaap/role/schedule/ReconciliationOfCashSummarySchedule">
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashAndCashEquivalentsPerCashFlowStatement"
+      xlink:href="gaap.xsd#gaap_CashAndCashEquivalentsPerCashFlowStatement" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_ReconcilingItems"
+      xlink:href="gaap.xsd#gaap_ReconcilingItems" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashAndCashEquivalentsPerCashFlowStatement" xlink:to="gaap_ReconcilingItems"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CashAndCashEquivalents"
+      xlink:href="gaap.xsd#gaap_CashAndCashEquivalents" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_CashAndCashEquivalentsPerCashFlowStatement" xlink:to="gaap_CashAndCashEquivalents"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+</linkbase>

@@ -1,0 +1,2325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by Herm Fischer and Charles Hoffman, UBmatrix 2008-03-31 -->
+<link:linkbase
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:link="http://www.xbrl.org/2003/linkbase"
+    xmlns:generic="http://xbrl.org/2008/generic"
+    xmlns:formula="http://xbrl.org/2008/formula"
+    xmlns:variable="http://xbrl.org/2008/variable"
+    xmlns:filterConcept="http://xbrl.org/2008/filter/concept" 
+    xmlns:filterPeriod="http://xbrl.org/2008/filter/period"
+    xmlns:filterDimension="http://xbrl.org/2008/filter/dimension"
+    xmlns:assertionConsistency="http://xbrl.org/2008/assertion/consistency"
+    xmlns:xfi="http://xbrl.org/2008/function/instance"
+    xmlns:gaap='http://xasb.org/gaap'
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+            http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+            http://xbrl.org/2008/generic http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/generic-link.xsd
+            http://xbrl.org/2008/formula http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/formula.xsd
+            http://xbrl.org/2008/variable http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/variable.xsd
+            http://xbrl.org/2008/filter/concept http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/concept-filter.xsd
+            http://xbrl.org/2008/filter/period http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/period-filter.xsd
+            http://xbrl.org/2008/filter/dimension http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/dimension-filter.xsd
+            http://xbrl.org/2008/assertion/consistency http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/consistency-assertion.xsd
+            ">
+
+  <!-- ArcroleRef declarations.  All these are declared by XBRL Formulas. -->
+  <link:arcroleRef xlink:href="http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/variable.xsd#variable-set" arcroleURI="http://xbrl.org/arcrole/2008/variable-set" xlink:type="simple"/>
+  <link:arcroleRef xlink:href="http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/variable.xsd#variable-filter" arcroleURI="http://xbrl.org/arcrole/2008/variable-filter" xlink:type="simple"/>
+  <link:arcroleRef xlink:href="http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/consistency-assertion.xsd#consistency-assertion-formula" arcroleURI="http://xbrl.org/arcrole/2008/consistency-assertion-formula" xlink:type="simple"/>
+
+
+  <!-- Movement: AdditionalPaidInCapital -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles_AdditionalPaidInCapital" 
+                     strict="false" 
+                     absoluteAcceptanceRadius="1" 
+                     />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+                     xlink:from="ASSERTION_MovementReconciles_AdditionalPaidInCapital" 
+                     xlink:to="FORMULA_MovementReconciles_AdditionalPaidInCapital" 
+                     order="1.0"
+                     />
+
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles_AdditionalPaidInCapital" 
+                     aspectModel="dimensional" 
+                     implicitFiltering="true" 
+                     source="VARIABLE_Balance_AdditionalPaidInCapital"
+                     value="$VARIABLE_Balance_AdditionalPaidInCapital + $VARIABLE_Change_AdditionalPaidInCapitalPeriodIncreaseDecrease" 
+                     >
+              <formula:decimals>'INF'</formula:decimals>
+              <formula:aspects>
+                <formula:period>
+                  <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change_AdditionalPaidInCapitalPeriodIncreaseDecrease))"/>
+                </formula:period>
+              </formula:aspects>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_AdditionalPaidInCapital" 
+                     xlink:to="VARIABLE_Balance_AdditionalPaidInCapital" 
+                     order="1.0" 
+                     name="VARIABLE_Balance_AdditionalPaidInCapital" 
+                     />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_AdditionalPaidInCapital" 
+                     xlink:to="VARIABLE_Change_AdditionalPaidInCapitalPeriodIncreaseDecrease" 
+                     order="2.0"
+                     name="VARIABLE_Change_AdditionalPaidInCapitalPeriodIncreaseDecrease" 
+                     />
+                
+
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change_AdditionalPaidInCapitalPeriodIncreaseDecrease" 
+                     bindAsSequence="false"  
+                     />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance_AdditionalPaidInCapital" 
+                     bindAsSequence="false" 
+                     />
+
+        
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Balance_AdditionalPaidInCapital" 
+                     xlink:to="FILTER_Balance_AdditionalPaidInCapital" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Change_AdditionalPaidInCapitalPeriodIncreaseDecrease" 
+                     xlink:to="FILTER_Change_AdditionalPaidInCapitalPeriodIncreaseDecrease" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+        
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance_AdditionalPaidInCapital">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:AdditionalPaidInCapital</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+        
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change_AdditionalPaidInCapitalPeriodIncreaseDecrease">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:AdditionalPaidInCapitalPeriodIncreaseDecrease</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+
+            <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+            <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance_AdditionalPaidInCapital" 
+                     variable="VARIABLE_Change_AdditionalPaidInCapitalPeriodIncreaseDecrease" 
+                     boundary="start" 
+                     />
+
+  </generic:link>
+
+  <!-- Movement: CommonStock -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles_CommonStock" 
+                     strict="false" 
+                     absoluteAcceptanceRadius="1" 
+                     />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+                     xlink:from="ASSERTION_MovementReconciles_CommonStock" 
+                     xlink:to="FORMULA_MovementReconciles_CommonStock" 
+                     order="1.0"
+                     />
+
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles_CommonStock" 
+                     aspectModel="dimensional" 
+                     implicitFiltering="true" 
+                     source="VARIABLE_Balance_CommonStock"
+                     value="$VARIABLE_Balance_CommonStock + $VARIABLE_Change_CommonStockPeriodIncreaseDecrease" 
+                     >
+              <formula:decimals>'INF'</formula:decimals>
+              <formula:aspects>
+                <formula:period>
+                  <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change_CommonStockPeriodIncreaseDecrease))"/>
+                </formula:period>
+              </formula:aspects>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_CommonStock" 
+                     xlink:to="VARIABLE_Balance_CommonStock" 
+                     order="1.0" 
+                     name="VARIABLE_Balance_CommonStock" 
+                     />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_CommonStock" 
+                     xlink:to="VARIABLE_Change_CommonStockPeriodIncreaseDecrease" 
+                     order="2.0"
+                     name="VARIABLE_Change_CommonStockPeriodIncreaseDecrease" 
+                     />
+                
+
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change_CommonStockPeriodIncreaseDecrease" 
+                     bindAsSequence="false"  
+                     />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance_CommonStock" 
+                     bindAsSequence="false" 
+                     />
+
+        
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Balance_CommonStock" 
+                     xlink:to="FILTER_Balance_CommonStock" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Change_CommonStockPeriodIncreaseDecrease" 
+                     xlink:to="FILTER_Change_CommonStockPeriodIncreaseDecrease" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+        
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance_CommonStock">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:CommonStock</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+        
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change_CommonStockPeriodIncreaseDecrease">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:CommonStockPeriodIncreaseDecrease</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+
+            <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+            <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance_CommonStock" 
+                     variable="VARIABLE_Change_CommonStockPeriodIncreaseDecrease" 
+                     boundary="start" 
+                     />
+
+  </generic:link>
+
+  <!-- Movement: CommonStockShares -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles_CommonStockShares" 
+                     strict="false" 
+                     absoluteAcceptanceRadius="1" 
+                     />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+                     xlink:from="ASSERTION_MovementReconciles_CommonStockShares" 
+                     xlink:to="FORMULA_MovementReconciles_CommonStockShares" 
+                     order="1.0"
+                     />
+
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles_CommonStockShares" 
+                     aspectModel="dimensional" 
+                     implicitFiltering="true" 
+                     source="VARIABLE_Balance_CommonStockShares"
+                     value="$VARIABLE_Balance_CommonStockShares + $VARIABLE_Change_CommonStockSharesPeriodIncreaseDecrease" 
+                     >
+              <formula:decimals>'INF'</formula:decimals>
+              <formula:aspects>
+                <formula:period>
+                  <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change_CommonStockSharesPeriodIncreaseDecrease))"/>
+                </formula:period>
+              </formula:aspects>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_CommonStockShares" 
+                     xlink:to="VARIABLE_Balance_CommonStockShares" 
+                     order="1.0" 
+                     name="VARIABLE_Balance_CommonStockShares" 
+                     />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_CommonStockShares" 
+                     xlink:to="VARIABLE_Change_CommonStockSharesPeriodIncreaseDecrease" 
+                     order="2.0"
+                     name="VARIABLE_Change_CommonStockSharesPeriodIncreaseDecrease" 
+                     />
+                
+
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change_CommonStockSharesPeriodIncreaseDecrease" 
+                     bindAsSequence="false"  
+                     />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance_CommonStockShares" 
+                     bindAsSequence="false" 
+                     />
+
+        
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Balance_CommonStockShares" 
+                     xlink:to="FILTER_Balance_CommonStockShares" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Change_CommonStockSharesPeriodIncreaseDecrease" 
+                     xlink:to="FILTER_Change_CommonStockSharesPeriodIncreaseDecrease" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+        
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance_CommonStockShares">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:CommonStockShares</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+        
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change_CommonStockSharesPeriodIncreaseDecrease">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:CommonStockSharesPeriodIncreaseDecrease</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+
+            <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+            <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance_CommonStockShares" 
+                     variable="VARIABLE_Change_CommonStockSharesPeriodIncreaseDecrease" 
+                     boundary="start" 
+                     />
+
+  </generic:link>
+
+  <!-- Movement: Equity -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles_Equity" 
+                     strict="false" 
+                     absoluteAcceptanceRadius="1" 
+                     />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+                     xlink:from="ASSERTION_MovementReconciles_Equity" 
+                     xlink:to="FORMULA_MovementReconciles_Equity" 
+                     order="1.0"
+                     />
+
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles_Equity" 
+                     aspectModel="dimensional" 
+                     implicitFiltering="true" 
+                     source="VARIABLE_Balance_Equity"
+                     value="$VARIABLE_Balance_Equity + $VARIABLE_Change_EquityPeriodIncreaseDecrease" 
+                     >
+              <formula:decimals>'INF'</formula:decimals>
+              <formula:aspects>
+                <formula:period>
+                  <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change_EquityPeriodIncreaseDecrease))"/>
+                </formula:period>
+              </formula:aspects>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_Equity" 
+                     xlink:to="VARIABLE_Balance_Equity" 
+                     order="1.0" 
+                     name="VARIABLE_Balance_Equity" 
+                     />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_Equity" 
+                     xlink:to="VARIABLE_Change_EquityPeriodIncreaseDecrease" 
+                     order="2.0"
+                     name="VARIABLE_Change_EquityPeriodIncreaseDecrease" 
+                     />
+                
+
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change_EquityPeriodIncreaseDecrease" 
+                     bindAsSequence="false"  
+                     />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance_Equity" 
+                     bindAsSequence="false" 
+                     />
+
+        
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Balance_Equity" 
+                     xlink:to="FILTER_Balance_Equity" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Change_EquityPeriodIncreaseDecrease" 
+                     xlink:to="FILTER_Change_EquityPeriodIncreaseDecrease" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+        
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance_Equity">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:Equity</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+        
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change_EquityPeriodIncreaseDecrease">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:EquityPeriodIncreaseDecrease</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+
+            <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+            <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance_Equity" 
+                     variable="VARIABLE_Change_EquityPeriodIncreaseDecrease" 
+                     boundary="start" 
+                     />
+
+  </generic:link>
+
+  <!-- Movement: PreferredStock -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles_PreferredStock" 
+                     strict="false" 
+                     absoluteAcceptanceRadius="1" 
+                     />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+                     xlink:from="ASSERTION_MovementReconciles_PreferredStock" 
+                     xlink:to="FORMULA_MovementReconciles_PreferredStock" 
+                     order="1.0"
+                     />
+
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles_PreferredStock" 
+                     aspectModel="dimensional" 
+                     implicitFiltering="true" 
+                     source="VARIABLE_Balance_PreferredStock"
+                     value="$VARIABLE_Balance_PreferredStock + $VARIABLE_Change_PreferredStockPeriodIncreaseDecrease" 
+                     >
+              <formula:decimals>'INF'</formula:decimals>
+              <formula:aspects>
+                <formula:period>
+                  <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change_PreferredStockPeriodIncreaseDecrease))"/>
+                </formula:period>
+              </formula:aspects>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_PreferredStock" 
+                     xlink:to="VARIABLE_Balance_PreferredStock" 
+                     order="1.0" 
+                     name="VARIABLE_Balance_PreferredStock" 
+                     />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_PreferredStock" 
+                     xlink:to="VARIABLE_Change_PreferredStockPeriodIncreaseDecrease" 
+                     order="2.0"
+                     name="VARIABLE_Change_PreferredStockPeriodIncreaseDecrease" 
+                     />
+                
+
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change_PreferredStockPeriodIncreaseDecrease" 
+                     bindAsSequence="false"  
+                     />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance_PreferredStock" 
+                     bindAsSequence="false" 
+                     />
+
+        
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Balance_PreferredStock" 
+                     xlink:to="FILTER_Balance_PreferredStock" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Change_PreferredStockPeriodIncreaseDecrease" 
+                     xlink:to="FILTER_Change_PreferredStockPeriodIncreaseDecrease" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+        
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance_PreferredStock">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:PreferredStock</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+        
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change_PreferredStockPeriodIncreaseDecrease">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:PreferredStockPeriodIncreaseDecrease</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+
+            <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+            <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance_PreferredStock" 
+                     variable="VARIABLE_Change_PreferredStockPeriodIncreaseDecrease" 
+                     boundary="start" 
+                     />
+
+  </generic:link>
+
+  <!-- Movement: PreferredStockShares -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles_PreferredStockShares" 
+                     strict="false" 
+                     absoluteAcceptanceRadius="1" 
+                     />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+                     xlink:from="ASSERTION_MovementReconciles_PreferredStockShares" 
+                     xlink:to="FORMULA_MovementReconciles_PreferredStockShares" 
+                     order="1.0"
+                     />
+
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles_PreferredStockShares" 
+                     aspectModel="dimensional" 
+                     implicitFiltering="true" 
+                     source="VARIABLE_Balance_PreferredStockShares"
+                     value="$VARIABLE_Balance_PreferredStockShares + $VARIABLE_Change_PreferredStockSharesPeriodIncreaseDecrease" 
+                     >
+              <formula:decimals>'INF'</formula:decimals>
+              <formula:aspects>
+                <formula:period>
+                  <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change_PreferredStockSharesPeriodIncreaseDecrease))"/>
+                </formula:period>
+              </formula:aspects>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_PreferredStockShares" 
+                     xlink:to="VARIABLE_Balance_PreferredStockShares" 
+                     order="1.0" 
+                     name="VARIABLE_Balance_PreferredStockShares" 
+                     />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_PreferredStockShares" 
+                     xlink:to="VARIABLE_Change_PreferredStockSharesPeriodIncreaseDecrease" 
+                     order="2.0"
+                     name="VARIABLE_Change_PreferredStockSharesPeriodIncreaseDecrease" 
+                     />
+                
+
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change_PreferredStockSharesPeriodIncreaseDecrease" 
+                     bindAsSequence="false"  
+                     />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance_PreferredStockShares" 
+                     bindAsSequence="false" 
+                     />
+
+        
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Balance_PreferredStockShares" 
+                     xlink:to="FILTER_Balance_PreferredStockShares" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Change_PreferredStockSharesPeriodIncreaseDecrease" 
+                     xlink:to="FILTER_Change_PreferredStockSharesPeriodIncreaseDecrease" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+        
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance_PreferredStockShares">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:PreferredStockShares</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+        
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change_PreferredStockSharesPeriodIncreaseDecrease">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:PreferredStockSharesPeriodIncreaseDecrease</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+
+            <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+            <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance_PreferredStockShares" 
+                     variable="VARIABLE_Change_PreferredStockSharesPeriodIncreaseDecrease" 
+                     boundary="start" 
+                     />
+
+  </generic:link>
+
+  <!-- Movement: RetainedEarningsAccumulatedLosses -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles_RetainedEarningsAccumulatedLosses" 
+                     strict="false" 
+                     absoluteAcceptanceRadius="1" 
+                     />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+                     xlink:from="ASSERTION_MovementReconciles_RetainedEarningsAccumulatedLosses" 
+                     xlink:to="FORMULA_MovementReconciles_RetainedEarningsAccumulatedLosses" 
+                     order="1.0"
+                     />
+
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles_RetainedEarningsAccumulatedLosses" 
+                     aspectModel="dimensional" 
+                     implicitFiltering="true" 
+                     source="VARIABLE_Balance_RetainedEarningsAccumulatedLosses"
+                     value="$VARIABLE_Balance_RetainedEarningsAccumulatedLosses + $VARIABLE_Change_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease" 
+                     >
+              <formula:decimals>'INF'</formula:decimals>
+              <formula:aspects>
+                <formula:period>
+                  <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease))"/>
+                </formula:period>
+              </formula:aspects>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_RetainedEarningsAccumulatedLosses" 
+                     xlink:to="VARIABLE_Balance_RetainedEarningsAccumulatedLosses" 
+                     order="1.0" 
+                     name="VARIABLE_Balance_RetainedEarningsAccumulatedLosses" 
+                     />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_RetainedEarningsAccumulatedLosses" 
+                     xlink:to="VARIABLE_Change_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease" 
+                     order="2.0"
+                     name="VARIABLE_Change_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease" 
+                     />
+                
+
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease" 
+                     bindAsSequence="false"  
+                     />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance_RetainedEarningsAccumulatedLosses" 
+                     bindAsSequence="false" 
+                     />
+
+        
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Balance_RetainedEarningsAccumulatedLosses" 
+                     xlink:to="FILTER_Balance_RetainedEarningsAccumulatedLosses" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Change_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease" 
+                     xlink:to="FILTER_Change_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+        
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance_RetainedEarningsAccumulatedLosses">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:RetainedEarningsAccumulatedLosses</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+        
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+
+            <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+            <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance_RetainedEarningsAccumulatedLosses" 
+                     variable="VARIABLE_Change_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease" 
+                     boundary="start" 
+                     />
+
+  </generic:link>
+
+
+
+
+  <!-- Movement: CashAndCashEquivalentsPerCashFlowStatement -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles_CashAndCashEquivalentsPerCashFlowStatement" 
+                     strict="false" 
+                     absoluteAcceptanceRadius="1" 
+                     />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+                     xlink:from="ASSERTION_MovementReconciles_CashAndCashEquivalentsPerCashFlowStatement" 
+                     xlink:to="FORMULA_MovementReconciles_CashAndCashEquivalentsPerCashFlowStatement" 
+                     order="1.0"
+                     />
+
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles_CashAndCashEquivalentsPerCashFlowStatement" 
+                     aspectModel="dimensional" 
+                     implicitFiltering="true" 
+                     source="VARIABLE_Balance_CashAndCashEquivalentsPerCashFlowStatement"
+                     value="$VARIABLE_Balance_CashAndCashEquivalentsPerCashFlowStatement + $VARIABLE_Change_CashFlowNet" 
+                     >
+              <formula:decimals>'INF'</formula:decimals>
+              <formula:aspects>
+                <formula:period>
+                  <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change_CashFlowNet))"/>
+                </formula:period>
+              </formula:aspects>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_CashAndCashEquivalentsPerCashFlowStatement" 
+                     xlink:to="VARIABLE_Balance_CashAndCashEquivalentsPerCashFlowStatement" 
+                     order="1.0" 
+                     name="VARIABLE_Balance_CashAndCashEquivalentsPerCashFlowStatement" 
+                     />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_CashAndCashEquivalentsPerCashFlowStatement" 
+                     xlink:to="VARIABLE_Change_CashFlowNet" 
+                     order="2.0"
+                     name="VARIABLE_Change_CashFlowNet" 
+                     />
+                
+
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change_CashFlowNet" 
+                     bindAsSequence="false"  
+                     />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance_CashAndCashEquivalentsPerCashFlowStatement" 
+                     bindAsSequence="false" 
+                     />
+
+        
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Balance_CashAndCashEquivalentsPerCashFlowStatement" 
+                     xlink:to="FILTER_Balance_CashAndCashEquivalentsPerCashFlowStatement" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Change_CashFlowNet" 
+                     xlink:to="FILTER_Change_CashFlowNet" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+        
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance_CashAndCashEquivalentsPerCashFlowStatement">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:CashAndCashEquivalentsPerCashFlowStatement</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+        
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change_CashFlowNet">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:CashFlowNet</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+
+            <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+            <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance_CashAndCashEquivalentsPerCashFlowStatement" 
+                     variable="VARIABLE_Change_CashFlowNet" 
+                     boundary="start" 
+                     />
+
+  </generic:link>
+
+
+  <!-- Movement: Land -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles_Land" 
+                     strict="false" 
+                     absoluteAcceptanceRadius="1" 
+                     />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+                     xlink:from="ASSERTION_MovementReconciles_Land" 
+                     xlink:to="FORMULA_MovementReconciles_Land" 
+                     order="1.0"
+                     />
+
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles_Land" 
+                     aspectModel="dimensional" 
+                     implicitFiltering="true" 
+                     source="VARIABLE_Balance_Land"
+                     value="$VARIABLE_Balance_Land + $VARIABLE_Change_LandPeriodIncreaseDecrease" 
+                     >
+              <formula:decimals>'INF'</formula:decimals>
+              <formula:aspects>
+                <formula:period>
+                  <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change_LandPeriodIncreaseDecrease))"/>
+                </formula:period>
+              </formula:aspects>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_Land" 
+                     xlink:to="VARIABLE_Balance_Land" 
+                     order="1.0" 
+                     name="VARIABLE_Balance_Land" 
+                     />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_Land" 
+                     xlink:to="VARIABLE_Change_LandPeriodIncreaseDecrease" 
+                     order="2.0"
+                     name="VARIABLE_Change_LandPeriodIncreaseDecrease" 
+                     />
+                
+
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change_LandPeriodIncreaseDecrease" 
+                     bindAsSequence="false"  
+                     />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance_Land" 
+                     bindAsSequence="false" 
+                     />
+
+        
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Balance_Land" 
+                     xlink:to="FILTER_Balance_Land" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Change_LandPeriodIncreaseDecrease" 
+                     xlink:to="FILTER_Change_LandPeriodIncreaseDecrease" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+        
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance_Land">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:Land</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+        
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change_LandPeriodIncreaseDecrease">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:LandPeriodIncreaseDecrease</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+
+            <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+            <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance_Land" 
+                     variable="VARIABLE_Change_LandPeriodIncreaseDecrease" 
+                     boundary="start" 
+                     />
+
+  </generic:link>
+
+
+  <!-- Movement: BuildingsNet -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles_BuildingsNet" 
+                     strict="false" 
+                     absoluteAcceptanceRadius="1" 
+                     />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+                     xlink:from="ASSERTION_MovementReconciles_BuildingsNet" 
+                     xlink:to="FORMULA_MovementReconciles_BuildingsNet" 
+                     order="1.0"
+                     />
+
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles_BuildingsNet" 
+                     aspectModel="dimensional" 
+                     implicitFiltering="true" 
+                     source="VARIABLE_Balance_BuildingsNet"
+                     value="$VARIABLE_Balance_BuildingsNet + $VARIABLE_Change_BuildingsNetPeriodIncreaseDecrease" 
+                     >
+              <formula:decimals>'INF'</formula:decimals>
+              <formula:aspects>
+                <formula:period>
+                  <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change_BuildingsNetPeriodIncreaseDecrease))"/>
+                </formula:period>
+              </formula:aspects>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_BuildingsNet" 
+                     xlink:to="VARIABLE_Balance_BuildingsNet" 
+                     order="1.0" 
+                     name="VARIABLE_Balance_BuildingsNet" 
+                     />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_BuildingsNet" 
+                     xlink:to="VARIABLE_Change_BuildingsNetPeriodIncreaseDecrease" 
+                     order="2.0"
+                     name="VARIABLE_Change_BuildingsNetPeriodIncreaseDecrease" 
+                     />
+                
+
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change_BuildingsNetPeriodIncreaseDecrease" 
+                     bindAsSequence="false"  
+                     />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance_BuildingsNet" 
+                     bindAsSequence="false" 
+                     />
+
+        
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Balance_BuildingsNet" 
+                     xlink:to="FILTER_Balance_BuildingsNet" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Change_BuildingsNetPeriodIncreaseDecrease" 
+                     xlink:to="FILTER_Change_BuildingsNetPeriodIncreaseDecrease" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+        
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance_BuildingsNet">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:BuildingsNet</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+        
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change_BuildingsNetPeriodIncreaseDecrease">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:BuildingsNetPeriodIncreaseDecrease</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+
+            <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+            <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance_BuildingsNet" 
+                     variable="VARIABLE_Change_BuildingsNetPeriodIncreaseDecrease" 
+                     boundary="start" 
+                     />
+
+  </generic:link>
+
+  <!-- Movement: FurnitureAndFixturesNet -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles_FurnitureAndFixturesNet" 
+                     strict="false" 
+                     absoluteAcceptanceRadius="1" 
+                     />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+                     xlink:from="ASSERTION_MovementReconciles_FurnitureAndFixturesNet" 
+                     xlink:to="FORMULA_MovementReconciles_FurnitureAndFixturesNet" 
+                     order="1.0"
+                     />
+
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles_FurnitureAndFixturesNet" 
+                     aspectModel="dimensional" 
+                     implicitFiltering="true" 
+                     source="VARIABLE_Balance_FurnitureAndFixturesNet"
+                     value="$VARIABLE_Balance_FurnitureAndFixturesNet + $VARIABLE_Change_FurnitureAndFixturesNetPeriodIncreaseDecrease" 
+                     >
+              <formula:decimals>'INF'</formula:decimals>
+              <formula:aspects>
+                <formula:period>
+                  <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change_FurnitureAndFixturesNetPeriodIncreaseDecrease))"/>
+                </formula:period>
+              </formula:aspects>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_FurnitureAndFixturesNet" 
+                     xlink:to="VARIABLE_Balance_FurnitureAndFixturesNet" 
+                     order="1.0" 
+                     name="VARIABLE_Balance_FurnitureAndFixturesNet" 
+                     />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_FurnitureAndFixturesNet" 
+                     xlink:to="VARIABLE_Change_FurnitureAndFixturesNetPeriodIncreaseDecrease" 
+                     order="2.0"
+                     name="VARIABLE_Change_FurnitureAndFixturesNetPeriodIncreaseDecrease" 
+                     />
+                
+
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change_FurnitureAndFixturesNetPeriodIncreaseDecrease" 
+                     bindAsSequence="false"  
+                     />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance_FurnitureAndFixturesNet" 
+                     bindAsSequence="false" 
+                     />
+
+        
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Balance_FurnitureAndFixturesNet" 
+                     xlink:to="FILTER_Balance_FurnitureAndFixturesNet" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Change_FurnitureAndFixturesNetPeriodIncreaseDecrease" 
+                     xlink:to="FILTER_Change_FurnitureAndFixturesNetPeriodIncreaseDecrease" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+        
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance_FurnitureAndFixturesNet">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:FurnitureAndFixturesNet</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+        
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change_FurnitureAndFixturesNetPeriodIncreaseDecrease">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:FurnitureAndFixturesNetPeriodIncreaseDecrease</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+
+            <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+            <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance_FurnitureAndFixturesNet" 
+                     variable="VARIABLE_Change_FurnitureAndFixturesNetPeriodIncreaseDecrease" 
+                     boundary="start" 
+                     />
+
+  </generic:link>
+
+  <!-- Movement: OtherPropertyPlantAndEquipmentNet -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles_OtherPropertyPlantAndEquipmentNet" 
+                     strict="false" 
+                     absoluteAcceptanceRadius="1" 
+                     />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+                     xlink:from="ASSERTION_MovementReconciles_OtherPropertyPlantAndEquipmentNet" 
+                     xlink:to="FORMULA_MovementReconciles_OtherPropertyPlantAndEquipmentNet" 
+                     order="1.0"
+                     />
+
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles_OtherPropertyPlantAndEquipmentNet" 
+                     aspectModel="dimensional" 
+                     implicitFiltering="true" 
+                     source="VARIABLE_Balance_OtherPropertyPlantAndEquipmentNet"
+                     value="$VARIABLE_Balance_OtherPropertyPlantAndEquipmentNet + $VARIABLE_Change_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease" 
+                     >
+              <formula:decimals>'INF'</formula:decimals>
+              <formula:aspects>
+                <formula:period>
+                  <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease))"/>
+                </formula:period>
+              </formula:aspects>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_OtherPropertyPlantAndEquipmentNet" 
+                     xlink:to="VARIABLE_Balance_OtherPropertyPlantAndEquipmentNet" 
+                     order="1.0" 
+                     name="VARIABLE_Balance_OtherPropertyPlantAndEquipmentNet" 
+                     />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_OtherPropertyPlantAndEquipmentNet" 
+                     xlink:to="VARIABLE_Change_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease" 
+                     order="2.0"
+                     name="VARIABLE_Change_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease" 
+                     />
+                
+
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease" 
+                     bindAsSequence="false"  
+                     />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance_OtherPropertyPlantAndEquipmentNet" 
+                     bindAsSequence="false" 
+                     />
+
+        
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Balance_OtherPropertyPlantAndEquipmentNet" 
+                     xlink:to="FILTER_Balance_OtherPropertyPlantAndEquipmentNet" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Change_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease" 
+                     xlink:to="FILTER_Change_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+        
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance_OtherPropertyPlantAndEquipmentNet">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:OtherPropertyPlantAndEquipmentNet</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+        
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+
+            <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+            <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance_OtherPropertyPlantAndEquipmentNet" 
+                     variable="VARIABLE_Change_OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease" 
+                     boundary="start" 
+                     />
+
+  </generic:link>
+
+
+  <!-- Movement: PropertyPlantAndEquipmentNet -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles_PropertyPlantAndEquipmentNet" 
+                     strict="false" 
+                     absoluteAcceptanceRadius="1" 
+                     />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+                     xlink:from="ASSERTION_MovementReconciles_PropertyPlantAndEquipmentNet" 
+                     xlink:to="FORMULA_MovementReconciles_PropertyPlantAndEquipmentNet" 
+                     order="1.0"
+                     />
+
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles_PropertyPlantAndEquipmentNet" 
+                     aspectModel="dimensional" 
+                     implicitFiltering="true" 
+                     source="VARIABLE_Balance_PropertyPlantAndEquipmentNet"
+                     value="$VARIABLE_Balance_PropertyPlantAndEquipmentNet + $VARIABLE_Change_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" 
+                     >
+              <formula:decimals>'INF'</formula:decimals>
+              <formula:aspects>
+                <formula:period>
+                  <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease))"/>
+                </formula:period>
+              </formula:aspects>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_PropertyPlantAndEquipmentNet" 
+                     xlink:to="VARIABLE_Balance_PropertyPlantAndEquipmentNet" 
+                     order="1.0" 
+                     name="VARIABLE_Balance_PropertyPlantAndEquipmentNet" 
+                     />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_PropertyPlantAndEquipmentNet" 
+                     xlink:to="VARIABLE_Change_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" 
+                     order="2.0"
+                     name="VARIABLE_Change_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" 
+                     />
+                
+
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" 
+                     bindAsSequence="false"  
+                     />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance_PropertyPlantAndEquipmentNet" 
+                     bindAsSequence="false" 
+                     />
+
+        
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Balance_PropertyPlantAndEquipmentNet" 
+                     xlink:to="FILTER_Balance_PropertyPlantAndEquipmentNet" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Change_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" 
+                     xlink:to="FILTER_Change_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+        
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance_PropertyPlantAndEquipmentNet">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:PropertyPlantAndEquipmentNet</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+        
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:PropertyPlantAndEquipmentNetPeriodIncreaseDecrease</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+
+            <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+            <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance_PropertyPlantAndEquipmentNet" 
+                     variable="VARIABLE_Change_PropertyPlantAndEquipmentNetPeriodIncreaseDecrease" 
+                     boundary="start" 
+                     />
+
+  </generic:link>
+
+
+  <!-- Movement: ShareOwnershipPlanShareOptionsOutstanding -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles_ShareOwnershipPlanShareOptionsOutstanding" 
+                     strict="false" 
+                     absoluteAcceptanceRadius="1" 
+                     />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+                     xlink:from="ASSERTION_MovementReconciles_ShareOwnershipPlanShareOptionsOutstanding" 
+                     xlink:to="FORMULA_MovementReconciles_ShareOwnershipPlanShareOptionsOutstanding" 
+                     order="1.0"
+                     />
+
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles_ShareOwnershipPlanShareOptionsOutstanding" 
+                     aspectModel="dimensional" 
+                     implicitFiltering="true" 
+                     source="VARIABLE_Balance_ShareOwnershipPlanShareOptionsOutstanding"
+                     value="$VARIABLE_Balance_ShareOwnershipPlanShareOptionsOutstanding + $VARIABLE_Change_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease" 
+                     >
+              <formula:decimals>'INF'</formula:decimals>
+              <formula:aspects>
+                <formula:period>
+                  <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease))"/>
+                </formula:period>
+              </formula:aspects>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_ShareOwnershipPlanShareOptionsOutstanding" 
+                     xlink:to="VARIABLE_Balance_ShareOwnershipPlanShareOptionsOutstanding" 
+                     order="1.0" 
+                     name="VARIABLE_Balance_ShareOwnershipPlanShareOptionsOutstanding" 
+                     />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+                     xlink:from="FORMULA_MovementReconciles_ShareOwnershipPlanShareOptionsOutstanding" 
+                     xlink:to="VARIABLE_Change_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease" 
+                     order="2.0"
+                     name="VARIABLE_Change_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease" 
+                     />
+                
+
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease" 
+                     bindAsSequence="false"  
+                     />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance_ShareOwnershipPlanShareOptionsOutstanding" 
+                     bindAsSequence="false" 
+                     />
+
+        
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Balance_ShareOwnershipPlanShareOptionsOutstanding" 
+                     xlink:to="FILTER_Balance_ShareOwnershipPlanShareOptionsOutstanding" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+                     xlink:from="VARIABLE_Change_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease" 
+                     xlink:to="FILTER_Change_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease" 
+                     order="1.0"
+                     complement="false" 
+                     cover="true" 
+                     />
+        
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance_ShareOwnershipPlanShareOptionsOutstanding">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:ShareOwnershipPlanShareOptionsOutstanding</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+        
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+
+            <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+            <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance_ShareOwnershipPlanShareOptionsOutstanding" 
+                     variable="VARIABLE_Change_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease" 
+                     boundary="start" 
+                     />
+
+  </generic:link>
+
+
+  <!-- Director Compensation -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_DirectorSalaryFoots"
+                id="ASSERTION_DirectorSalaryFoots"
+                strict="false" 
+                absoluteAcceptanceRadius="1"
+                />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula"       
+              xlink:from="ASSERTION_DirectorSalaryFoots" 
+              xlink:to="FORMULA_SumSalaryByDirector" 
+              order="1.0"
+              />
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_SumSalaryByDirector"
+              aspectModel="dimensional" 
+              implicitFiltering="true"
+              source="VARIABLE_TotalSalaries"
+              value="sum($VARIABLE_EachDirectorSalary)"
+              >
+              <formula:decimals>'INF'</formula:decimals>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_SumSalaryByDirector" 
+              xlink:to="VARIABLE_Total" 
+              order="3.0"
+              name="VARIABLE_TotalSalaries" 
+              />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_SumSalaryByDirector" 
+              xlink:to="VARIABLE_Each" 
+              order="4.0" 
+              name="VARIABLE_EachDirectorSalary" 
+              />
+        
+            <!--  RESOURCE: (C) VARIABLES-Fact  -->
+            <!--  The Total variable binds to the total dimension for each of the columns
+                  The Each after filtering binds to the sequence of the column's
+                  dimension child members (John and Jane in the example) -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Total" 
+              bindAsSequence="false"
+              />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Each" 
+              bindAsSequence="true"
+              />
+
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <!--  Note that the concept name filter allows a choice of 4 concepts 
+                  (each column of table).  It has cover="false" so that concept is not
+                  covered, this allows the dependent variable Each to use
+                  implicit filtering to match the concept chosen by the variable Total -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Total" 
+              xlink:to="FILTER_CONCEPT_Total" 
+              order="2.0"
+              complement="false" 
+              cover="false"
+              />
+            <!-- the Each variable implicitly matches concept to that chosen for the Total variable 
+                 thus it has no explicit concept name filter -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Each" 
+              xlink:to="FILTER_DIMENSION_Director" 
+              order="3.0"
+              complement="false" 
+              cover="true"
+              />
+
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) --> 
+            <!-- Any of these 4 concepts will match for the total variable -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Total">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:DirectorSalary</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:DirectorBonuses</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:DirectorFees</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:DirectorOptionsGrantedAtFairValue</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+            <!-- RESOURCE: (D) FILTER-Dimension (similar to WHERE statement) -->        
+            <filterDimension:explicitDimension xlink:type="resource" xlink:label="FILTER_DIMENSION_Director">
+              <filterDimension:dimension contextElement="segment">
+                <filterDimension:qname>gaap:DirectorNameAxis</filterDimension:qname>
+              </filterDimension:dimension>
+              <filterDimension:member axis="child">
+                <filterDimension:qnameExpression>
+                   xfi:fact-explicit-segment-dimension-value(
+                       $VARIABLE_TotalSalaries,
+                       QName('http://xasb.org/gaap','gaap:DirectorNameAxis')
+                       )
+                </filterDimension:qnameExpression>
+              </filterDimension:member>
+              <filterDimension:linkrole>http://xasb.org/gaap/role/schedule/DirectorCompensationSchedule</filterDimension:linkrole>
+            </filterDimension:explicitDimension>
+
+  </generic:link>
+
+
+
+
+  <!-- Debt Instruments -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_DebtInstrumentsFoots"
+                id="ASSERTION_DebtInstrumentsFoots"
+                strict="false" 
+                absoluteAcceptanceRadius="1"
+                />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula"       
+              xlink:from="ASSERTION_DebtInstrumentsFoots" 
+              xlink:to="FORMULA_SumAmountByInstrument" 
+              order="1.0"
+              />
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_SumAmountByInstrument"
+              aspectModel="dimensional" 
+              implicitFiltering="true"
+              source="VARIABLE_TotalDebtAmount"
+              value="sum($VARIABLE_EachInstrumentAmount)"
+              >
+              <formula:decimals>'INF'</formula:decimals>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_SumAmountByInstrument" 
+              xlink:to="VARIABLE_Total_Instruments" 
+              order="3.0"
+              name="VARIABLE_TotalDebtAmount" 
+              />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_SumAmountByInstrument" 
+              xlink:to="VARIABLE_Each_Instrument" 
+              order="4.0" 
+              name="VARIABLE_EachInstrumentAmount" 
+              />
+        
+        
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Total_Instruments" 
+              bindAsSequence="false"
+              />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Each_Instrument" 
+              bindAsSequence="true"
+              />
+
+
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Total_Instruments" 
+              xlink:to="FILTER_CONCEPT_Total_Instrument" 
+              order="2.0"
+              complement="false" 
+              cover="false"
+              />
+            <!-- the Each variable implicitly matches concept to that chosen for the Total variable -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Each_Instrument" 
+              xlink:to="FILTER_DIMENSION_Instrument" 
+              order="3.0"
+              complement="false" 
+              cover="true"
+              />
+
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Total_Instrument">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:DebtInstrumentAmount</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+            <!-- RESOURCE: (D) FILTER-Dimension (similar to WHERE statement) -->        
+            <filterDimension:explicitDimension xlink:type="resource" xlink:label="FILTER_DIMENSION_Instrument">
+              <filterDimension:dimension contextElement="segment">
+                <filterDimension:qname>gaap:DebtInstrumentIdentifierAxis</filterDimension:qname>
+              </filterDimension:dimension>
+              <filterDimension:member axis="child">
+                <filterDimension:qnameExpression>
+                   xfi:fact-explicit-segment-dimension-value(
+                       $VARIABLE_TotalDebtAmount,
+                       QName('http://xasb.org/gaap','gaap:DebtInstrumentIdentifierAxis')
+                       )
+                </filterDimension:qnameExpression>
+              </filterDimension:member>
+              <filterDimension:linkrole>http://xasb.org/gaap/role/schedule/DebtInstrumentsSchedule</filterDimension:linkrole>
+            </filterDimension:explicitDimension>
+
+  </generic:link>
+
+
+  <!-- ClassOfPreferredStock (Classes of Preferred Stock) -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_Foots_AmountBy_ClassOfPreferredStock"
+                id="ASSERTION_Foots_AmountBy_ClassOfPreferredStock"
+                strict="false" 
+                absoluteAcceptanceRadius="1"
+                />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula"       
+              xlink:from="ASSERTION_Foots_AmountBy_ClassOfPreferredStock" 
+              xlink:to="FORMULA_Foots_AmountBy_ClassOfPreferredStock" 
+              order="1.0"
+              />
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_Foots_AmountBy_ClassOfPreferredStock"
+              aspectModel="dimensional" 
+              implicitFiltering="true"
+              source="VARIABLE_Total_ClassOfPreferredStock"
+              value="sum($VARIABLE_Each_ClassOfPreferredStock)"
+              >
+              <formula:decimals>'INF'</formula:decimals>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_Foots_AmountBy_ClassOfPreferredStock" 
+              xlink:to="VARIABLE_Total_ClassOfPreferredStock" 
+              order="3.0"
+              name="VARIABLE_Total_ClassOfPreferredStock" 
+              />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_Foots_AmountBy_ClassOfPreferredStock" 
+              xlink:to="VARIABLE_Each_ClassOfPreferredStock" 
+              order="4.0" 
+              name="VARIABLE_Each_ClassOfPreferredStock" 
+              />
+        
+        
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Total_ClassOfPreferredStock" 
+              bindAsSequence="false"
+              />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Each_ClassOfPreferredStock" 
+              bindAsSequence="true"
+              />
+
+
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Total_ClassOfPreferredStock" 
+              xlink:to="FILTER_CONCEPT_Total_ClassOfPreferredStock" 
+              order="2.0"
+              complement="false" 
+              cover="false"
+              />
+            <!-- the Each variable implicitly matches concept to that chosen for the Total variable -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Each_ClassOfPreferredStock" 
+              xlink:to="FILTER_DIMENSION_ClassOfPreferredStock" 
+              order="3.0"
+              complement="false" 
+              cover="true"
+              />
+
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Total_ClassOfPreferredStock">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:PreferredStockAmount</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:PreferredStockShareSubscriptions</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:PreferredStockSharesAuthorized</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:PreferredStockSharesIssued</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:PreferredStockSharesOutstanding</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+            <!-- RESOURCE: (D) FILTER-Dimension (similar to WHERE statement) -->        
+            <filterDimension:explicitDimension xlink:type="resource" xlink:label="FILTER_DIMENSION_ClassOfPreferredStock">
+              <filterDimension:dimension contextElement="segment">
+                <filterDimension:qname>gaap:ClassOfPreferredStockDescriptionAxis</filterDimension:qname>
+              </filterDimension:dimension>
+              <filterDimension:member axis="child">
+                <filterDimension:qnameExpression>
+                   xfi:fact-explicit-segment-dimension-value(
+                       $VARIABLE_Total_ClassOfPreferredStock,
+                       QName('http://xasb.org/gaap','gaap:ClassOfPreferredStockDescriptionAxis')
+                       )
+                </filterDimension:qnameExpression>
+              </filterDimension:member>
+              <filterDimension:linkrole>http://xasb.org/gaap/role/schedule/ClassesOfPreferredStockSchedule</filterDimension:linkrole>
+            </filterDimension:explicitDimension>
+
+  </generic:link>
+  
+  
+  <!-- ClassesOfCommonStock (Classes of Common Stock) -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_Foots_AmountBy_ClassesOfCommonStock"
+                id="ASSERTION_Foots_AmountBy_ClassesOfCommonStock"
+                strict="false" 
+                absoluteAcceptanceRadius="1"
+                />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula"       
+              xlink:from="ASSERTION_Foots_AmountBy_ClassesOfCommonStock" 
+              xlink:to="FORMULA_Foots_AmountBy_ClassesOfCommonStock" 
+              order="1.0"
+              />
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_Foots_AmountBy_ClassesOfCommonStock"
+              aspectModel="dimensional" 
+              implicitFiltering="true"
+              source="VARIABLE_Total_ClassesOfCommonStock"
+              value="sum($VARIABLE_Each_ClassesOfCommonStock)"
+              >
+              <formula:decimals>'INF'</formula:decimals>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_Foots_AmountBy_ClassesOfCommonStock" 
+              xlink:to="VARIABLE_Total_ClassesOfCommonStock" 
+              order="3.0"
+              name="VARIABLE_Total_ClassesOfCommonStock" 
+              />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_Foots_AmountBy_ClassesOfCommonStock" 
+              xlink:to="VARIABLE_Each_ClassesOfCommonStock" 
+              order="4.0" 
+              name="VARIABLE_Each_ClassesOfCommonStock" 
+              />
+        
+        
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Total_ClassesOfCommonStock" 
+              bindAsSequence="false"
+              />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Each_ClassesOfCommonStock" 
+              bindAsSequence="true"
+              />
+
+
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Total_ClassesOfCommonStock" 
+              xlink:to="FILTER_CONCEPT_Total_ClassesOfCommonStock" 
+              order="2.0"
+              complement="false" 
+              cover="false"
+              />
+            <!-- the Each variable implicitly matches concept to that chosen for the Total variable -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Each_ClassesOfCommonStock" 
+              xlink:to="FILTER_DIMENSION_ClassesOfCommonStock" 
+              order="3.0"
+              complement="false" 
+              cover="true"
+              />
+
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Total_ClassesOfCommonStock">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:CommonStockAmount</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:CommonStockShareSubscriptions</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:CommonStockSharesAuthorized</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:CommonStockSharesIssued</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:CommonStockSharesOutstanding</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+            <!-- RESOURCE: (D) FILTER-Dimension (similar to WHERE statement) -->        
+            <filterDimension:explicitDimension xlink:type="resource" xlink:label="FILTER_DIMENSION_ClassesOfCommonStock">
+              <filterDimension:dimension contextElement="segment">
+                <filterDimension:qname>gaap:ClassOfCommonStockDescriptionAxis</filterDimension:qname>
+              </filterDimension:dimension>
+              <filterDimension:member axis="child">
+                <filterDimension:qnameExpression>
+                   xfi:fact-explicit-segment-dimension-value(
+                       $VARIABLE_Total_ClassesOfCommonStock,
+                       QName('http://xasb.org/gaap','gaap:ClassOfCommonStockDescriptionAxis')
+                       )
+                </filterDimension:qnameExpression>
+              </filterDimension:member>
+              <filterDimension:linkrole>http://xasb.org/gaap/role/schedule/ClassesOfCommonStockSchedule</filterDimension:linkrole>
+            </filterDimension:explicitDimension>
+
+  </generic:link>
+  
+  <!-- LeaseholdLandBuildingsRecord (Leasehold Improvements) -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_Foots_AmountBy_LeaseholdLandBuildingsRecord"
+                id="ASSERTION_Foots_AmountBy_LeaseholdLandBuildingsRecord"
+                strict="false" 
+                absoluteAcceptanceRadius="1"
+                />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula"       
+              xlink:from="ASSERTION_Foots_AmountBy_LeaseholdLandBuildingsRecord" 
+              xlink:to="FORMULA_Foots_AmountBy_LeaseholdLandBuildingsRecord" 
+              order="1.0"
+              />
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_Foots_AmountBy_LeaseholdLandBuildingsRecord"
+              aspectModel="dimensional" 
+              implicitFiltering="true"
+              source="VARIABLE_Total_LeaseholdLandBuildingsRecord"
+              value="sum($VARIABLE_Each_LeaseholdLandBuildingsRecord)"
+              >
+              <formula:decimals>'INF'</formula:decimals>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_Foots_AmountBy_LeaseholdLandBuildingsRecord" 
+              xlink:to="VARIABLE_Total_LeaseholdLandBuildingsRecord" 
+              order="3.0"
+              name="VARIABLE_Total_LeaseholdLandBuildingsRecord" 
+              />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_Foots_AmountBy_LeaseholdLandBuildingsRecord" 
+              xlink:to="VARIABLE_Each_LeaseholdLandBuildingsRecord" 
+              order="4.0" 
+              name="VARIABLE_Each_LeaseholdLandBuildingsRecord" 
+              />
+        
+        
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Total_LeaseholdLandBuildingsRecord" 
+              bindAsSequence="false"
+              />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Each_LeaseholdLandBuildingsRecord" 
+              bindAsSequence="true"
+              />
+
+
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Total_LeaseholdLandBuildingsRecord" 
+              xlink:to="FILTER_CONCEPT_Total_LeaseholdLandBuildingsRecord" 
+              order="2.0"
+              complement="false" 
+              cover="false"
+              />
+            <!-- the Each variable implicitly matches concept to that chosen for the Total variable -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Each_LeaseholdLandBuildingsRecord" 
+              xlink:to="FILTER_DIMENSION_LeaseholdLandBuildingsRecord" 
+              order="3.0"
+              complement="false" 
+              cover="true"
+              />
+
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Total_LeaseholdLandBuildingsRecord">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:LeaseholdLandAndBuildingLandArea</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:LeaseholdLandAndBuildingValueAtCost</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+            <!-- RESOURCE: (D) FILTER-Dimension (similar to WHERE statement) -->        
+            <filterDimension:explicitDimension xlink:type="resource" xlink:label="FILTER_DIMENSION_LeaseholdLandBuildingsRecord">
+              <filterDimension:dimension contextElement="segment">
+                <filterDimension:qname>gaap:LeaseholdLandAndBuildingIdentifierAxis</filterDimension:qname>
+              </filterDimension:dimension>
+              <filterDimension:member axis="child">
+                <filterDimension:qnameExpression>
+                   xfi:fact-explicit-segment-dimension-value(
+                       $VARIABLE_Total_LeaseholdLandBuildingsRecord,
+                       QName('http://xasb.org/gaap','gaap:LeaseholdLandAndBuildingIdentifierAxis')
+                       )
+                </filterDimension:qnameExpression>
+              </filterDimension:member>
+              <filterDimension:linkrole>http://xasb.org/gaap/role/schedule/LeaseholdLandAndBuildingsSchedule</filterDimension:linkrole>
+            </filterDimension:explicitDimension>
+
+  </generic:link>
+  
+  <!-- BusinessSegmentsSchedule (Business Segments) -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_Foots_AmountBy_BusinessSegmentsSchedule"
+                id="ASSERTION_Foots_AmountBy_BusinessSegmentsSchedule"
+                strict="false" 
+                absoluteAcceptanceRadius="1"
+                />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula"       
+              xlink:from="ASSERTION_Foots_AmountBy_BusinessSegmentsSchedule" 
+              xlink:to="FORMULA_Foots_AmountBy_BusinessSegmentsSchedule" 
+              order="1.0"
+              />
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_Foots_AmountBy_BusinessSegmentsSchedule"
+              aspectModel="dimensional" 
+              implicitFiltering="true"
+              source="VARIABLE_Total_BusinessSegmentsSchedule"
+              value="sum($VARIABLE_Each_BusinessSegmentsSchedule)"
+              >
+              <formula:decimals>'INF'</formula:decimals>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_Foots_AmountBy_BusinessSegmentsSchedule" 
+              xlink:to="VARIABLE_Total_BusinessSegmentsSchedule" 
+              order="3.0"
+              name="VARIABLE_Total_BusinessSegmentsSchedule" 
+              />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_Foots_AmountBy_BusinessSegmentsSchedule" 
+              xlink:to="VARIABLE_Each_BusinessSegmentsSchedule" 
+              order="4.0" 
+              name="VARIABLE_Each_BusinessSegmentsSchedule" 
+              />
+        
+        
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Total_BusinessSegmentsSchedule" 
+              bindAsSequence="false"
+              />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Each_BusinessSegmentsSchedule" 
+              bindAsSequence="true"
+              />
+
+
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Total_BusinessSegmentsSchedule" 
+              xlink:to="FILTER_CONCEPT_Total_BusinessSegmentsSchedule" 
+              order="2.0"
+              complement="false" 
+              cover="false"
+              />
+            <!-- the Each variable implicitly matches concept to that chosen for the Total variable -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Each_BusinessSegmentsSchedule" 
+              xlink:to="FILTER_DIMENSION_BusinessSegmentsSchedule" 
+              order="3.0"
+              complement="false" 
+              cover="true"
+              />
+
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Total_BusinessSegmentsSchedule">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:ExternalSales</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:IntersegmentalSales</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:RevenuesNet</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:SegmentResult</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:AssetsSegmental</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:LiabilitiesSegmental</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:CapitalAdditions</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:Depreciation</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:Amortization</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:DepreciationAndAmortization</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:ImpairmentLossesReversalsRecognizedInIncome</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:AverageNumberEmployees</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+            <!-- RESOURCE: (D) FILTER-Dimension (similar to WHERE statement) -->        
+            <filterDimension:explicitDimension xlink:type="resource" xlink:label="FILTER_DIMENSION_BusinessSegmentsSchedule">
+              <filterDimension:dimension contextElement="segment">
+                <filterDimension:qname>gaap:BusinessSegmentAxis</filterDimension:qname>
+              </filterDimension:dimension>
+              <filterDimension:member axis="child">
+                <filterDimension:qnameExpression>
+                   xfi:fact-explicit-segment-dimension-value(
+                       $VARIABLE_Total_BusinessSegmentsSchedule,
+                       QName('http://xasb.org/gaap','gaap:BusinessSegmentAxis')
+                       )
+                </filterDimension:qnameExpression>
+              </filterDimension:member>
+              <filterDimension:linkrole>http://xasb.org/gaap/role/schedule/BusinessSegmentsSchedule</filterDimension:linkrole>
+            </filterDimension:explicitDimension>
+
+  </generic:link>
+  
+  <!-- ReconcilingItemCashCashEquivalentsRecord (Reconcilation of Cash) -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_Foots_AmountBy_ReconcilingItemCashCashEquivalentsRecord"
+                id="ASSERTION_Foots_AmountBy_ReconcilingItemCashCashEquivalentsRecord"
+                strict="false" 
+                absoluteAcceptanceRadius="1"
+                />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula"       
+              xlink:from="ASSERTION_Foots_AmountBy_ReconcilingItemCashCashEquivalentsRecord" 
+              xlink:to="FORMULA_Foots_AmountBy_ReconcilingItemCashCashEquivalentsRecord" 
+              order="1.0"
+              />
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_Foots_AmountBy_ReconcilingItemCashCashEquivalentsRecord"
+              aspectModel="dimensional" 
+              implicitFiltering="true"
+              source="VARIABLE_Total_ReconcilingItemCashCashEquivalentsRecord"
+              value="sum($VARIABLE_Each_ReconcilingItemCashCashEquivalentsRecord)"
+              >
+              <formula:decimals>'INF'</formula:decimals>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_Foots_AmountBy_ReconcilingItemCashCashEquivalentsRecord" 
+              xlink:to="VARIABLE_Total_ReconcilingItemCashCashEquivalentsRecord" 
+              order="3.0"
+              name="VARIABLE_Total_ReconcilingItemCashCashEquivalentsRecord" 
+              />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_Foots_AmountBy_ReconcilingItemCashCashEquivalentsRecord" 
+              xlink:to="VARIABLE_Each_ReconcilingItemCashCashEquivalentsRecord" 
+              order="4.0" 
+              name="VARIABLE_Each_ReconcilingItemCashCashEquivalentsRecord" 
+              />
+        
+        
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Total_ReconcilingItemCashCashEquivalentsRecord" 
+              bindAsSequence="false"
+              />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Each_ReconcilingItemCashCashEquivalentsRecord" 
+              bindAsSequence="true"
+              />
+
+
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Total_ReconcilingItemCashCashEquivalentsRecord" 
+              xlink:to="FILTER_CONCEPT_Total_ReconcilingItemCashCashEquivalentsRecord" 
+              order="2.0"
+              complement="false" 
+              cover="false"
+              />
+            <!-- the Each variable implicitly matches concept to that chosen for the Total variable -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Each_ReconcilingItemCashCashEquivalentsRecord" 
+              xlink:to="FILTER_DIMENSION_ReconcilingItemCashCashEquivalentsRecord" 
+              order="3.0"
+              complement="false" 
+              cover="true"
+              />
+
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Total_ReconcilingItemCashCashEquivalentsRecord">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:ReconcilingItemAmount</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+            <!-- RESOURCE: (D) FILTER-Dimension (similar to WHERE statement) -->        
+            <filterDimension:explicitDimension xlink:type="resource" xlink:label="FILTER_DIMENSION_ReconcilingItemCashCashEquivalentsRecord">
+              <filterDimension:dimension contextElement="segment">
+                <filterDimension:qname>gaap:ReconcilingItemTypeAxis</filterDimension:qname>
+              </filterDimension:dimension>
+              <filterDimension:member axis="child">
+                <filterDimension:qnameExpression>
+                   xfi:fact-explicit-segment-dimension-value(
+                       $VARIABLE_Total_ReconcilingItemCashCashEquivalentsRecord,
+                       QName('http://xasb.org/gaap','gaap:ReconcilingItemTypeAxis')
+                       )
+                </filterDimension:qnameExpression>
+              </filterDimension:member>
+              <filterDimension:linkrole>http://xasb.org/gaap/role/schedule/ReconciliationOfCashDetailSchedule</filterDimension:linkrole>
+            </filterDimension:explicitDimension>
+
+  </generic:link>
+  
+  <!-- SalesAnalysisByCustomerHierarchy (Sales Analysis) -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_Foots_AmountBy_SalesAnalysisByCustomerHierarchy"
+                id="ASSERTION_Foots_AmountBy_SalesAnalysisByCustomerHierarchy"
+                strict="false" 
+                absoluteAcceptanceRadius="1"
+                />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula"       
+              xlink:from="ASSERTION_Foots_AmountBy_SalesAnalysisByCustomerHierarchy" 
+              xlink:to="FORMULA_Foots_AmountBy_SalesAnalysisByCustomerHierarchy" 
+              order="1.0"
+              />
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_Foots_AmountBy_SalesAnalysisByCustomerHierarchy"
+              aspectModel="dimensional" 
+              implicitFiltering="true"
+              source="VARIABLE_Total_SalesAnalysisByCustomerHierarchy"
+              value="sum($VARIABLE_Each_SalesAnalysisByCustomerHierarchy)"
+              >
+              <formula:decimals>'INF'</formula:decimals>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_Foots_AmountBy_SalesAnalysisByCustomerHierarchy" 
+              xlink:to="VARIABLE_Total_SalesAnalysisByCustomerHierarchy" 
+              order="3.0"
+              name="VARIABLE_Total_SalesAnalysisByCustomerHierarchy" 
+              />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_Foots_AmountBy_SalesAnalysisByCustomerHierarchy" 
+              xlink:to="VARIABLE_Each_SalesAnalysisByCustomerHierarchy" 
+              order="4.0" 
+              name="VARIABLE_Each_SalesAnalysisByCustomerHierarchy" 
+              />
+        
+        
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Total_SalesAnalysisByCustomerHierarchy" 
+              bindAsSequence="false"
+              />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Each_SalesAnalysisByCustomerHierarchy" 
+              bindAsSequence="true"
+              />
+
+
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Total_SalesAnalysisByCustomerHierarchy" 
+              xlink:to="FILTER_CONCEPT_Total_SalesAnalysisByCustomerHierarchy" 
+              order="2.0"
+              complement="false" 
+              cover="false"
+              />
+            <!-- the Each variable implicitly matches concept to that chosen for the Total variable -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Each_SalesAnalysisByCustomerHierarchy" 
+              xlink:to="FILTER_DIMENSION_SalesAnalysisByCustomerHierarchy" 
+              order="3.0"
+              complement="false" 
+              cover="true"
+              />
+
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Total_SalesAnalysisByCustomerHierarchy">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:RevenuesNet</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+            <!-- RESOURCE: (D) FILTER-Dimension (similar to WHERE statement) -->        
+            <filterDimension:explicitDimension xlink:type="resource" xlink:label="FILTER_DIMENSION_SalesAnalysisByCustomerHierarchy">
+              <filterDimension:dimension contextElement="segment">
+                <filterDimension:qname>gaap:CustomerAxis</filterDimension:qname>
+              </filterDimension:dimension>
+              <filterDimension:member axis="child">
+                <filterDimension:qnameExpression>
+                   xfi:fact-explicit-segment-dimension-value(
+                       $VARIABLE_Total_SalesAnalysisByCustomerHierarchy,
+                       QName('http://xasb.org/gaap','gaap:CustomerAxis')
+                       )
+                </filterDimension:qnameExpression>
+              </filterDimension:member>
+              <filterDimension:linkrole>http://xasb.org/gaap/role/schedule/SalesAnanysisSchedule</filterDimension:linkrole>
+            </filterDimension:explicitDimension>
+
+  </generic:link>
+  
+  <!-- InvestmentRecord (Portfolio of Investments)-->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+            <!-- RESOURCE: (A) ASSERTION-Consistency -->
+            <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_Foots_AmountBy_InvestmentRecord"
+                id="ASSERTION_Foots_AmountBy_InvestmentRecord"
+                strict="false" 
+                absoluteAcceptanceRadius="1"
+                />
+        
+            <!--  ARC: (A) to (B)(Assertion to Formula) -->
+            <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula"       
+              xlink:from="ASSERTION_Foots_AmountBy_InvestmentRecord" 
+              xlink:to="FORMULA_Foots_AmountBy_InvestmentRecord" 
+              order="1.0"
+              />
+
+            <!-- RESOURCE: (B) FORMULA -->
+            <formula:formula xlink:type="resource" xlink:label="FORMULA_Foots_AmountBy_InvestmentRecord"
+              aspectModel="dimensional" 
+              implicitFiltering="true"
+              source="VARIABLE_Total_InvestmentRecord"
+              value="sum($VARIABLE_Each_InvestmentRecord)"
+              >
+              <formula:decimals>'INF'</formula:decimals>
+            </formula:formula>
+        
+
+            <!-- ARC: (B) to (C)(Formula to Variable) -->
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_Foots_AmountBy_InvestmentRecord" 
+              xlink:to="VARIABLE_Total_InvestmentRecord" 
+              order="3.0"
+              name="VARIABLE_Total_InvestmentRecord" 
+              />
+            <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+              xlink:from="FORMULA_Foots_AmountBy_InvestmentRecord" 
+              xlink:to="VARIABLE_Each_InvestmentRecord" 
+              order="4.0" 
+              name="VARIABLE_Each_InvestmentRecord" 
+              />
+        
+        
+            <!--  RESOURCE: (C) VARIABLES-Fact -->
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Total_InvestmentRecord" 
+              bindAsSequence="false"
+              />
+            <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Each_InvestmentRecord" 
+              bindAsSequence="true"
+              />
+
+
+            <!--  ARC: (C) to (D)(Variables to Filters) -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Total_InvestmentRecord" 
+              xlink:to="FILTER_CONCEPT_Total_InvestmentRecord" 
+              order="2.0"
+              complement="false" 
+              cover="false"
+              />
+            <!-- the Each variable implicitly matches concept to that chosen for the Total variable -->
+            <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+              xlink:from="VARIABLE_Each_InvestmentRecord" 
+              xlink:to="FILTER_DIMENSION_InvestmentRecord" 
+              order="3.0"
+              complement="false" 
+              cover="true"
+              />
+
+        
+            <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+            <!-- ?????????? Not sure if these are correct.  This has multiple axis and lots of them are changing.) -->
+            <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Total_InvestmentRecord">
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:InvestmentShares</filterConcept:qname>
+              </filterConcept:concept>
+              <filterConcept:concept>
+                <filterConcept:qname>gaap:InvestmentValueAtCost</filterConcept:qname>
+              </filterConcept:concept>
+            </filterConcept:conceptName>
+
+            <!-- RESOURCE: (D) FILTER-Dimension (similar to WHERE statement) -->        
+            <filterDimension:explicitDimension xlink:type="resource" xlink:label="FILTER_DIMENSION_InvestmentRecord">
+              <filterDimension:dimension contextElement="segment">
+                <filterDimension:qname>gaap:InvestmentDescriptionAxis</filterDimension:qname>
+              </filterDimension:dimension>
+              <filterDimension:member axis="child">
+                <filterDimension:qnameExpression>
+                   xfi:fact-explicit-segment-dimension-value(
+                       $VARIABLE_Total_InvestmentRecord,
+                       QName('http://xasb.org/gaap','gaap:InvestmentDescriptionAxis')
+                       )
+                </filterDimension:qnameExpression>
+              </filterDimension:member>
+              <filterDimension:linkrole>http://xasb.org/gaap/role/schedule/PortfolioOfInvestmentsSchedule</filterDimension:linkrole>
+            </filterDimension:explicitDimension>
+
+  </generic:link>
+
+</link:linkbase>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA, UBmatrix: 2008-03-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+      xmlns:pattern="http://xbrls.org/2008/xbrls/metapattern/calculation" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="Calculation.xsd" />
+
+   <context id="I-2007">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:ConsolidatedGroupDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2007-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2006">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:ConsolidatedGroupDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2006-12-31</instant>
+      </period>
+   </context>
+
+
+   <unit id="U-Monetary">
+      <measure>iso4217:USD</measure>
+   </unit>
+
+
+   <pattern:Land contextRef="I-2007" unitRef="U-Monetary" decimals="INF">5347000</pattern:Land>
+   <pattern:Land contextRef="I-2006" unitRef="U-Monetary" decimals="INF">1147000</pattern:Land>
+
+   <pattern:BuildingsNet contextRef="I-2007" unitRef="U-Monetary" decimals="INF">244508000</pattern:BuildingsNet>
+   <pattern:BuildingsNet contextRef="I-2006" unitRef="U-Monetary" decimals="INF">366375000</pattern:BuildingsNet>
+
+   <pattern:FurnitureAndFixturesNet contextRef="I-2007" unitRef="U-Monetary" decimals="INF">34457000</pattern:FurnitureAndFixturesNet>
+   <pattern:FurnitureAndFixturesNet contextRef="I-2006" unitRef="U-Monetary" decimals="INF">34457000</pattern:FurnitureAndFixturesNet>
+
+   <pattern:ComputerEquipmentNet contextRef="I-2007" unitRef="U-Monetary" decimals="INF">4169000</pattern:ComputerEquipmentNet>
+   <pattern:ComputerEquipmentNet contextRef="I-2006" unitRef="U-Monetary" decimals="INF">5313000</pattern:ComputerEquipmentNet>
+
+   <pattern:OtherPropertyPlantAndEquipmentNet contextRef="I-2007" unitRef="U-Monetary" decimals="INF">6702000</pattern:OtherPropertyPlantAndEquipmentNet>
+   <pattern:OtherPropertyPlantAndEquipmentNet contextRef="I-2006" unitRef="U-Monetary" decimals="INF">6149000</pattern:OtherPropertyPlantAndEquipmentNet>
+
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2007" unitRef="U-Monetary" decimals="INF">295183000</pattern:PropertyPlantAndEquipmentNet>
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2006" unitRef="U-Monetary" decimals="INF">413441000</pattern:PropertyPlantAndEquipmentNet>
+
+
+</xbrl>

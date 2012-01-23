@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- EDGAR Online I-Metrix Xcelerate Taxonomy Presentation Linkbase, based on XBRL 2.1  http://www.edgar-online.com/ -->
+<!-- Version: 6.12.8 -->
+<!-- Round: 4 -->
+<!-- Creation date: 2011-11-23T16:17:37Z -->
+<!-- Copyright (c) 2005-2011 EDGAR Online, Inc. All Rights Reserved. -->
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#DocumentDocumentandEntityInformation" roleURI="http://www.0001527728.com/taxonomy/role/DocumentDocumentandEntityInformation"/>
+  <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_StatementOfFinancialPositionClassified" roleURI="http://www.0001527728.com/taxonomy/role/StatementOfFinancialPositionClassified"/>
+  <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_StatementOfFinancialPositionClassifiedParen" roleURI="http://www.0001527728.com/taxonomy/role/StatementOfFinancialPositionClassifiedParenthetical"/>
+  <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_StatementOfIncomeAlternative" roleURI="http://www.0001527728.com/taxonomy/role/StatementOfIncomeAlternative"/>
+  <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_ci-StatementOfShareholdersEquityAndOtherComprehensiveIncome" roleURI="http://www.0001527728.com/taxonomy/role/StatementOfShareholdersEquityAndOtherComprehensiveIncome"/>
+  <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_StatementOfCashFlowsIndirect" roleURI="http://www.0001527728.com/taxonomy/role/StatementOfCashFlowsIndirect"/>
+  <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_NotesToFinancialStatementsNatureOfOperations" roleURI="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsNatureOfOperations"/>
+  <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_NotesToFinancialStatementsBasisOfPresentationAndSignificantAccountingPoliciesTextBlock" roleURI="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsBasisOfPresentationAndSignificantAccountingPoliciesTextBlock"/>
+  <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_NotesToFinancialStatementsGoingConcernDisclosureTextBlock" roleURI="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsGoingConcernDisclosureTextBlock"/>
+  <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_NotesToFinancialStatementsIncomeTaxDisclosureTextBlock" roleURI="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsIncomeTaxDisclosureTextBlock"/>
+  <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_NotesToFinancialStatementsCommonStockDisclosureTextBlock" roleURI="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsCommonStockDisclosureTextBlock"/>
+  <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_NotesToFinancialStatementsPreferredStockTextBlock" roleURI="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsPreferredStockTextBlock"/>
+  <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_NotesToFinancialStatementsRelatedPartyTransactionsDisclosureTextBlock" roleURI="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsRelatedPartyTransactionsDisclosureTextBlock"/>
+  <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_NotesToFinancialStatementsSubsequentEventsTextBlock" roleURI="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsSubsequentEventsTextBlock"/>
+  <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/DocumentDocumentandEntityInformation">
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_AmendmentFlag" xlink:label="dei_AmendmentFlag"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_CurrentFiscalYearEndDate" xlink:label="dei_CurrentFiscalYearEndDate"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_DocumentDocumentandEntityInformationAbstract" xlink:label="ck0001527728_DocumentDocumentandEntityInformationAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_DocumentFiscalPeriodFocus" xlink:label="dei_DocumentFiscalPeriodFocus"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_DocumentFiscalYearFocus" xlink:label="dei_DocumentFiscalYearFocus"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_DocumentInformationLineItems" xlink:label="dei_DocumentInformationLineItems"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_DocumentPeriodEndDate" xlink:label="dei_DocumentPeriodEndDate"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_DocumentType" xlink:label="dei_DocumentType"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntitiesTable" xlink:label="dei_EntitiesTable"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityCentralIndexKey" xlink:label="dei_EntityCentralIndexKey"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityCommonStockSharesOutstanding" xlink:label="dei_EntityCommonStockSharesOutstanding"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityDomain" xlink:label="dei_EntityDomain"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityFilerCategory" xlink:label="dei_EntityFilerCategory"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityRegistrantName" xlink:label="dei_EntityRegistrantName"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_LegalEntityAxis" xlink:label="dei_LegalEntityAxis"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ck0001527728_DocumentDocumentandEntityInformationAbstract" xlink:to="dei_EntitiesTable" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_DocumentInformationLineItems" xlink:to="dei_DocumentType" order="1.0100" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_DocumentInformationLineItems" xlink:to="dei_AmendmentFlag" order="1.0200" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_DocumentInformationLineItems" xlink:to="dei_DocumentPeriodEndDate" order="1.0300" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_DocumentInformationLineItems" xlink:to="dei_DocumentFiscalYearFocus" order="1.0400" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_DocumentInformationLineItems" xlink:to="dei_DocumentFiscalPeriodFocus" order="1.0500" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_DocumentInformationLineItems" xlink:to="dei_EntityRegistrantName" order="1.0600" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_DocumentInformationLineItems" xlink:to="dei_EntityCentralIndexKey" order="1.0700" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_DocumentInformationLineItems" xlink:to="dei_CurrentFiscalYearEndDate" order="1.0800" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_DocumentInformationLineItems" xlink:to="dei_EntityFilerCategory" order="1.0900" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_DocumentInformationLineItems" xlink:to="dei_EntityCommonStockSharesOutstanding" order="1.1000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_EntitiesTable" xlink:to="dei_LegalEntityAxis" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_EntitiesTable" xlink:to="dei_DocumentInformationLineItems" order="100.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain" order="1.0000" priority="2" use="optional"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/StatementOfFinancialPositionClassified">
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_AccountsPayableCurrent" xlink:label="us-gaap_AccountsPayableCurrent"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_AdditionalPaidInCapital" xlink:label="us-gaap_AdditionalPaidInCapital"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_Assets" xlink:label="us-gaap_Assets"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_AssetsAbstract" xlink:label="us-gaap_AssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_AssetsCurrent" xlink:label="us-gaap_AssetsCurrent"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_AssetsCurrentAbstract" xlink:label="us-gaap_AssetsCurrentAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_Cash" xlink:label="us-gaap_Cash"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_CommitmentsAndContingencies" xlink:label="us-gaap_CommitmentsAndContingencies"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_CommonStockShareSubscribedButUnissuedSubscriptionsReceivable" xlink:label="us-gaap_CommonStockShareSubscribedButUnissuedSubscriptionsReceivable"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_CommonStockValue" xlink:label="us-gaap_CommonStockValue"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStage" xlink:label="us-gaap_DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStage"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_DueFromRelatedPartiesCurrent" xlink:label="us-gaap_DueFromRelatedPartiesCurrent"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityDomain" xlink:label="dei_EntityDomain"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_LegalEntityAxis" xlink:label="dei_LegalEntityAxis"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_LiabilitiesAndStockholdersEquity" xlink:label="us-gaap_LiabilitiesAndStockholdersEquity"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_LiabilitiesAndStockholdersEquityAbstract" xlink:label="us-gaap_LiabilitiesAndStockholdersEquityAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_LiabilitiesCurrent" xlink:label="us-gaap_LiabilitiesCurrent"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_LiabilitiesCurrentAbstract" xlink:label="us-gaap_LiabilitiesCurrentAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_LoansPayableCurrent" xlink:label="us-gaap_LoansPayableCurrent"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_NotesPayableRelatedPartiesClassifiedCurrent" xlink:label="us-gaap_NotesPayableRelatedPartiesClassifiedCurrent"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_PreferredStockValue" xlink:label="us-gaap_PreferredStockValue"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementLineItems" xlink:label="us-gaap_StatementLineItems"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementOfFinancialPositionAbstract" xlink:label="us-gaap_StatementOfFinancialPositionAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementTable" xlink:label="us-gaap_StatementTable"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StockholdersEquity" xlink:label="us-gaap_StockholdersEquity"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StockholdersEquityAbstract" xlink:label="us-gaap_StockholdersEquityAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_AssetsAbstract" xlink:to="us-gaap_AssetsCurrentAbstract" order="1.1800" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_AssetsAbstract" xlink:to="us-gaap_Assets" order="1.1900" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_AssetsCurrentAbstract" xlink:to="us-gaap_Cash" order="1.2000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_AssetsCurrentAbstract" xlink:to="us-gaap_DueFromRelatedPartiesCurrent" order="1.2100" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_AssetsCurrentAbstract" xlink:to="us-gaap_AssetsCurrent" order="1.2200" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_LiabilitiesAndStockholdersEquityAbstract" xlink:to="us-gaap_LiabilitiesCurrentAbstract" order="1.0200" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_LiabilitiesAndStockholdersEquityAbstract" xlink:to="us-gaap_CommitmentsAndContingencies" order="1.0300" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_LiabilitiesAndStockholdersEquityAbstract" xlink:to="us-gaap_StockholdersEquityAbstract" order="1.0400" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_LiabilitiesAndStockholdersEquityAbstract" xlink:to="us-gaap_LiabilitiesAndStockholdersEquity" order="1.0500" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_LiabilitiesCurrentAbstract" xlink:to="us-gaap_AccountsPayableCurrent" order="1.0600" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_LiabilitiesCurrentAbstract" xlink:to="us-gaap_LoansPayableCurrent" order="1.0700" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_LiabilitiesCurrentAbstract" xlink:to="us-gaap_NotesPayableRelatedPartiesClassifiedCurrent" order="1.0800" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_LiabilitiesCurrentAbstract" xlink:to="us-gaap_LiabilitiesCurrent" order="1.0900" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_AssetsAbstract" order="1.1000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_LiabilitiesAndStockholdersEquityAbstract" order="1.1100" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementOfFinancialPositionAbstract" xlink:to="us-gaap_StatementTable" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="dei_LegalEntityAxis" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="us-gaap_StatementLineItems" order="100.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StockholdersEquityAbstract" xlink:to="us-gaap_PreferredStockValue" order="1.1200" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StockholdersEquityAbstract" xlink:to="us-gaap_CommonStockValue" order="1.1300" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StockholdersEquityAbstract" xlink:to="us-gaap_AdditionalPaidInCapital" order="1.1400" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StockholdersEquityAbstract" xlink:to="us-gaap_CommonStockShareSubscribedButUnissuedSubscriptionsReceivable" order="1.1500" preferredLabel="http://xbrl.us/us-gaap/role/label/negated" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StockholdersEquityAbstract" xlink:to="us-gaap_DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStage" order="1.1600" preferredLabel="http://xbrl.us/us-gaap/role/label/negated" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StockholdersEquityAbstract" xlink:to="us-gaap_StockholdersEquity" order="1.1700" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" priority="2" use="optional"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/StatementOfFinancialPositionClassifiedParenthetical">
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_CommonStockParOrStatedValuePerShare" xlink:label="us-gaap_CommonStockParOrStatedValuePerShare"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_CommonStockSharesAuthorized" xlink:label="us-gaap_CommonStockSharesAuthorized"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_CommonStockSharesIssued" xlink:label="us-gaap_CommonStockSharesIssued"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_CommonStockSharesOutstanding" xlink:label="us-gaap_CommonStockSharesOutstanding"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityDomain" xlink:label="dei_EntityDomain"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_LegalEntityAxis" xlink:label="dei_LegalEntityAxis"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_PreferredStockParOrStatedValuePerShare" xlink:label="us-gaap_PreferredStockParOrStatedValuePerShare"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_PreferredStockSharesAuthorized" xlink:label="us-gaap_PreferredStockSharesAuthorized"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_PreferredStockSharesIssued" xlink:label="us-gaap_PreferredStockSharesIssued"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_PreferredStockSharesOutstanding" xlink:label="us-gaap_PreferredStockSharesOutstanding"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementLineItems" xlink:label="us-gaap_StatementLineItems"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementOfFinancialPositionAbstract" xlink:label="us-gaap_StatementOfFinancialPositionAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementTable" xlink:label="us-gaap_StatementTable"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_PreferredStockParOrStatedValuePerShare" order="1.0200" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_PreferredStockSharesAuthorized" order="1.0300" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_PreferredStockSharesIssued" order="1.0400" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_PreferredStockSharesOutstanding" order="1.0500" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_CommonStockParOrStatedValuePerShare" order="1.0600" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_CommonStockSharesAuthorized" order="1.0700" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_CommonStockSharesIssued" order="1.0800" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_CommonStockSharesOutstanding" order="1.0900" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementOfFinancialPositionAbstract" xlink:to="us-gaap_StatementTable" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="dei_LegalEntityAxis" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="us-gaap_StatementLineItems" order="100.0000" priority="2" use="optional"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/StatementOfIncomeAlternative">
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_EarningsPerShareBasicAndDiluted" xlink:label="us-gaap_EarningsPerShareBasicAndDiluted"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityDomain" xlink:label="dei_EntityDomain"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_GeneralAndAdministrativeExpense" xlink:label="us-gaap_GeneralAndAdministrativeExpense"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments" xlink:label="us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_IncomeStatementAbstract" xlink:label="us-gaap_IncomeStatementAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_IncomeTaxExpenseBenefit" xlink:label="us-gaap_IncomeTaxExpenseBenefit"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_LegalEntityAxis" xlink:label="dei_LegalEntityAxis"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_NetIncomeLoss" xlink:label="us-gaap_NetIncomeLoss"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_OperatingIncomeLoss" xlink:label="us-gaap_OperatingIncomeLoss"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_Revenues" xlink:label="us-gaap_Revenues"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementLineItems" xlink:label="us-gaap_StatementLineItems"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementTable" xlink:label="us-gaap_StatementTable"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_WeightedAverageNumberBasicDilutedSharesOutstanding" xlink:label="ck0001527728_WeightedAverageNumberBasicDilutedSharesOutstanding"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_IncomeStatementAbstract" xlink:to="us-gaap_StatementTable" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_Revenues" order="1.0200" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_GeneralAndAdministrativeExpense" order="1.0300" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_OperatingIncomeLoss" order="1.0400" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments" order="1.0500" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_IncomeTaxExpenseBenefit" order="1.0600" preferredLabel="http://xbrl.us/us-gaap/role/label/negated" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_NetIncomeLoss" order="1.0700" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_EarningsPerShareBasicAndDiluted" order="1.0800" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="ck0001527728_WeightedAverageNumberBasicDilutedSharesOutstanding" order="1.0900" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="dei_LegalEntityAxis" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="us-gaap_StatementLineItems" order="100.0000" priority="2" use="optional"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/StatementOfShareholdersEquityAndOtherComprehensiveIncome">
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_AdditionalPaidInCapitalMember" xlink:label="us-gaap_AdditionalPaidInCapitalMember"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_CapitalContributed" xlink:label="ck0001527728_CapitalContributed"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_CommonStockMember" xlink:label="us-gaap_CommonStockMember"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember" xlink:label="ck0001527728_DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityDomain" xlink:label="dei_EntityDomain"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_EquityComponentDomain" xlink:label="us-gaap_EquityComponentDomain"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_LegalEntityAxis" xlink:label="dei_LegalEntityAxis"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_NetIncomeLoss" xlink:label="us-gaap_NetIncomeLoss"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_SharesOutstanding" xlink:label="us-gaap_SharesOutstanding"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_SharesOutstanding" xlink:label="us-gaap_SharesOutstanding_2"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementEquityComponentsAxis" xlink:label="us-gaap_StatementEquityComponentsAxis"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementLineItems" xlink:label="us-gaap_StatementLineItems"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementOfStockholdersEquityAbstract" xlink:label="us-gaap_StatementOfStockholdersEquityAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementTable" xlink:label="us-gaap_StatementTable"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StockholdersEquity" xlink:label="us-gaap_StockholdersEquity"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StockholdersEquity" xlink:label="us-gaap_StockholdersEquity_2"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_SubscriptionsReceivablesMember" xlink:label="ck0001527728_SubscriptionsReceivablesMember"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_EquityComponentDomain" xlink:to="us-gaap_CommonStockMember" order="1.0800" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_EquityComponentDomain" xlink:to="us-gaap_AdditionalPaidInCapitalMember" order="1.0900" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_EquityComponentDomain" xlink:to="ck0001527728_SubscriptionsReceivablesMember" order="1.1000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_EquityComponentDomain" xlink:to="ck0001527728_DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember" order="1.1100" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementEquityComponentsAxis" xlink:to="us-gaap_EquityComponentDomain" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_SharesOutstanding" order="1.0200" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="ck0001527728_CapitalContributed" order="1.0300" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_StockholdersEquity" order="1.0400" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_NetIncomeLoss" order="1.0500" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_SharesOutstanding_2" order="1.0600" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_StockholdersEquity_2" order="1.0700" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementOfStockholdersEquityAbstract" xlink:to="us-gaap_StatementTable" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="dei_LegalEntityAxis" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="us-gaap_StatementEquityComponentsAxis" order="2.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="us-gaap_StatementLineItems" order="100.0000" priority="2" use="optional"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/StatementOfCashFlowsIndirect">
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivitiesAbstract" xlink:label="us-gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_Cash" xlink:label="us-gaap_Cash"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_Cash" xlink:label="us-gaap_Cash_2"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_CashPeriodIncreaseDecrease" xlink:label="us-gaap_CashPeriodIncreaseDecrease"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_CommonStockSubscribed" xlink:label="ck0001527728_CommonStockSubscribed"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityDomain" xlink:label="dei_EntityDomain"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_ExpensePaidByRelatedPartyOnBehalfOfTheCompany" xlink:label="ck0001527728_ExpensePaidByRelatedPartyOnBehalfOfTheCompany"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_IncreaseDecreaseInAccountsPayable" xlink:label="us-gaap_IncreaseDecreaseInAccountsPayable"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_LegalEntityAxis" xlink:label="dei_LegalEntityAxis"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_NetCashProvidedByUsedInFinancingActivities" xlink:label="us-gaap_NetCashProvidedByUsedInFinancingActivities"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_NetCashProvidedByUsedInFinancingActivitiesAbstract" xlink:label="us-gaap_NetCashProvidedByUsedInFinancingActivitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_NetCashProvidedByUsedInInvestingActivities" xlink:label="us-gaap_NetCashProvidedByUsedInInvestingActivities"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_NetCashProvidedByUsedInInvestingActivitiesAbstract" xlink:label="us-gaap_NetCashProvidedByUsedInInvestingActivitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_NetCashProvidedByUsedInOperatingActivities" xlink:label="us-gaap_NetCashProvidedByUsedInOperatingActivities"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_NetCashProvidedByUsedInOperatingActivitiesAbstract" xlink:label="us-gaap_NetCashProvidedByUsedInOperatingActivitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_NetIncomeLoss" xlink:label="us-gaap_NetIncomeLoss"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_NoncashFinancingActivitiesAbstract" xlink:label="ck0001527728_NoncashFinancingActivitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_ProceedsFromIssuanceOfCommonStock" xlink:label="us-gaap_ProceedsFromIssuanceOfCommonStock"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_ProceedsFromPaymentsForLongTermLoansForRelatedParties" xlink:label="us-gaap_ProceedsFromPaymentsForLongTermLoansForRelatedParties"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_ProceedsFromRelatedPartyDebt" xlink:label="us-gaap_ProceedsFromRelatedPartyDebt"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_ProfessionalFees" xlink:label="us-gaap_ProfessionalFees"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementLineItems" xlink:label="us-gaap_StatementLineItems"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementOfCashFlowsAbstract" xlink:label="us-gaap_StatementOfCashFlowsAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementTable" xlink:label="us-gaap_StatementTable"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivitiesAbstract" xlink:to="us-gaap_ProfessionalFees" order="1.1000" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivitiesAbstract" xlink:to="us-gaap_IncreaseDecreaseInAccountsPayable" order="1.1100" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_NetCashProvidedByUsedInFinancingActivitiesAbstract" xlink:to="us-gaap_ProceedsFromIssuanceOfCommonStock" order="1.0400" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_NetCashProvidedByUsedInFinancingActivitiesAbstract" xlink:to="us-gaap_ProceedsFromRelatedPartyDebt" order="1.0500" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_NetCashProvidedByUsedInFinancingActivitiesAbstract" xlink:to="us-gaap_NetCashProvidedByUsedInFinancingActivities" order="1.0600" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_NetCashProvidedByUsedInInvestingActivitiesAbstract" xlink:to="us-gaap_ProceedsFromPaymentsForLongTermLoansForRelatedParties" order="1.0200" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_NetCashProvidedByUsedInInvestingActivitiesAbstract" xlink:to="us-gaap_NetCashProvidedByUsedInInvestingActivities" order="1.0300" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_NetCashProvidedByUsedInOperatingActivitiesAbstract" xlink:to="us-gaap_NetIncomeLoss" order="1.0700" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_NetCashProvidedByUsedInOperatingActivitiesAbstract" xlink:to="us-gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivitiesAbstract" order="1.0800" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_NetCashProvidedByUsedInOperatingActivitiesAbstract" xlink:to="us-gaap_NetCashProvidedByUsedInOperatingActivities" order="1.0900" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ck0001527728_NoncashFinancingActivitiesAbstract" xlink:to="ck0001527728_ExpensePaidByRelatedPartyOnBehalfOfTheCompany" order="1.1900" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ck0001527728_NoncashFinancingActivitiesAbstract" xlink:to="ck0001527728_CommonStockSubscribed" order="1.2000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_NetCashProvidedByUsedInOperatingActivitiesAbstract" order="1.1200" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_NetCashProvidedByUsedInInvestingActivitiesAbstract" order="1.1300" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_NetCashProvidedByUsedInFinancingActivitiesAbstract" order="1.1400" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_CashPeriodIncreaseDecrease" order="1.1500" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_Cash" order="1.1600" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_Cash_2" order="1.1700" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="ck0001527728_NoncashFinancingActivitiesAbstract" order="1.1800" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementOfCashFlowsAbstract" xlink:to="us-gaap_StatementTable" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="dei_LegalEntityAxis" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="us-gaap_StatementLineItems" order="100.0000" priority="2" use="optional"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsNatureOfOperations">
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityDomain" xlink:label="dei_EntityDomain"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_LegalEntityAxis" xlink:label="dei_LegalEntityAxis"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_NatureOfOperations" xlink:label="us-gaap_NatureOfOperations"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_NotesToFinancialStatementsAbstract" xlink:label="ck0001527728_NotesToFinancialStatementsAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementLineItems" xlink:label="us-gaap_StatementLineItems"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementTable" xlink:label="us-gaap_StatementTable"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ck0001527728_NotesToFinancialStatementsAbstract" xlink:to="us-gaap_StatementTable" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_NatureOfOperations" order="1.0200" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="dei_LegalEntityAxis" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="us-gaap_StatementLineItems" order="100.0000" priority="2" use="optional"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsBasisOfPresentationAndSignificantAccountingPoliciesTextBlock">
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_BasisOfPresentationAndSignificantAccountingPoliciesTextBlock" xlink:label="us-gaap_BasisOfPresentationAndSignificantAccountingPoliciesTextBlock"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityDomain" xlink:label="dei_EntityDomain"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_LegalEntityAxis" xlink:label="dei_LegalEntityAxis"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_NotesToFinancialStatementsAbstract" xlink:label="ck0001527728_NotesToFinancialStatementsAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementLineItems" xlink:label="us-gaap_StatementLineItems"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementTable" xlink:label="us-gaap_StatementTable"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ck0001527728_NotesToFinancialStatementsAbstract" xlink:to="us-gaap_StatementTable" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_BasisOfPresentationAndSignificantAccountingPoliciesTextBlock" order="1.0200" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="dei_LegalEntityAxis" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="us-gaap_StatementLineItems" order="100.0000" priority="2" use="optional"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsGoingConcernDisclosureTextBlock">
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityDomain" xlink:label="dei_EntityDomain"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_GoingConcernDisclosureTextBlock" xlink:label="ck0001527728_GoingConcernDisclosureTextBlock"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_LegalEntityAxis" xlink:label="dei_LegalEntityAxis"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_NotesToFinancialStatementsAbstract" xlink:label="ck0001527728_NotesToFinancialStatementsAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementLineItems" xlink:label="us-gaap_StatementLineItems"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementTable" xlink:label="us-gaap_StatementTable"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ck0001527728_NotesToFinancialStatementsAbstract" xlink:to="us-gaap_StatementTable" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="ck0001527728_GoingConcernDisclosureTextBlock" order="1.0200" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="dei_LegalEntityAxis" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="us-gaap_StatementLineItems" order="100.0000" priority="2" use="optional"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsIncomeTaxDisclosureTextBlock">
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityDomain" xlink:label="dei_EntityDomain"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_IncomeTaxDisclosureTextBlock" xlink:label="us-gaap_IncomeTaxDisclosureTextBlock"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_LegalEntityAxis" xlink:label="dei_LegalEntityAxis"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_NotesToFinancialStatementsAbstract" xlink:label="ck0001527728_NotesToFinancialStatementsAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementLineItems" xlink:label="us-gaap_StatementLineItems"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementTable" xlink:label="us-gaap_StatementTable"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ck0001527728_NotesToFinancialStatementsAbstract" xlink:to="us-gaap_StatementTable" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_IncomeTaxDisclosureTextBlock" order="1.0200" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="dei_LegalEntityAxis" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="us-gaap_StatementLineItems" order="100.0000" priority="2" use="optional"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsCommonStockDisclosureTextBlock">
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_CommonStockDisclosureTextBlock" xlink:label="ck0001527728_CommonStockDisclosureTextBlock"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityDomain" xlink:label="dei_EntityDomain"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_LegalEntityAxis" xlink:label="dei_LegalEntityAxis"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_NotesToFinancialStatementsAbstract" xlink:label="ck0001527728_NotesToFinancialStatementsAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementLineItems" xlink:label="us-gaap_StatementLineItems"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementTable" xlink:label="us-gaap_StatementTable"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ck0001527728_NotesToFinancialStatementsAbstract" xlink:to="us-gaap_StatementTable" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="ck0001527728_CommonStockDisclosureTextBlock" order="1.0200" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="dei_LegalEntityAxis" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="us-gaap_StatementLineItems" order="100.0000" priority="2" use="optional"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsPreferredStockTextBlock">
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityDomain" xlink:label="dei_EntityDomain"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_LegalEntityAxis" xlink:label="dei_LegalEntityAxis"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_NotesToFinancialStatementsAbstract" xlink:label="ck0001527728_NotesToFinancialStatementsAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_PreferredStockTextBlock" xlink:label="us-gaap_PreferredStockTextBlock"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementLineItems" xlink:label="us-gaap_StatementLineItems"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementTable" xlink:label="us-gaap_StatementTable"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ck0001527728_NotesToFinancialStatementsAbstract" xlink:to="us-gaap_StatementTable" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_PreferredStockTextBlock" order="1.0200" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="dei_LegalEntityAxis" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="us-gaap_StatementLineItems" order="100.0000" priority="2" use="optional"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsRelatedPartyTransactionsDisclosureTextBlock">
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityDomain" xlink:label="dei_EntityDomain"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_LegalEntityAxis" xlink:label="dei_LegalEntityAxis"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_NotesToFinancialStatementsAbstract" xlink:label="ck0001527728_NotesToFinancialStatementsAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_RelatedPartyTransactionsDisclosureTextBlock" xlink:label="us-gaap_RelatedPartyTransactionsDisclosureTextBlock"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementLineItems" xlink:label="us-gaap_StatementLineItems"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementTable" xlink:label="us-gaap_StatementTable"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ck0001527728_NotesToFinancialStatementsAbstract" xlink:to="us-gaap_StatementTable" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_RelatedPartyTransactionsDisclosureTextBlock" order="1.0200" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="dei_LegalEntityAxis" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="us-gaap_StatementLineItems" order="100.0000" priority="2" use="optional"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsSubsequentEventsTextBlock">
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_EntityDomain" xlink:label="dei_EntityDomain"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_LegalEntityAxis" xlink:label="dei_LegalEntityAxis"/>
+    <loc xlink:type="locator" xlink:href="ck0001527728-20110930.xsd#ck0001527728_NotesToFinancialStatementsAbstract" xlink:label="ck0001527728_NotesToFinancialStatementsAbstract"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementLineItems" xlink:label="us-gaap_StatementLineItems"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_StatementTable" xlink:label="us-gaap_StatementTable"/>
+    <loc xlink:type="locator" xlink:href="http://xbrl.fasb.org/us-gaap/2011/elts/us-gaap-2011-01-31.xsd#us-gaap_SubsequentEventsTextBlock" xlink:label="us-gaap_SubsequentEventsTextBlock"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ck0001527728_NotesToFinancialStatementsAbstract" xlink:to="us-gaap_StatementTable" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementLineItems" xlink:to="us-gaap_SubsequentEventsTextBlock" order="1.0200" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="dei_LegalEntityAxis" order="1.0000" priority="2" use="optional"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="us-gaap_StatementTable" xlink:to="us-gaap_StatementLineItems" order="100.0000" priority="2" use="optional"/>
+  </presentationLink>
+</linkbase>

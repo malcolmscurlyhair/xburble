@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA, UBmatrix: 2008-03-27 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+      xmlns:pattern="http://xbrls.org/2008/xbrls/metapattern/combined" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="gaap.xsd" />
+
+   <link:linkbaseRef xlink:type="simple" xlink:href="gaap-formula.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+
+   <context id="I-2007">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:ConsolidatedGroupDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2007-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2006">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:ConsolidatedGroupDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2006-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2005">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:ConsolidatedGroupDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2005-12-31</instant>
+      </period>
+   </context>
+
+   <context id="D-2007">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:ConsolidatedGroupDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2007-01-01</startDate>
+         <endDate>2007-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2006">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:ConsolidatedGroupDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2006-01-01</startDate>
+         <endDate>2006-12-31</endDate>
+      </period>
+   </context>
+
+   <!--All-->
+   <context id="D-2007-All">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2007-01-01</startDate>
+         <endDate>2007-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2006-All">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2006-01-01</startDate>
+         <endDate>2006-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2005-All">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2005-01-01</startDate>
+         <endDate>2005-12-31</endDate>
+      </period>
+   </context>
+
+   <!--Pharmaceuticals-->
+   <context id="D-2007-Pharm">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:PharmaceuticalsSegmentMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2007-01-01</startDate>
+         <endDate>2007-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2006-Pharm">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:PharmaceuticalsSegmentMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2006-01-01</startDate>
+         <endDate>2006-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2005-Pharm">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:PharmaceuticalsSegmentMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2005-01-01</startDate>
+         <endDate>2005-12-31</endDate>
+      </period>
+   </context>
+
+
+   <!--Generics-->
+   <context id="D-2007-Gen">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:GenericsSegmentMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2007-01-01</startDate>
+         <endDate>2007-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2006-Gen">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:GenericsSegmentMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2006-01-01</startDate>
+         <endDate>2006-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2005-Gen">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:GenericsSegmentMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2005-01-01</startDate>
+         <endDate>2005-12-31</endDate>
+      </period>
+   </context>
+
+
+   <!--Consumer Health-->
+   <context id="D-2007-ConHealth">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:ConsumerHealthSegmentMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2007-01-01</startDate>
+         <endDate>2007-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2006-ConHealth">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:ConsumerHealthSegmentMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2006-01-01</startDate>
+         <endDate>2006-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2005-ConHealth">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:ConsumerHealthSegmentMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2005-01-01</startDate>
+         <endDate>2005-12-31</endDate>
+      </period>
+   </context>
+
+   <!--Other Segments-->
+   <context id="D-2007-OtherSeg">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:OtherSegmentsMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2007-01-01</startDate>
+         <endDate>2007-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2006-OtherSeg">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:OtherSegmentsMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2006-01-01</startDate>
+         <endDate>2006-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2005-OtherSeg">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:OtherSegmentsMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:RegionsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2005-01-01</startDate>
+         <endDate>2005-12-31</endDate>
+      </period>
+   </context>
+
+   <!--US And Canada-->
+   <context id="D-2007-US">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:USAndCanadaRegionMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2007-01-01</startDate>
+         <endDate>2007-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2006-US">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:USAndCanadaRegionMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2006-01-01</startDate>
+         <endDate>2006-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2005-US">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:USAndCanadaRegionMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2005-01-01</startDate>
+         <endDate>2005-12-31</endDate>
+      </period>
+   </context>
+
+   <!--Europe-->
+   <context id="D-2007-Europe">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:EuropeRegionMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2007-01-01</startDate>
+         <endDate>2007-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2006-Europe">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:EuropeRegionMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2006-01-01</startDate>
+         <endDate>2006-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2005-Europe">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:EuropeRegionMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2005-01-01</startDate>
+         <endDate>2005-12-31</endDate>
+      </period>
+   </context>
+
+
+   <!--Asia-->
+   <context id="D-2007-Asia">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:AsiaRegionMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2007-01-01</startDate>
+         <endDate>2007-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2006-Asia">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:AsiaRegionMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2006-01-01</startDate>
+         <endDate>2006-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2005-Asia">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:AsiaRegionMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2005-01-01</startDate>
+         <endDate>2005-12-31</endDate>
+      </period>
+   </context>
+
+
+   <!--Other Regions-->
+   <context id="D-2007-OtherRegions">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:OtherRegionsMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2007-01-01</startDate>
+         <endDate>2007-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2006-OtherRegions">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:OtherRegionsMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2006-01-01</startDate>
+         <endDate>2006-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2005-OtherRegions">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:BusinessSegmentAxis">pattern:BusinessSegmentsAllDomain</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:RegionAxis">pattern:OtherRegionsMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2005-01-01</startDate>
+         <endDate>2005-12-31</endDate>
+      </period>
+   </context>
+
+
+
+   <context id="D-2007-John">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:DirectorAxis">pattern:JohnDoeMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2007-01-01</startDate>
+         <endDate>2007-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2007-Jane">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:DirectorAxis">pattern:JaneDoeMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2007-01-01</startDate>
+         <endDate>2007-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2007-AllDirectors">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:EntityAxis">pattern:SampleCompanyMember</xbrldi:explicitMember>
+             <xbrldi:explicitMember dimension="pattern:DirectorAxis">pattern:DirectorsAllDomain</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2007-01-01</startDate>
+         <endDate>2007-12-31</endDate>
+      </period>
+   </context>
+
+   <unit id="U-Monetary">
+      <measure>iso4217:USD</measure>
+   </unit>
+
+<!--Total-->
+   <pattern:Sales contextRef="D-2007-All" unitRef="U-Monetary" decimals="INF">32038000</pattern:Sales>
+   <pattern:Sales contextRef="D-2006-All" unitRef="U-Monetary" decimals="INF">35805000</pattern:Sales>
+   <pattern:Sales contextRef="D-2005-All" unitRef="U-Monetary" decimals="INF">32465000</pattern:Sales>
+
+
+<!--By Segment-->
+   <pattern:Sales contextRef="D-2007-Pharm" unitRef="U-Monetary" decimals="INF">20181000</pattern:Sales>
+   <pattern:Sales contextRef="D-2006-Pharm" unitRef="U-Monetary" decimals="INF">18150000</pattern:Sales>
+   <pattern:Sales contextRef="D-2005-Pharm" unitRef="U-Monetary" decimals="INF">15275000</pattern:Sales>
+
+   <pattern:Sales contextRef="D-2007-Gen" unitRef="U-Monetary" decimals="INF">2433000</pattern:Sales>
+   <pattern:Sales contextRef="D-2006-Gen" unitRef="U-Monetary" decimals="INF">1973000</pattern:Sales>
+   <pattern:Sales contextRef="D-2005-Gen" unitRef="U-Monetary" decimals="INF">1823000</pattern:Sales>
+
+   <pattern:Sales contextRef="D-2007-ConHealth" unitRef="U-Monetary" decimals="INF">6675000</pattern:Sales>
+   <pattern:Sales contextRef="D-2006-ConHealth" unitRef="U-Monetary" decimals="INF">6514000</pattern:Sales>
+   <pattern:Sales contextRef="D-2005-ConHealth" unitRef="U-Monetary" decimals="INF">5752000</pattern:Sales>
+
+   <pattern:Sales contextRef="D-2007-OtherSeg" unitRef="U-Monetary" decimals="INF">2749000</pattern:Sales>
+   <pattern:Sales contextRef="D-2006-OtherSeg" unitRef="U-Monetary" decimals="INF">9168000</pattern:Sales>
+   <pattern:Sales contextRef="D-2005-OtherSeg" unitRef="U-Monetary" decimals="INF">9615000</pattern:Sales>
+
+<!--By Region-->
+   <pattern:Sales contextRef="D-2007-US" unitRef="U-Monetary" decimals="INF">10214000</pattern:Sales>
+   <pattern:Sales contextRef="D-2006-US" unitRef="U-Monetary" decimals="INF">12649000</pattern:Sales>
+   <pattern:Sales contextRef="D-2005-US" unitRef="U-Monetary" decimals="INF">10137000</pattern:Sales>
+
+   <pattern:Sales contextRef="D-2007-Europe" unitRef="U-Monetary" decimals="INF">11901000</pattern:Sales>
+   <pattern:Sales contextRef="D-2006-Europe" unitRef="U-Monetary" decimals="INF">10374000</pattern:Sales>
+   <pattern:Sales contextRef="D-2005-Europe" unitRef="U-Monetary" decimals="INF">10396000</pattern:Sales>
+
+   <pattern:Sales contextRef="D-2007-Asia" unitRef="U-Monetary" decimals="INF">5639000</pattern:Sales>
+   <pattern:Sales contextRef="D-2006-Asia" unitRef="U-Monetary" decimals="INF">4371000</pattern:Sales>
+   <pattern:Sales contextRef="D-2005-Asia" unitRef="U-Monetary" decimals="INF">3210000</pattern:Sales>
+
+   <pattern:Sales contextRef="D-2007-OtherRegions" unitRef="U-Monetary" decimals="INF">4284000</pattern:Sales>
+   <pattern:Sales contextRef="D-2006-OtherRegions" unitRef="U-Monetary" decimals="INF">8411000</pattern:Sales>
+   <pattern:Sales contextRef="D-2005-OtherRegions" unitRef="U-Monetary" decimals="INF">8722000</pattern:Sales>
+
+
+
+
+   <pattern:BasisOfPresentationTextBlock contextRef="D-2007">The financial statements have been prepared on the historical cost basis, except for the revaluation of land and buildings and certain financial instruments. The principal accounting policies adopted are set out below.</pattern:BasisOfPresentationTextBlock>
+   <pattern:BasisOfPresentation contextRef="D-2007">Historical Cost</pattern:BasisOfPresentation>
+
+   <pattern:InventoryPolicyTextBlock contextRef="D-2007">Inventories are stated at the lower of cost and net realisable value.  Cost comprises direct materials and, where applicable, direct labour costs and those overheads that have been incurred in bringing the inventories to their present location and condition.  Cost is calculated using the weighted average method.  Net realisable value represents the estimated selling price less all estimated costs to completion and costs to be incurred in marketing, selling and distribution.  Inventories are comprised of raw materials and work in progress.</pattern:InventoryPolicyTextBlock>
+   <pattern:InventoryValuationMethod contextRef="D-2007">Cost</pattern:InventoryValuationMethod>
+   <pattern:DescriptionOfInventoryComponents contextRef="D-2007">weighted average method</pattern:DescriptionOfInventoryComponents>
+   
+   <pattern:FinancialInstrumentsPolicyTextBlock contextRef="D-2007">Financial assets and liabilities are recognised on the Group's balance sheet when the Group has become a party to the contractual provisions of the investment.</pattern:FinancialInstrumentsPolicyTextBlock>
+   <pattern:TradeReceivablesPolicy contextRef="D-2007">Trade receivables are stated at their nominal value as reduced by appropriate allowances for estimated irrecoverable amounts.</pattern:TradeReceivablesPolicy>
+   <pattern:InvestmentsInSecuritiesPolicy contextRef="D-2007">Investments in securities are recognised on a trade-date basis and are initially measured at cost.</pattern:InvestmentsInSecuritiesPolicy>
+   <pattern:BankBorrowingsPolicy contextRef="D-2007">Interest-bearing bank loans and overdrafts are recorded at the proceeds received, net of direct issue costs.  Finance charges, including premiums payable on settlement or redemption, are accounted for on an accrual basis and are added to the carrying amount of the instrument to the extent that they are not settled in the period in which they arise.</pattern:BankBorrowingsPolicy>
+   
+   <pattern:ProvisionsPolicy contextRef="D-2007">Provisions are recognised when the Group has a present obligation as a result of a past event which it is probable will result in an outflow of economic benefits that can be reasonably estimated.</pattern:ProvisionsPolicy>
+
+
+
+
+
+
+   <pattern:Land contextRef="I-2007" unitRef="U-Monetary" decimals="INF">5347000</pattern:Land>
+   <pattern:Land contextRef="I-2006" unitRef="U-Monetary" decimals="INF">1147000</pattern:Land>
+
+   <pattern:BuildingsNet contextRef="I-2007" unitRef="U-Monetary" decimals="INF">244508000</pattern:BuildingsNet>
+   <pattern:BuildingsNet contextRef="I-2006" unitRef="U-Monetary" decimals="INF">366375000</pattern:BuildingsNet>
+
+   <pattern:FurnitureAndFixturesNet contextRef="I-2007" unitRef="U-Monetary" decimals="INF">34457000</pattern:FurnitureAndFixturesNet>
+   <pattern:FurnitureAndFixturesNet contextRef="I-2006" unitRef="U-Monetary" decimals="INF">34457000</pattern:FurnitureAndFixturesNet>
+
+   <pattern:FurnitureNet contextRef="I-2007" unitRef="U-Monetary" decimals="INF">34000000</pattern:FurnitureNet>
+   <pattern:FurnitureNet contextRef="I-2006" unitRef="U-Monetary" decimals="INF">34000000</pattern:FurnitureNet>
+
+   <pattern:FixturesNet contextRef="I-2007" unitRef="U-Monetary" decimals="INF">457000</pattern:FixturesNet>
+   <pattern:FixturesNet contextRef="I-2006" unitRef="U-Monetary" decimals="INF">457000</pattern:FixturesNet>
+
+   <pattern:ComputerEquipmentNet contextRef="I-2007" unitRef="U-Monetary" decimals="INF">4169000</pattern:ComputerEquipmentNet>
+   <pattern:ComputerEquipmentNet contextRef="I-2006" unitRef="U-Monetary" decimals="INF">5313000</pattern:ComputerEquipmentNet>
+
+   <pattern:OtherPropertyPlantAndEquipmentNet contextRef="I-2007" unitRef="U-Monetary" decimals="INF">6702000</pattern:OtherPropertyPlantAndEquipmentNet>
+   <pattern:OtherPropertyPlantAndEquipmentNet contextRef="I-2006" unitRef="U-Monetary" decimals="INF">6149000</pattern:OtherPropertyPlantAndEquipmentNet>
+
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2007" unitRef="U-Monetary" decimals="INF">295183000</pattern:PropertyPlantAndEquipmentNet>
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2006" unitRef="U-Monetary" decimals="INF">413441000</pattern:PropertyPlantAndEquipmentNet>
+
+
+
+
+
+   <pattern:Land contextRef="I-2005" unitRef="U-Monetary" decimals="INF">1147000</pattern:Land>
+
+   <pattern:LandAdditions contextRef="D-2006" unitRef="U-Monetary" decimals="INF">400000</pattern:LandAdditions>
+
+   <pattern:LandAdditionsFromPurchase contextRef="D-2006" unitRef="U-Monetary" decimals="INF">100000</pattern:LandAdditionsFromPurchase>
+   <pattern:LandAdditionsFromAcquisition contextRef="D-2006" unitRef="U-Monetary" decimals="INF">300000</pattern:LandAdditionsFromAcquisition>
+
+   <pattern:LandDisposals contextRef="D-2006" unitRef="U-Monetary" decimals="INF">200000</pattern:LandDisposals>
+   <pattern:LandTranslationDifference contextRef="D-2006" unitRef="U-Monetary" decimals="INF">-200000</pattern:LandTranslationDifference>
+   <pattern:LandPeriodIncreaseDecrease contextRef="D-2006" unitRef="U-Monetary" decimals="INF">0</pattern:LandPeriodIncreaseDecrease>
+
+   <pattern:LandAdditions contextRef="D-2007" unitRef="U-Monetary" decimals="INF">1992000</pattern:LandAdditions>
+
+   <pattern:LandAdditionsFromPurchase contextRef="D-2007" unitRef="U-Monetary" decimals="INF">1000000</pattern:LandAdditionsFromPurchase>
+   <pattern:LandAdditionsFromAcquisition contextRef="D-2007" unitRef="U-Monetary" decimals="INF">992000</pattern:LandAdditionsFromAcquisition>
+
+   <pattern:LandDisposals contextRef="D-2007" unitRef="U-Monetary" decimals="INF">193000</pattern:LandDisposals>
+   <pattern:LandTranslationDifference id="Item-02" contextRef="D-2007" unitRef="U-Monetary" decimals="INF">2401000</pattern:LandTranslationDifference>
+   <pattern:LandPeriodIncreaseDecrease id="Item-01" contextRef="D-2007" unitRef="U-Monetary" decimals="INF">4200000</pattern:LandPeriodIncreaseDecrease>
+
+
+   <pattern:DirectorSalary contextRef="D-2007-John" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorSalary>
+   <pattern:DirectorBonuses contextRef="D-2007-John" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorBonuses>
+   <pattern:DirectorFees contextRef="D-2007-John" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorFees>
+   <pattern:DirectorOptionsGrantedAtFairValue contextRef="D-2007-John" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorOptionsGrantedAtFairValue>
+
+   <pattern:DirectorSalary contextRef="D-2007-Jane" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorSalary>
+   <pattern:DirectorBonuses contextRef="D-2007-Jane" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorBonuses>
+   <pattern:DirectorFees contextRef="D-2007-Jane" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorFees>
+   <pattern:DirectorOptionsGrantedAtFairValue contextRef="D-2007-Jane" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorOptionsGrantedAtFairValue>
+
+   <pattern:DirectorSalary contextRef="D-2007-AllDirectors" unitRef="U-Monetary" decimals="INF">2000</pattern:DirectorSalary>
+   <pattern:DirectorBonuses contextRef="D-2007-AllDirectors" unitRef="U-Monetary" decimals="INF">2000</pattern:DirectorBonuses>
+   <pattern:DirectorFees contextRef="D-2007-AllDirectors" unitRef="U-Monetary" decimals="INF">2000</pattern:DirectorFees>
+   <pattern:DirectorOptionsGrantedAtFairValue contextRef="D-2007-AllDirectors" unitRef="U-Monetary" decimals="INF">2000</pattern:DirectorOptionsGrantedAtFairValue>
+
+
+
+  <!-- General Comments -->
+  <link:footnoteLink xlink:title='General Comment' xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link" xmlns:link="http://www.xbrl.org/2003/linkbase">
+    <link:loc xlink:type="locator" xlink:href="#Item-01" xlink:label="FactSet-01" />
+    <link:loc xlink:type="locator" xlink:href="#Item-02" xlink:label="FactSet-01" />
+    <link:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="FactSet-01" xlink:to="Footnote-01" order="1" />
+    <link:footnote xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:label="Footnote-01" xml:lang="en">GENERAL: This is a footnote making general comments.</link:footnote>
+  </link:footnoteLink>
+
+
+
+</xbrl>

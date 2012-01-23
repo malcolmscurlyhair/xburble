@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Label Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 1.0.0.0 (2008-04-17 05:55).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2008 UBmatrix inc., All Rights Reserved
+Produced on 2008-04-18 10:35:48
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <labelLink xlink:type="extended"
+    xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator"
+      xlink:label="pattern_AsiaRegionMember"
+      xlink:href="Schedule.xsd#pattern_AsiaRegionMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_AsiaRegionMember" xlink:to="pattern_AsiaRegionMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_AsiaRegionMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Asia Region</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_AsiaRegionMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Asia Region [Member]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_BusinessSegmentAxis"
+      xlink:href="Schedule.xsd#pattern_BusinessSegmentAxis" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_BusinessSegmentAxis" xlink:to="pattern_BusinessSegmentAxis_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_BusinessSegmentAxis_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: By Product (Placeholder)</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_BusinessSegmentAxis_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Business Segment [Axis]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_BusinessSegmentsAllDomain"
+      xlink:href="Schedule.xsd#pattern_BusinessSegmentsAllDomain" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_BusinessSegmentsAllDomain" xlink:to="pattern_BusinessSegmentsAllDomain_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_BusinessSegmentsAllDomain_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: All Products</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_BusinessSegmentsAllDomain_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Business Segments, All [Domain]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_ConsumerHealthSegmentMember"
+      xlink:href="Schedule.xsd#pattern_ConsumerHealthSegmentMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_ConsumerHealthSegmentMember" xlink:to="pattern_ConsumerHealthSegmentMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_ConsumerHealthSegmentMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Consumer Health Segment</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_ConsumerHealthSegmentMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Consumer Health Segment [Member]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntitiesAllDomain"
+      xlink:href="Schedule.xsd#pattern_EntitiesAllDomain" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_EntitiesAllDomain" xlink:to="pattern_EntitiesAllDomain_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_EntitiesAllDomain_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: All Products</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_EntitiesAllDomain_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Entities, All [Domain]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntityAxis"
+      xlink:href="Schedule.xsd#pattern_EntityAxis" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_EntityAxis" xlink:to="pattern_EntityAxis_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_EntityAxis_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: By Product (Placeholder)</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_EntityAxis_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Entity [Axis]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_EuropeRegionMember"
+      xlink:href="Schedule.xsd#pattern_EuropeRegionMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_EuropeRegionMember" xlink:to="pattern_EuropeRegionMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_EuropeRegionMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Europe Region</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_EuropeRegionMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Europe Region [Member]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_GenericsSegmentMember"
+      xlink:href="Schedule.xsd#pattern_GenericsSegmentMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_GenericsSegmentMember" xlink:to="pattern_GenericsSegmentMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_GenericsSegmentMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Generics Segment</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_GenericsSegmentMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Generics Segment [Member]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_OtherRegionsMember"
+      xlink:href="Schedule.xsd#pattern_OtherRegionsMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_OtherRegionsMember" xlink:to="pattern_OtherRegionsMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_OtherRegionsMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Other Regions</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_OtherRegionsMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Other Regions [Member]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_OtherSegmentsMember"
+      xlink:href="Schedule.xsd#pattern_OtherSegmentsMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_OtherSegmentsMember" xlink:to="pattern_OtherSegmentsMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_OtherSegmentsMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Other Segments</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_OtherSegmentsMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Other Segments [Member]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_PharmaceuticalsSegmentMember"
+      xlink:href="Schedule.xsd#pattern_PharmaceuticalsSegmentMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_PharmaceuticalsSegmentMember" xlink:to="pattern_PharmaceuticalsSegmentMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_PharmaceuticalsSegmentMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Pharmaceuticals Segment</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_PharmaceuticalsSegmentMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Pharmaceuticals Segment [Member]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_RegionAxis"
+      xlink:href="Schedule.xsd#pattern_RegionAxis" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_RegionAxis" xlink:to="pattern_RegionAxis_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_RegionAxis_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: By Region (Placeholder)</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_RegionAxis_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Region [Axis]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_RegionsAllDomain"
+      xlink:href="Schedule.xsd#pattern_RegionsAllDomain" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_RegionsAllDomain" xlink:to="pattern_RegionsAllDomain_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_RegionsAllDomain_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: All Regions</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_RegionsAllDomain_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Regions, All [Domain]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_SalesAnalysisHierarchy"
+      xlink:href="Schedule.xsd#pattern_SalesAnalysisHierarchy" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_SalesAnalysisHierarchy" xlink:to="pattern_SalesAnalysisHierarchy_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_SalesAnalysisHierarchy_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for concept.</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_SalesAnalysisHierarchy_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Sales Analysis [Hierarchy]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_SalesAnalysisSchedule"
+      xlink:href="Schedule.xsd#pattern_SalesAnalysisSchedule" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_SalesAnalysisSchedule" xlink:to="pattern_SalesAnalysisSchedule_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_SalesAnalysisSchedule_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Company Hypercube</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_SalesAnalysisSchedule_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Sales Analysis [Schedule]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_SalesAnalysislineItemsGroup"
+      xlink:href="Schedule.xsd#pattern_SalesAnalysislineItemsGroup" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_SalesAnalysislineItemsGroup" xlink:to="pattern_SalesAnalysislineItemsGroup_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_SalesAnalysislineItemsGroup_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for concept.</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_SalesAnalysislineItemsGroup_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Sales Analysis [Line Items]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_Sales"
+      xlink:href="Schedule.xsd#pattern_Sales" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_Sales" xlink:to="pattern_Sales_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_Sales_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Sales</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_Sales_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Sales</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_SampleCompanyMember"
+      xlink:href="Schedule.xsd#pattern_SampleCompanyMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_SampleCompanyMember" xlink:to="pattern_SampleCompanyMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_SampleCompanyMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Pharmaceuticals Segment</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_SampleCompanyMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Sample Company [Member]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_USAndCanadaRegionMember"
+      xlink:href="Schedule.xsd#pattern_USAndCanadaRegionMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_USAndCanadaRegionMember" xlink:to="pattern_USAndCanadaRegionMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_USAndCanadaRegionMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: US and Canada Region</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_USAndCanadaRegionMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">US and Canada Region [Member]</label>
+  </labelLink>
+</linkbase>
