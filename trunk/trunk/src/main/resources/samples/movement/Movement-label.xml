@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Label Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 1.0.0.0 (2008-04-17 05:55).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2008 UBmatrix inc., All Rights Reserved
+Produced on 2008-04-18 10:37:11
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <labelLink xlink:type="extended"
+    xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator"
+      xlink:label="pattern_BusinessSegmentAxis"
+      xlink:href="Movement.xsd#pattern_BusinessSegmentAxis" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_BusinessSegmentAxis" xlink:to="pattern_BusinessSegmentAxis_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_BusinessSegmentAxis_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: By Product (Placeholder)</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_BusinessSegmentAxis_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Business Segment [Axis]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_CompanyBusinessSegmentAMember"
+      xlink:href="Movement.xsd#pattern_CompanyBusinessSegmentAMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_CompanyBusinessSegmentAMember" xlink:to="pattern_CompanyBusinessSegmentAMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_CompanyBusinessSegmentAMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Pharmaceuticals Segment</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_CompanyBusinessSegmentAMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Company Business Segment A [Member]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_CompanyBusinessSegmentBMember"
+      xlink:href="Movement.xsd#pattern_CompanyBusinessSegmentBMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_CompanyBusinessSegmentBMember" xlink:to="pattern_CompanyBusinessSegmentBMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_CompanyBusinessSegmentBMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Consumer Health Segment</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_CompanyBusinessSegmentBMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Company Business Segment B [Member]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_ConsolidatedGroupDomain"
+      xlink:href="Movement.xsd#pattern_ConsolidatedGroupDomain" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_ConsolidatedGroupDomain" xlink:to="pattern_ConsolidatedGroupDomain_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_ConsolidatedGroupDomain_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: All Products</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_ConsolidatedGroupDomain_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Consolidated Group [Domain]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntitiesAllDomain"
+      xlink:href="Movement.xsd#pattern_EntitiesAllDomain" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_EntitiesAllDomain" xlink:to="pattern_EntitiesAllDomain_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_EntitiesAllDomain_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: All Products</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_EntitiesAllDomain_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Entities, All [Domain]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntityAxis"
+      xlink:href="Movement.xsd#pattern_EntityAxis" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_EntityAxis" xlink:to="pattern_EntityAxis_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_EntityAxis_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: By Product (Placeholder)</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_EntityAxis_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Entity [Axis]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandAdditions"
+      xlink:href="Movement.xsd#pattern_LandAdditions" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_LandAdditions" xlink:to="pattern_LandAdditions_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_LandAdditions_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Land, Additions</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandChangesLineItems"
+      xlink:href="Movement.xsd#pattern_LandChangesLineItems" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_LandChangesLineItems" xlink:to="pattern_LandChangesLineItems_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_LandChangesLineItems_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for concept.</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_LandChangesLineItems_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Land Changes [Line Items]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandChangesSchedule"
+      xlink:href="Movement.xsd#pattern_LandChangesSchedule" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_LandChangesSchedule" xlink:to="pattern_LandChangesSchedule_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_LandChangesSchedule_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Company Hypercube</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_LandChangesSchedule_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Land Changes [Schedule]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandDisposals"
+      xlink:href="Movement.xsd#pattern_LandDisposals" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_LandDisposals" xlink:to="pattern_LandDisposals_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_LandDisposals_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Land, Disposals</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandPeriodIncreaseDecreaseTotalCalculation"
+      xlink:href="Movement.xsd#pattern_LandPeriodIncreaseDecreaseTotalCalculation" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_LandPeriodIncreaseDecreaseTotalCalculation" xlink:to="pattern_LandPeriodIncreaseDecreaseTotalCalculation_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_LandPeriodIncreaseDecreaseTotalCalculation_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Sales</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_LandPeriodIncreaseDecreaseTotalCalculation_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Land, Period Increase (Decrease), Total [Calculation]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandPeriodIncreaseDecrease"
+      xlink:href="Movement.xsd#pattern_LandPeriodIncreaseDecrease" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_LandPeriodIncreaseDecrease" xlink:to="pattern_LandPeriodIncreaseDecrease_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_LandPeriodIncreaseDecrease_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Land, Period Increase (Decrease)</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_LandPeriodIncreaseDecrease_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/totalLabel">Land, Period Increase (Decrease), Total</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandReconciles"
+      xlink:href="Movement.xsd#pattern_LandReconciles" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_LandReconciles" xlink:to="pattern_LandReconciles_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_LandReconciles_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Land, Reconciles</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandTranslationDifference"
+      xlink:href="Movement.xsd#pattern_LandTranslationDifference" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_LandTranslationDifference" xlink:to="pattern_LandTranslationDifference_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_LandTranslationDifference_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Land, Translation Difference</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_Land"
+      xlink:href="Movement.xsd#pattern_Land" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_Land" xlink:to="pattern_Land_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_Land_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/periodEndLabel">Land, Ending Balance</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_Land_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/periodStartLabel">Land, Beginning Balance</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_Land_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Land</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_MovementInLandMovement"
+      xlink:href="Movement.xsd#pattern_MovementInLandMovement" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_MovementInLandMovement" xlink:to="pattern_MovementInLandMovement_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_MovementInLandMovement_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Sales</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_MovementInLandMovement_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Movement in Land [Movement]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_SampleCompanyMember"
+      xlink:href="Movement.xsd#pattern_SampleCompanyMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_SampleCompanyMember" xlink:to="pattern_SampleCompanyMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_SampleCompanyMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Pharmaceuticals Segment</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_SampleCompanyMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Sample Company [Member]</label>
+  </labelLink>
+</linkbase>

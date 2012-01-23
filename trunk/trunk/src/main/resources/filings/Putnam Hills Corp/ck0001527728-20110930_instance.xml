@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!-- EDGAR Online I-Metrix Xcelerate Instance Document, based on XBRL 2.1  http://www.edgar-online.com/ -->
+<!-- Version:  6.12.8 -->
+<!-- Round: 4 -->
+<!-- Creation date: 2011-11-23T16:17:37Z -->
+<!-- Copyright (c) 2005-2011 EDGAR Online, Inc. All Rights Reserved. -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" xmlns:xbrll="http://www.xbrl.org/2003/linkbase"
+      xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ck0001527728="http://www.0001527728.com/20110930"
+      xmlns:country="http://xbrl.sec.gov/country/2011-01-31" xmlns:dei="http://xbrl.sec.gov/dei/2011-01-31"
+      xmlns:invest="http://xbrl.sec.gov/invest/2011-01-31" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric"
+      xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:us-gaap="http://fasb.org/us-gaap/2011-01-31"
+      xmlns:us-types="http://fasb.org/us-types/2011-01-31" xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+      xmlns:xbrldt="http://xbrl.org/2005/xbrldt">
+    <xbrll:schemaRef xlink:type="simple" xlink:arcrole="http://www.xbrl.org/2003/linkbase"
+                     xlink:href="ck0001527728-20110930.xsd" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     xmlns:xbrll="http://www.xbrl.org/2003/linkbase"/>
+    <dei:EntityCommonStockSharesOutstanding contextRef="eol_PE862008--1110-Q0003_STD_0_20111122_0" unitRef="shares"
+                                            decimals="INF">5000000
+    </dei:EntityCommonStockSharesOutstanding>
+    <us-gaap:LiabilitiesCurrent contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="iso4217_USD"
+                                decimals="0">8735
+    </us-gaap:LiabilitiesCurrent>
+    <us-gaap:CommonStockShareSubscribedButUnissuedSubscriptionsReceivable
+            contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="iso4217_USD" decimals="0">25000
+    </us-gaap:CommonStockShareSubscribedButUnissuedSubscriptionsReceivable>
+    <us-gaap:Assets contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="iso4217_USD" decimals="0">0
+    </us-gaap:Assets>
+    <us-gaap:CommonStockValue contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="iso4217_USD" decimals="0">
+        500
+    </us-gaap:CommonStockValue>
+    <us-gaap:CommitmentsAndContingencies contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="iso4217_USD"
+                                         xsi:nil="true"/>
+    <us-gaap:CommonStockSharesOutstanding contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="shares"
+                                          decimals="INF">5000000
+    </us-gaap:CommonStockSharesOutstanding>
+    <us-gaap:PreferredStockSharesAuthorized contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="shares"
+                                            decimals="INF">10000000
+    </us-gaap:PreferredStockSharesAuthorized>
+    <us-gaap:DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStage
+            contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="iso4217_USD" decimals="0">8735
+    </us-gaap:DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStage>
+    <us-gaap:PreferredStockSharesOutstanding contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="shares"
+                                             decimals="INF">0
+    </us-gaap:PreferredStockSharesOutstanding>
+    <us-gaap:CommonStockParOrStatedValuePerShare contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0"
+                                                 unitRef="iso4217_USD_per_shares" decimals="4">0.0001
+    </us-gaap:CommonStockParOrStatedValuePerShare>
+    <us-gaap:AdditionalPaidInCapital contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="iso4217_USD"
+                                     decimals="0">24500
+    </us-gaap:AdditionalPaidInCapital>
+    <us-gaap:PreferredStockSharesIssued contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="shares"
+                                        decimals="INF">0
+    </us-gaap:PreferredStockSharesIssued>
+    <us-gaap:PreferredStockValue contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="iso4217_USD"
+                                 xsi:nil="true"/>
+    <us-gaap:LoansPayableCurrent contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="iso4217_USD"
+                                 decimals="0">8735
+    </us-gaap:LoansPayableCurrent>
+    <us-gaap:StockholdersEquity contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="iso4217_USD"
+                                decimals="0">-8735
+    </us-gaap:StockholdersEquity>
+    <us-gaap:CommonStockSharesIssued contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="shares"
+                                     decimals="INF">5000000
+    </us-gaap:CommonStockSharesIssued>
+    <us-gaap:PreferredStockParOrStatedValuePerShare contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0"
+                                                    unitRef="iso4217_USD_per_shares" decimals="4">0.0001
+    </us-gaap:PreferredStockParOrStatedValuePerShare>
+    <us-gaap:CommonStockSharesAuthorized contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0" unitRef="shares"
+                                         decimals="INF">100000000
+    </us-gaap:CommonStockSharesAuthorized>
+    <us-gaap:SharesOutstanding contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0_452905x444581" unitRef="shares"
+                               decimals="INF">5000000
+    </us-gaap:SharesOutstanding>
+    <us-gaap:StockholdersEquity contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0_452905x444581"
+                                unitRef="iso4217_USD" decimals="0">500
+    </us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0_452905x453698"
+                                unitRef="iso4217_USD" decimals="0">24500
+    </us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0_452905x468129"
+                                unitRef="iso4217_USD" decimals="0">-25000
+    </us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="eol_PE862008--1110-Q0003_STD_0_20110331_0_452905x478726"
+                                unitRef="iso4217_USD" decimals="0">-8735
+    </us-gaap:StockholdersEquity>
+    <us-gaap:LiabilitiesCurrent contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="iso4217_USD"
+                                decimals="0">18810
+    </us-gaap:LiabilitiesCurrent>
+    <us-gaap:Assets contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="iso4217_USD" decimals="0">20892
+    </us-gaap:Assets>
+    <us-gaap:CommonStockValue contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="iso4217_USD" decimals="0">
+        500
+    </us-gaap:CommonStockValue>
+    <us-gaap:DueFromRelatedPartiesCurrent contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="iso4217_USD"
+                                          decimals="0">8400
+    </us-gaap:DueFromRelatedPartiesCurrent>
+    <us-gaap:CommitmentsAndContingencies contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="iso4217_USD"
+                                         xsi:nil="true"/>
+    <us-gaap:CommonStockSharesOutstanding contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="shares"
+                                          decimals="INF">5000000
+    </us-gaap:CommonStockSharesOutstanding>
+    <us-gaap:PreferredStockSharesAuthorized contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="shares"
+                                            decimals="INF">10000000
+    </us-gaap:PreferredStockSharesAuthorized>
+    <us-gaap:AssetsCurrent contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="iso4217_USD" decimals="0">
+        20892
+    </us-gaap:AssetsCurrent>
+    <us-gaap:DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStage
+            contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="iso4217_USD" decimals="0">22918
+    </us-gaap:DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStage>
+    <us-gaap:PreferredStockSharesOutstanding contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="shares"
+                                             decimals="INF">0
+    </us-gaap:PreferredStockSharesOutstanding>
+    <us-gaap:CommonStockParOrStatedValuePerShare contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0"
+                                                 unitRef="iso4217_USD_per_shares" decimals="4">0.0001
+    </us-gaap:CommonStockParOrStatedValuePerShare>
+    <us-gaap:AdditionalPaidInCapital contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="iso4217_USD"
+                                     decimals="0">24500
+    </us-gaap:AdditionalPaidInCapital>
+    <us-gaap:LiabilitiesAndStockholdersEquity contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0"
+                                              unitRef="iso4217_USD" decimals="0">20892
+    </us-gaap:LiabilitiesAndStockholdersEquity>
+    <us-gaap:PreferredStockSharesIssued contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="shares"
+                                        decimals="INF">0
+    </us-gaap:PreferredStockSharesIssued>
+    <us-gaap:PreferredStockValue contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="iso4217_USD"
+                                 xsi:nil="true"/>
+    <us-gaap:LoansPayableCurrent contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="iso4217_USD"
+                                 decimals="0">13735
+    </us-gaap:LoansPayableCurrent>
+    <us-gaap:StockholdersEquity contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="iso4217_USD"
+                                decimals="0">2082
+    </us-gaap:StockholdersEquity>
+    <us-gaap:CommonStockSharesIssued contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="shares"
+                                     decimals="INF">5000000
+    </us-gaap:CommonStockSharesIssued>
+    <us-gaap:PreferredStockParOrStatedValuePerShare contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0"
+                                                    unitRef="iso4217_USD_per_shares" decimals="4">0.0001
+    </us-gaap:PreferredStockParOrStatedValuePerShare>
+    <us-gaap:CommonStockSharesAuthorized contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="shares"
+                                         decimals="INF">100000000
+    </us-gaap:CommonStockSharesAuthorized>
+    <us-gaap:NotesPayableRelatedPartiesClassifiedCurrent contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0"
+                                                         unitRef="iso4217_USD" decimals="0">5000
+    </us-gaap:NotesPayableRelatedPartiesClassifiedCurrent>
+    <us-gaap:AccountsPayableCurrent contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="iso4217_USD"
+                                    decimals="0">75
+    </us-gaap:AccountsPayableCurrent>
+
+
+    <us-gaap:SharesOutstanding contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0_452905x444581" unitRef="shares"
+                               decimals="INF">5000000
+    </us-gaap:SharesOutstanding>
+    <us-gaap:StockholdersEquity contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0_452905x444581"
+                                unitRef="iso4217_USD" decimals="0">500
+    </us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0_452905x453698"
+                                unitRef="iso4217_USD" decimals="0">24500
+    </us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0_452905x478726"
+                                unitRef="iso4217_USD" decimals="0">-22918
+    </us-gaap:StockholdersEquity>
+    <us-gaap:SharesOutstanding contextRef="eol_PE862008--1110-Q0003_STD_0_20110117_0_452905x444581" unitRef="shares"
+                               decimals="INF">5000000
+    </us-gaap:SharesOutstanding>
+    <us-gaap:StockholdersEquity contextRef="eol_PE862008--1110-Q0003_STD_0_20110117_0_452905x444581"
+                                unitRef="iso4217_USD" decimals="0">500
+    </us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="eol_PE862008--1110-Q0003_STD_0_20110117_0_452905x453698"
+                                unitRef="iso4217_USD" decimals="0">24500
+    </us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="eol_PE862008--1110-Q0003_STD_0_20110117_0_452905x468129"
+                                unitRef="iso4217_USD" decimals="0">-25000
+    </us-gaap:StockholdersEquity>
+    <dei:DocumentFiscalPeriodFocus contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0">Q2
+    </dei:DocumentFiscalPeriodFocus>
+    <dei:EntityRegistrantName contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0">PUTNAM HILLS CORP.
+    </dei:EntityRegistrantName>
+    <dei:AmendmentFlag contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0">false</dei:AmendmentFlag>
+    <dei:EntityFilerCategory contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0">Smaller Reporting Company
+    </dei:EntityFilerCategory>
+    <dei:DocumentFiscalYearFocus contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0">2012
+    </dei:DocumentFiscalYearFocus>
+    <dei:DocumentType contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0">10-Q</dei:DocumentType>
+    <dei:DocumentPeriodEndDate contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0">2011-09-30
+    </dei:DocumentPeriodEndDate>
+    <dei:EntityCentralIndexKey contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0">0001527728
+    </dei:EntityCentralIndexKey>
+    <dei:CurrentFiscalYearEndDate contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0">--03-31
+    </dei:CurrentFiscalYearEndDate>
+    <us-gaap:ProceedsFromRelatedPartyDebt contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0" unitRef="iso4217_USD"
+                                          decimals="0">5000
+    </us-gaap:ProceedsFromRelatedPartyDebt>
+    <us-gaap:NetCashProvidedByUsedInInvestingActivities contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0"
+                                                        unitRef="iso4217_USD" decimals="0">-8400
+    </us-gaap:NetCashProvidedByUsedInInvestingActivities>
+    <us-gaap:Revenues contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0" unitRef="iso4217_USD" xsi:nil="true"/>
+    <us-gaap:NetCashProvidedByUsedInOperatingActivities contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0"
+                                                        unitRef="iso4217_USD" decimals="0">-9108
+    </us-gaap:NetCashProvidedByUsedInOperatingActivities>
+    <us-gaap:ProfessionalFees contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0" unitRef="iso4217_USD"
+                              decimals="0">5000
+    </us-gaap:ProfessionalFees>
+    <us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+            contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0" unitRef="iso4217_USD" decimals="0">-14183
+    </us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments>
+    <us-gaap:OperatingIncomeLoss contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0" unitRef="iso4217_USD"
+                                 decimals="0">-14183
+    </us-gaap:OperatingIncomeLoss>
+    <us-gaap:ProceedsFromPaymentsForLongTermLoansForRelatedParties
+            contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0" unitRef="iso4217_USD" decimals="0">-8400
+    </us-gaap:ProceedsFromPaymentsForLongTermLoansForRelatedParties>
+    <us-gaap:IncreaseDecreaseInAccountsPayable contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0"
+                                               unitRef="iso4217_USD" decimals="0">75
+    </us-gaap:IncreaseDecreaseInAccountsPayable>
+    <us-gaap:ProceedsFromIssuanceOfCommonStock contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0"
+                                               unitRef="iso4217_USD" decimals="0">25000
+    </us-gaap:ProceedsFromIssuanceOfCommonStock>
+    <us-gaap:IncomeTaxExpenseBenefit contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0" unitRef="iso4217_USD"
+                                     xsi:nil="true"/>
+    <us-gaap:CashPeriodIncreaseDecrease contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0" unitRef="iso4217_USD"
+                                        decimals="INF">12492
+    </us-gaap:CashPeriodIncreaseDecrease>
+    <us-gaap:GeneralAndAdministrativeExpense contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0"
+                                             unitRef="iso4217_USD" decimals="0">14183
+    </us-gaap:GeneralAndAdministrativeExpense>
+    <us-gaap:NetCashProvidedByUsedInFinancingActivities contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0"
+                                                        unitRef="iso4217_USD" decimals="0">30000
+    </us-gaap:NetCashProvidedByUsedInFinancingActivities>
+    <us-gaap:EarningsPerShareBasicAndDiluted contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0"
+                                             unitRef="iso4217_USD_per_shares" xsi:nil="true"/>
+    <ck0001527728:CapitalContributed contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0" unitRef="iso4217_USD"
+                                     decimals="0">25000
+    </ck0001527728:CapitalContributed>
+    <ck0001527728:WeightedAverageNumberBasicDilutedSharesOutstanding
+            contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0" unitRef="shares" xsi:nil="true"/>
+    <ck0001527728:ExpensePaidByRelatedPartyOnBehalfOfTheCompany contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0"
+                                                                unitRef="iso4217_USD" decimals="0">5000
+    </ck0001527728:ExpensePaidByRelatedPartyOnBehalfOfTheCompany>
+    <ck0001527728:CapitalContributed contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0_452905x468129"
+                                     unitRef="iso4217_USD" decimals="0">25000
+    </ck0001527728:CapitalContributed>
+
+    <us-gaap:NetIncomeLoss contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0" unitRef="iso4217_USD" decimals="0">
+        -14183
+    </us-gaap:NetIncomeLoss>
+
+    <us-gaap:NetIncomeLoss contextRef="eol_PE862008--1110-Q0003_STD_183_20110930_0_452905x478726" unitRef="iso4217_USD"
+                           decimals="0">-14183
+    </us-gaap:NetIncomeLoss>
+
+    <us-gaap:ProceedsFromRelatedPartyDebt contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0" unitRef="iso4217_USD"
+                                          decimals="0">5000
+    </us-gaap:ProceedsFromRelatedPartyDebt>
+    <us-gaap:BasisOfPresentationAndSignificantAccountingPoliciesTextBlock
+            contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0">&lt;div&gt;
+        &lt;div&gt;
+        &lt;table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="FONT-SIZE: 10pt;
+        FONT-FAMILY: Times New Roman; FONT-SIZE: 10pt; FONT-FAMILY: times new roman"&gt;
+        &lt;tr valign="top"&gt;
+        &lt;td style="WIDTH: 54pt"&gt;
+        &lt;div style="MARGIN-LEFT: 0pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt"&gt;
+        &lt;font style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;Note
+        2 -&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+        &lt;div align="justify"&gt;&lt;font style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;&lt;font
+        style="DISPLAY: inline; TEXT-DECORATION: underline"&gt;
+        Summary of Significant Accounting Policies&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;&lt;font style="DISPLAY: inline;
+        TEXT-DECORATION: underline"&gt;
+        Basis of Presentation&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;The
+        accompanying interim financial statements of the Company have been
+        prepared in accordance with accounting principles generally
+        accepted for interim financial statements presentation and in
+        accordance with the instructions to Regulation S-X. Accordingly,
+        they do not include all of the information and footnotes required
+        by accounting principles generally accepted in the United States of
+        America for complete financial statement presentation. In the
+        opinion of management, all adjustments for a fair statement of the
+        results of operations and financial position for the interim
+        periods presented have been included. All such adjustments are of a
+        normal recurring nature. The accompanying financial statements and
+        the information included under the heading Management&amp;#x2019;s
+        Discussion and Analysis of Financial Condition and Results of
+        Operations should be read in conjunction with the Company&amp;#x2019;s
+        audited financial statements and related notes included in the
+        Company&amp;#x2019;s Form 10 as of March 31, 2011. Interim results are
+        not necessarily indicative of the results for a full
+        year.&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="left"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;&lt;font style="DISPLAY: inline;
+        TEXT-DECORATION: underline"&gt;
+        Use of Estimates&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;The
+        preparation of financial statements in conformity with accounting
+        principles generally accepted in the United States requires
+        management to make estimates and assumptions that affect the
+        reported amounts of assets and liabilities and disclosure of
+        contingent assets and liabilities at the date of the balance sheet
+        and the reported amounts of revenues and expenses during the
+        reporting period. Actual results could differ from those
+        estimates.&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="left"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;&lt;font style="DISPLAY: inline;
+        TEXT-DECORATION: underline"&gt;
+        Cash Equivalents&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;The
+        Company considers highly liquid financial instruments purchased
+        with a maturity of three months or less to be cash equivalents.
+        There are no cash equivalents at the balance sheet
+        date.&lt;/font&gt;&lt;/div&gt;
+        &lt;div&gt;&amp;#xA0;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&amp;#xA0;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="left"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;&lt;font style="DISPLAY: inline;
+        TEXT-DECORATION: underline"&gt;
+        Income Taxes&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;The
+        Company utilizes the accrual method of accounting for income taxes.
+        Under the accrual method, the deferred tax assets and liabilities
+        are determined based on the differences between the financial
+        reporting basis and the tax basis of the assets and liabilities and
+        are measured using enacted tax rates and laws that will be in
+        effect, when the differences are expected to reverse. An allowance
+        against deferred tax assets is recognized, when it is more likely
+        than not, that such tax benefits will not be realized.&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;The
+        Company recognizes the financial statement benefit of an uncertain
+        tax position only after considering the probability that a tax
+        authority would sustain the position in an examination. For tax
+        positions meeting a &amp;#x201C;more-likely than-not&amp;#x201D; threshold,
+        the amount recognized in the financial statements is the benefit
+        expected to be realized upon settlement with the tax authority. For
+        tax positions not meeting the threshold, no financial statement
+        benefit is recognized. The Company recognizes interest and
+        penalties, if any, related to uncertain tax positions in income tax
+        expense. As of September 30, 2011, the Company is unaware of any
+        uncertain tax positions.&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="left"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;&lt;font style="DISPLAY: inline;
+        TEXT-DECORATION: underline"&gt;
+        Loss Per Common Share&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;Basic
+        loss per share is calculated using the weighted-average number of
+        common shares outstanding during each reporting period. Diluted
+        loss per share includes potentially dilutive securities such as
+        outstanding options and warrants, using various methods such as the
+        treasury stock or modified treasury stock method in the
+        determination of dilutive shares outstanding during each reporting
+        period. The Company does not have any potentially dilutive
+        instruments.&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="left"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;&lt;font style="DISPLAY: inline;
+        TEXT-DECORATION: underline"&gt;
+        Recent Accounting Pronouncements&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;Management
+        does not believe that any recently issued, but not yet effective
+        accounting pronouncements, if adopted, would have a material effect
+        on the accompanying financial statements.&lt;/font&gt;&lt;/div&gt;
+        &lt;/div&gt;</us-gaap:BasisOfPresentationAndSignificantAccountingPoliciesTextBlock>
+    <us-gaap:NetCashProvidedByUsedInInvestingActivities contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0"
+                                                        unitRef="iso4217_USD" decimals="0">-8400
+    </us-gaap:NetCashProvidedByUsedInInvestingActivities>
+    <us-gaap:Revenues contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0" unitRef="iso4217_USD" xsi:nil="true"/>
+    <us-gaap:PreferredStockTextBlock contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0">&lt;div&gt;
+        &lt;div&gt;
+        &lt;table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="FONT-SIZE: 10pt;
+        FONT-FAMILY: Times New Roman; FONT-SIZE: 10pt; FONT-FAMILY: times new roman"&gt;
+        &lt;tr valign="top"&gt;
+        &lt;td style="WIDTH: 54pt"&gt;
+        &lt;div style="MARGIN-LEFT: 0pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt"&gt;
+        &lt;font style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;Note
+        6 -&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+        &lt;div align="justify"&gt;&lt;font style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;&lt;font
+        style="DISPLAY: inline; TEXT-DECORATION: underline"&gt;
+        Preferred Stock&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;The
+        Company is authorized to issue (10,000,000) shares of $.0001 par
+        value preferred stock with designations, voting and other rights
+        and preferences as may be determined from time to time by the Board
+        of Directors of the Company.&lt;/font&gt;&lt;/div&gt;
+        &lt;/div&gt;</us-gaap:PreferredStockTextBlock>
+    <us-gaap:NetCashProvidedByUsedInOperatingActivities contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0"
+                                                        unitRef="iso4217_USD" decimals="0">-9108
+    </us-gaap:NetCashProvidedByUsedInOperatingActivities>
+    <us-gaap:ProfessionalFees contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0" unitRef="iso4217_USD"
+                              decimals="0">13735
+    </us-gaap:ProfessionalFees>
+    <us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+            contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0" unitRef="iso4217_USD" decimals="0">-22918
+    </us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments>
+    <us-gaap:SubsequentEventsTextBlock contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0">&lt;div&gt;
+        &lt;div&gt;
+        &lt;table style="FONT-FAMILY: times new roman; FONT-SIZE: 10pt" border="0" cellspacing="0" cellpadding="0"
+        width="100%" align="center"&gt;
+        &lt;tr valign="top"&gt;
+        &lt;td style="WIDTH: 54pt"&gt;
+        &lt;div style="TEXT-INDENT: 0pt; MARGIN-LEFT: 0pt; MARGIN-RIGHT: 0pt"&gt;
+        &lt;font style="DISPLAY: inline; FONT-FAMILY: Times New Roman; FONT-SIZE: 10pt"&gt;Note
+        8 -&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+        &lt;div align="justify"&gt;&lt;font style="DISPLAY: inline; FONT-FAMILY: Times New Roman; FONT-SIZE: 10pt"&gt;&lt;font
+        style="DISPLAY: inline; TEXT-DECORATION: underline"&gt;
+        Subsequent Events&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div style="TEXT-INDENT: 0pt; DISPLAY: block"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="TEXT-INDENT: 0pt; DISPLAY: block; MARGIN-LEFT: 54pt; MARGIN-RIGHT: 0pt" align="left"&gt;&lt;font
+        style="DISPLAY: inline; FONT-FAMILY: Times New Roman; FONT-SIZE: 10pt"&gt;Subsequent
+        to September 30, 2011, the Company received funds totaling $3,500
+        from Sunrise to pay for professional fees. These advances are
+        unsecured, non-interest bearing and have no stipulated repayment
+        terms.&lt;/font&gt;&lt;/div&gt;
+
+
+        &lt;/div&gt;</us-gaap:SubsequentEventsTextBlock>
+    <us-gaap:NatureOfOperations contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0">&lt;div&gt;
+        &lt;div&gt;
+        &lt;table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="FONT-SIZE: 10pt;
+        FONT-FAMILY: Times New Roman; FONT-SIZE: 10pt; FONT-FAMILY: times new roman"&gt;
+        &lt;tr valign="top"&gt;
+        &lt;td style="WIDTH: 54pt"&gt;
+        &lt;div style="MARGIN-LEFT: 0pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt"&gt;
+        &lt;font style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;Note
+        1 -&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+        &lt;div align="justify"&gt;&lt;font style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;&lt;font
+        style="DISPLAY: inline; TEXT-DECORATION: underline"&gt;
+        Organization and Business&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;&lt;font style="DISPLAY: inline;
+        TEXT-DECORATION: underline"&gt;
+        Business Activity&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;Putnam
+        Hills Corp., a Development Stage Company, ("the Company") was
+        incorporated in the state of Delaware on January 18, 2011 with the
+        objective to acquire, or merge with, an operating
+        business.&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;The
+        Company was organized as a vehicle to investigate and, if such
+        investigation warrants, acquire a target company or business
+        seeking the perceived advantages of being a publicly traded
+        corporation and, to a lesser extent, desires to employ the
+        Company&amp;#x2019;s funds in its business. The Company&amp;#x2019;s
+        principal business objective over the next twelve months and beyond
+        will be to achieve long-term growth potential through a combination
+        with a business rather than immediate short-term earnings. The
+        Company will not restrict its potential target companies to any
+        specific business, industry or geographical location. The analysis
+        of business opportunities will be undertaken by, or under the
+        supervision of, the officers and directors of the
+        Company.&lt;/font&gt;&lt;/div&gt;
+        &lt;/div&gt;</us-gaap:NatureOfOperations>
+    <us-gaap:OperatingIncomeLoss contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0" unitRef="iso4217_USD"
+                                 decimals="0">-22918
+    </us-gaap:OperatingIncomeLoss>
+    <us-gaap:ProceedsFromPaymentsForLongTermLoansForRelatedParties
+            contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0" unitRef="iso4217_USD" decimals="0">-8400
+    </us-gaap:ProceedsFromPaymentsForLongTermLoansForRelatedParties>
+    <us-gaap:IncreaseDecreaseInAccountsPayable contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0"
+                                               unitRef="iso4217_USD" decimals="0">75
+    </us-gaap:IncreaseDecreaseInAccountsPayable>
+    <us-gaap:ProceedsFromIssuanceOfCommonStock contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0"
+                                               unitRef="iso4217_USD" decimals="0">25000
+    </us-gaap:ProceedsFromIssuanceOfCommonStock>
+    <us-gaap:IncomeTaxExpenseBenefit contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0" unitRef="iso4217_USD"
+                                     xsi:nil="true"/>
+    <us-gaap:CashPeriodIncreaseDecrease contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0" unitRef="iso4217_USD"
+                                        decimals="INF">12492
+    </us-gaap:CashPeriodIncreaseDecrease>
+    <us-gaap:IncomeTaxDisclosureTextBlock contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0">&lt;div&gt;
+        &lt;div&gt;
+        &lt;table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="FONT-SIZE: 10pt;
+        FONT-FAMILY: Times New Roman; FONT-SIZE: 10pt; FONT-FAMILY: times new roman"&gt;
+        &lt;tr valign="top"&gt;
+        &lt;td style="WIDTH: 54pt"&gt;
+        &lt;div style="MARGIN-LEFT: 0pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt"&gt;
+        &lt;font style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;Note
+        4 -&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+        &lt;div align="justify"&gt;&lt;font style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;&lt;font
+        style="DISPLAY: inline; TEXT-DECORATION: underline"&gt;
+        Income Taxes&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;As
+        of June 30, 2011 the Company has net operating loss carryforwards
+        of approximately $23,000 to reduce future federal and state taxable
+        income through 2031. The Company has approximately $8,000 in
+        deferred tax assets at June 30, 2011 resulting from net operating
+        loss carryforwards. At June 30, 2011, a valuation allowance has
+        been recorded to fully offset these deferred tax assets because
+        future realization of the related income tax effects is uncertain.
+        The difference between the statutory rate of 34% and the effective
+        rate of 0% is due to the increase in the deferred tax asset
+        valuation allowance.&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;The
+        Company currently has no federal or state tax examination in
+        progress nor has it had any federal or state examinations since its
+        inception.&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;The
+        earliest tax year subject to examination by taxing authorities by
+        major jurisdictions are Federal and Delaware for fiscal year
+        2011.&lt;/font&gt;&lt;/div&gt;
+        &lt;/div&gt;</us-gaap:IncomeTaxDisclosureTextBlock>
+    <us-gaap:RelatedPartyTransactionsDisclosureTextBlock contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0">&lt;div&gt;
+        &lt;div&gt;
+        &lt;table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="FONT-SIZE: 10pt;
+        FONT-FAMILY: Times New Roman; FONT-SIZE: 10pt; FONT-FAMILY: times new roman"&gt;
+        &lt;tr valign="top"&gt;
+        &lt;td style="WIDTH: 54pt"&gt;
+        &lt;div style="MARGIN-LEFT: 0pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt"&gt;
+        &lt;font style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;Note
+        7 -&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+        &lt;div align="justify"&gt;&lt;font style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;&lt;font
+        style="DISPLAY: inline; TEXT-DECORATION: underline"&gt;
+        Related Party Transactions&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;The
+        Company utilizes the office space and equipment of its management
+        at no cost.&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;During
+        the year ended March 31, 2011, professional fees in the amount of
+        $8,735 were paid on behalf of the Company by Sunrise Securities
+        Corp. (&amp;#x201C;Sunrise&amp;#x201D;). During the six months ended
+        September 30, 2011, Sunrise paid additional professional fees on
+        behalf of the Company in the amount of $5,000. The President of
+        Sunrise was the Company&amp;#x2019;s former President and sole
+        stockholder. As of September 30, 2011, the outstanding balance of
+        $13,735 is reported as loan payable &amp;#x2013; related party. The
+        amount is unsecured, non-interest bearing and has no stipulated
+        repayment terms.&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;During
+        the six months ended September 30, 2011 the Company disbursed
+        $8,400 to Iron Sands Corp. and Trenton Acquisition Corp. NLBDIT
+        2010 Services, LLC is the sole stockholder of both Iron Sands Corp.
+        and Trenton Acquisition Corp. As of September 30, 2011, the
+        outstanding balance of $8,400 is reported as loan receivable -
+        related party. The amount is unsecured, non-interest bearing and
+        has no stipulated repayment terms.&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="left"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;On
+        May 26, 2011, the former President resigned and the related
+        subscription for common stock was cancelled. On May 26, 2011,
+        NLBDIT 2010 Services, LLC, a company controlled by the former
+        President, subscribed for five million (5,000,000) shares of common
+        stock for $25,000. On August 10, 2011, the Company received payment
+        of $25,000 for the common stock subscription.&lt;/font&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;On
+        June 3, 2011, the Company issued a Promissory Note payable (the
+        &amp;#x201C;Note&amp;#x201D;) to NLBDIT 2010 Enterprises, LLC, an entity
+        controlled by the Company&amp;#x2019;s sole stockholder.&amp;#xA0; The Note
+        bears interest at 6% and is payable upon completion of a business
+        combination with a private company in a reverse merger or other
+        transaction after which the Company would cease to be a shell
+        company.&amp;#xA0; At September 30, 2011 the outstanding balance of
+        $5,000 is reported as note payable &amp;#x2013; related
+        party.&lt;/font&gt;&lt;/div&gt;
+        &lt;/div&gt;</us-gaap:RelatedPartyTransactionsDisclosureTextBlock>
+    <us-gaap:GeneralAndAdministrativeExpense contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0"
+                                             unitRef="iso4217_USD" decimals="0">22918
+    </us-gaap:GeneralAndAdministrativeExpense>
+    <us-gaap:NetCashProvidedByUsedInFinancingActivities contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0"
+                                                        unitRef="iso4217_USD" decimals="0">30000
+    </us-gaap:NetCashProvidedByUsedInFinancingActivities>
+    <us-gaap:EarningsPerShareBasicAndDiluted contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0"
+                                             unitRef="iso4217_USD_per_shares" xsi:nil="true"/>
+    <ck0001527728:WeightedAverageNumberBasicDilutedSharesOutstanding
+            contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0" unitRef="shares" xsi:nil="true"/>
+    <ck0001527728:CommonStockDisclosureTextBlock contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0">&lt;div&gt;
+        &lt;div&gt;
+        &lt;table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="FONT-SIZE: 10pt;
+        FONT-FAMILY: Times New Roman; FONT-SIZE: 10pt; FONT-FAMILY: times new roman"&gt;
+        &lt;tr valign="top"&gt;
+        &lt;td style="WIDTH: 54pt"&gt;
+        &lt;div style="MARGIN-LEFT: 0pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt"&gt;
+        &lt;font style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;Note
+        5 -&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+        &lt;div align="justify"&gt;&lt;font style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;&lt;font
+        style="DISPLAY: inline; TEXT-DECORATION: underline"&gt;
+        Common Stock&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;On
+        January 18, 2011, the Company authorized one hundred million
+        (100,000,000) shares of common stock. On January 18, 2011, the
+        Company received a subscription for five million (5,000,000) shares
+        of common stock for $25,000 from the former President of the
+        Company.&lt;/font&gt;&lt;/div&gt;
+        &lt;/div&gt;</ck0001527728:CommonStockDisclosureTextBlock>
+    <ck0001527728:GoingConcernDisclosureTextBlock contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0">&lt;div&gt;
+        &lt;div&gt;
+        &lt;table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="FONT-SIZE: 10pt;
+        FONT-FAMILY: Times New Roman; FONT-SIZE: 10pt; FONT-FAMILY: times new roman"&gt;
+        &lt;tr valign="top"&gt;
+        &lt;td style="WIDTH: 54pt"&gt;
+        &lt;div style="MARGIN-LEFT: 0pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt"&gt;
+        &lt;font style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;Note
+        3 -&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+        &lt;div align="justify"&gt;&lt;font style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;&lt;font
+        style="DISPLAY: inline; TEXT-DECORATION: underline"&gt;
+        Going Concern&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div style="DISPLAY: block; TEXT-INDENT: 0pt"&gt;&lt;br /&gt;&lt;/div&gt;
+        &lt;div style="DISPLAY: block; MARGIN-LEFT: 54pt; TEXT-INDENT: 0pt; MARGIN-RIGHT: 0pt" align="justify"&gt;&lt;font
+        style="DISPLAY: inline; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman"&gt;The
+        accompanying financial statements have been prepared assuming the
+        Company will continue as a going concern, which contemplates the
+        recoverability of assets and the satisfaction of liabilities in the
+        normal course of business. The Company has incurred losses from
+        inception of approximately $23,000, which, among other factors,
+        raises substantial doubt about the Company&amp;#x2019;s ability to
+        continue as a going concern. The ability of the Company to continue
+        as a going concern is dependent upon management&amp;#x2019;s plan to
+        find a suitable acquisition or merger candidate, raise additional
+        capital from the sales of stock, receive additional loans from its
+        stockholder, and ultimately, income from operations. The
+        accompanying financial statements do not include any adjustments
+        that might be required should the Company be unable to continue as
+        a going concern.&lt;/font&gt;&lt;/div&gt;
+        &lt;/div&gt;</ck0001527728:GoingConcernDisclosureTextBlock>
+    <ck0001527728:CommonStockSubscribed contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0" unitRef="iso4217_USD"
+                                        decimals="0">25000
+    </ck0001527728:CommonStockSubscribed>
+    <ck0001527728:ExpensePaidByRelatedPartyOnBehalfOfTheCompany contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0"
+                                                                unitRef="iso4217_USD" decimals="0">13735
+    </ck0001527728:ExpensePaidByRelatedPartyOnBehalfOfTheCompany>
+
+
+
+
+
+    <us-gaap:Revenues contextRef="eol_PE862008--1110-Q0003_STD_92_20110930_0" unitRef="iso4217_USD" xsi:nil="true"/>
+    <us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+            contextRef="eol_PE862008--1110-Q0003_STD_92_20110930_0" unitRef="iso4217_USD" decimals="0">-14153
+    </us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments>
+
+    <us-gaap:OperatingIncomeLoss contextRef="eol_PE862008--1110-Q0003_STD_92_20110930_0" unitRef="iso4217_USD"
+                                 decimals="0">-14153
+    </us-gaap:OperatingIncomeLoss>
+    <us-gaap:IncomeTaxExpenseBenefit contextRef="eol_PE862008--1110-Q0003_STD_92_20110930_0" unitRef="iso4217_USD"
+                                     xsi:nil="true"/>
+    <us-gaap:GeneralAndAdministrativeExpense contextRef="eol_PE862008--1110-Q0003_STD_92_20110930_0"
+                                             unitRef="iso4217_USD" decimals="0">14153
+    </us-gaap:GeneralAndAdministrativeExpense>
+    <us-gaap:EarningsPerShareBasicAndDiluted contextRef="eol_PE862008--1110-Q0003_STD_92_20110930_0"
+                                             unitRef="iso4217_USD_per_shares" xsi:nil="true"/>
+    <ck0001527728:WeightedAverageNumberBasicDilutedSharesOutstanding
+            contextRef="eol_PE862008--1110-Q0003_STD_92_20110930_0" unitRef="shares" xsi:nil="true"/>
+
+
+
+    <context id="eol_PE862008--1110-Q0003_STD_183_20110930_0_452905x478726">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">
+                    ck0001527728:DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember
+                </xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2011-04-01</startDate>
+            <endDate>2011-09-30</endDate>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_183_20110930_0_452905x468129">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">
+                    ck0001527728:SubscriptionsReceivablesMember
+                </xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2011-04-01</startDate>
+            <endDate>2011-09-30</endDate>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_183_20110930_0">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+        </entity>
+        <period>
+            <startDate>2011-04-01</startDate>
+            <endDate>2011-09-30</endDate>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_0_20110117_0_452905x468129">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">
+                    ck0001527728:SubscriptionsReceivablesMember
+                </xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2011-01-17</instant>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_0_20110117_0_452905x453698">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">
+                    us-gaap:AdditionalPaidInCapitalMember
+                </xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2011-01-17</instant>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_0_20110117_0_452905x444581">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:CommonStockMember
+                </xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2011-01-17</instant>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_0_20110930_0_452905x478726">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">
+                    ck0001527728:DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember
+                </xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2011-09-30</instant>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_0_20110930_0_452905x453698">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">
+                    us-gaap:AdditionalPaidInCapitalMember
+                </xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2011-09-30</instant>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_0_20110930_0_452905x444581">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:CommonStockMember
+                </xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2011-09-30</instant>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_0_20110930_0">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+        </entity>
+        <period>
+            <instant>2011-09-30</instant>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_0_20110331_0_452905x478726">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">
+                    ck0001527728:DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember
+                </xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2011-03-31</instant>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_0_20110331_0_452905x468129">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">
+                    ck0001527728:SubscriptionsReceivablesMember
+                </xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2011-03-31</instant>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_0_20110331_0_452905x453698">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">
+                    us-gaap:AdditionalPaidInCapitalMember
+                </xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2011-03-31</instant>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_0_20110331_0_452905x444581">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:CommonStockMember
+                </xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2011-03-31</instant>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_0_20110331_0">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+        </entity>
+        <period>
+            <instant>2011-03-31</instant>
+        </period>
+    </context>
+    <context id="eol_PE862008--1110-Q0003_STD_0_20111122_0">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+        </entity>
+        <period>
+            <instant>2011-11-22</instant>
+        </period>
+    </context>
+    <unit id="shares">
+        <measure>shares</measure>
+    </unit>
+    <unit id="iso4217_USD">
+        <measure>iso4217:USD</measure>
+    </unit>
+    <unit id="iso4217_USD_per_shares">
+        <divide>
+            <unitNumerator>
+                <measure>iso4217:USD</measure>
+            </unitNumerator>
+            <unitDenominator>
+                <measure>shares</measure>
+            </unitDenominator>
+        </divide>
+    </unit>
+
+
+    <context id="eol_PE862008--1110-Q0003_STD_92_20110930_0">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+        </entity>
+        <period>
+            <startDate>2011-07-01</startDate>
+            <endDate>2011-09-30</endDate>
+        </period>
+    </context>
+
+    <context id="eol_PE862008--1110-Q0003_STD_73_20110331_0">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+        </entity>
+        <period>
+            <startDate>2011-01-18</startDate>
+            <endDate>2011-03-31</endDate>
+        </period>
+    </context>
+
+    <context id="eol_PE862008--1110-Q0003_STD_73_20110331_0_452905x478726">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">
+                    ck0001527728:DevelopmentStageEnterpriseDeficitAccumulatedDuringDevelopmentStageMember
+                </xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2011-01-18</startDate>
+            <endDate>2011-03-31</endDate>
+        </period>
+    </context>
+
+    <context id="eol_PE862008--1110-Q0003_STD_256_20110930_0">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001527728</identifier>
+        </entity>
+        <period>
+            <startDate>2011-01-18</startDate>
+            <endDate>2011-09-30</endDate>
+        </period>
+    </context>
+
+    <us-gaap:NetIncomeLoss contextRef="eol_PE862008--1110-Q0003_STD_92_20110930_0" unitRef="iso4217_USD" decimals="0">
+        -14153
+    </us-gaap:NetIncomeLoss>
+
+    <us-gaap:NetIncomeLoss contextRef="eol_PE862008--1110-Q0003_STD_73_20110331_0" unitRef="iso4217_USD" decimals="0">
+        -8735
+    </us-gaap:NetIncomeLoss>
+
+    <us-gaap:NetIncomeLoss contextRef="eol_PE862008--1110-Q0003_STD_73_20110331_0_452905x478726" unitRef="iso4217_USD" decimals="0">
+        -8735
+    </us-gaap:NetIncomeLoss>
+
+    <us-gaap:NetIncomeLoss contextRef="eol_PE862008--1110-Q0003_STD_256_20110930_0" unitRef="iso4217_USD" decimals="0">
+        -22918
+    </us-gaap:NetIncomeLoss>
+
+
+    <us-gaap:Cash contextRef="eol_PE862008--1110-Q0003_STD_0_20110930_0" unitRef="iso4217_USD" decimals="0">12492</us-gaap:Cash>
+
+
+</xbrl>

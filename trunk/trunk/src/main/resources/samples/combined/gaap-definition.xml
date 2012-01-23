@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Definition Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 1.0.0.0 (2008-04-17 05:55).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2008 UBmatrix inc., All Rights Reserved
+Produced on 2008-04-18 10:38:49
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    http://xbrl.org/2005/xbrldt  http://www.xbrl.org/2005/xbrldt-2005.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#SalesAnalysis"
+    roleURI="http://xbrls.org/2008/xbrls/metapattern/combined/SalesAnalysis" />
+  <arcroleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"
+    arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" />
+  <arcroleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all"
+    arcroleURI="http://xbrl.org/int/dim/arcrole/all" />
+  <arcroleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"
+    arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension" />
+  <arcroleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"
+    arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#AccountingPolicies"
+    roleURI="http://xbrls.org/2008/xbrls/metapattern/combined/AccountingPolicies" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#PropertyPlantAndEquipmentByComponent"
+    roleURI="http://xbrls.org/2008/xbrls/metapattern/combined/PropertyPlantAndEquipmentByComponent" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#MovementsInLand"
+    roleURI="http://xbrls.org/2008/xbrls/metapattern/combined/MovementsInLand" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#DirectorCompensation"
+    roleURI="http://xbrls.org/2008/xbrls/metapattern/combined/DirectorCompensation" />
+  <definitionLink xlink:type="extended"
+    xlink:role="http://xbrls.org/2008/xbrls/metapattern/combined/SalesAnalysis">
+    <loc xlink:type="locator"
+      xlink:label="pattern_SalesAnalysislineItemsGroup"
+      xlink:href="gaap.xsd#pattern_SalesAnalysislineItemsGroup" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_SalesAnalysisHierarchy"
+      xlink:href="gaap.xsd#pattern_SalesAnalysisHierarchy" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_SalesAnalysislineItemsGroup" xlink:to="pattern_SalesAnalysisHierarchy"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_Sales"
+      xlink:href="gaap.xsd#pattern_Sales" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_SalesAnalysisHierarchy" xlink:to="pattern_Sales"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_SalesAnalysisSchedule"
+      xlink:href="gaap.xsd#pattern_SalesAnalysisSchedule" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/all"
+      xlink:from="pattern_SalesAnalysislineItemsGroup" xlink:to="pattern_SalesAnalysisSchedule"
+      order="2"
+      use="optional"
+      xbrldt:contextElement="segment"
+      xbrldt:closed="true" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntityAxis"
+      xlink:href="gaap.xsd#pattern_EntityAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_SalesAnalysisSchedule" xlink:to="pattern_EntityAxis"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntitiesAllDomain"
+      xlink:href="gaap.xsd#pattern_EntitiesAllDomain" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_EntityAxis" xlink:to="pattern_EntitiesAllDomain"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_SampleCompanyMember"
+      xlink:href="gaap.xsd#pattern_SampleCompanyMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_EntitiesAllDomain" xlink:to="pattern_SampleCompanyMember"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_BusinessSegmentAxis"
+      xlink:href="gaap.xsd#pattern_BusinessSegmentAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_SalesAnalysisSchedule" xlink:to="pattern_BusinessSegmentAxis"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_BusinessSegmentsAllDomain"
+      xlink:href="gaap.xsd#pattern_BusinessSegmentsAllDomain" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_BusinessSegmentAxis" xlink:to="pattern_BusinessSegmentsAllDomain"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_PharmaceuticalsSegmentMember"
+      xlink:href="gaap.xsd#pattern_PharmaceuticalsSegmentMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_BusinessSegmentsAllDomain" xlink:to="pattern_PharmaceuticalsSegmentMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_GenericsSegmentMember"
+      xlink:href="gaap.xsd#pattern_GenericsSegmentMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_BusinessSegmentsAllDomain" xlink:to="pattern_GenericsSegmentMember"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ConsumerHealthSegmentMember"
+      xlink:href="gaap.xsd#pattern_ConsumerHealthSegmentMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_BusinessSegmentsAllDomain" xlink:to="pattern_ConsumerHealthSegmentMember"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_OtherSegmentsMember"
+      xlink:href="gaap.xsd#pattern_OtherSegmentsMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_BusinessSegmentsAllDomain" xlink:to="pattern_OtherSegmentsMember"
+      order="4"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_RegionAxis"
+      xlink:href="gaap.xsd#pattern_RegionAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_SalesAnalysisSchedule" xlink:to="pattern_RegionAxis"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_RegionsAllDomain"
+      xlink:href="gaap.xsd#pattern_RegionsAllDomain" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_RegionAxis" xlink:to="pattern_RegionsAllDomain"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_USAndCanadaRegionMember"
+      xlink:href="gaap.xsd#pattern_USAndCanadaRegionMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_RegionsAllDomain" xlink:to="pattern_USAndCanadaRegionMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EuropeRegionMember"
+      xlink:href="gaap.xsd#pattern_EuropeRegionMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_RegionsAllDomain" xlink:to="pattern_EuropeRegionMember"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_AsiaRegionMember"
+      xlink:href="gaap.xsd#pattern_AsiaRegionMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_RegionsAllDomain" xlink:to="pattern_AsiaRegionMember"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_OtherRegionsMember"
+      xlink:href="gaap.xsd#pattern_OtherRegionsMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_RegionsAllDomain" xlink:to="pattern_OtherRegionsMember"
+      order="4"
+      use="optional" />
+  </definitionLink>
+  <definitionLink xlink:type="extended"
+    xlink:role="http://xbrls.org/2008/xbrls/metapattern/combined/AccountingPolicies">
+    <loc xlink:type="locator"
+      xlink:label="pattern_AccountingPolicieslineItemsGroup"
+      xlink:href="gaap.xsd#pattern_AccountingPolicieslineItemsGroup" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_AccountingPoliciesHierarchy"
+      xlink:href="gaap.xsd#pattern_AccountingPoliciesHierarchy" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_AccountingPolicieslineItemsGroup" xlink:to="pattern_AccountingPoliciesHierarchy"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_BasisOfPresentationTextBlock"
+      xlink:href="gaap.xsd#pattern_BasisOfPresentationTextBlock" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_AccountingPoliciesHierarchy" xlink:to="pattern_BasisOfPresentationTextBlock"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_BasisOfPresentation"
+      xlink:href="gaap.xsd#pattern_BasisOfPresentation" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_BasisOfPresentationTextBlock" xlink:to="pattern_BasisOfPresentation"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_InventoryPolicyTextBlock"
+      xlink:href="gaap.xsd#pattern_InventoryPolicyTextBlock" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_AccountingPoliciesHierarchy" xlink:to="pattern_InventoryPolicyTextBlock"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_InventoryValuationMethod"
+      xlink:href="gaap.xsd#pattern_InventoryValuationMethod" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_InventoryPolicyTextBlock" xlink:to="pattern_InventoryValuationMethod"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_DescriptionOfInventoryComponents"
+      xlink:href="gaap.xsd#pattern_DescriptionOfInventoryComponents" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_InventoryPolicyTextBlock" xlink:to="pattern_DescriptionOfInventoryComponents"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_InventoryCostMethod"
+      xlink:href="gaap.xsd#pattern_InventoryCostMethod" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_InventoryPolicyTextBlock" xlink:to="pattern_InventoryCostMethod"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_DescriptionNetRealizableValue"
+      xlink:href="gaap.xsd#pattern_DescriptionNetRealizableValue" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_InventoryPolicyTextBlock" xlink:to="pattern_DescriptionNetRealizableValue"
+      order="4"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_FinancialInstrumentsPolicyTextBlock"
+      xlink:href="gaap.xsd#pattern_FinancialInstrumentsPolicyTextBlock" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_AccountingPoliciesHierarchy" xlink:to="pattern_FinancialInstrumentsPolicyTextBlock"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_TradeReceivablesPolicy"
+      xlink:href="gaap.xsd#pattern_TradeReceivablesPolicy" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_FinancialInstrumentsPolicyTextBlock" xlink:to="pattern_TradeReceivablesPolicy"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_InvestmentsInSecuritiesPolicy"
+      xlink:href="gaap.xsd#pattern_InvestmentsInSecuritiesPolicy" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_FinancialInstrumentsPolicyTextBlock" xlink:to="pattern_InvestmentsInSecuritiesPolicy"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_BankBorrowingsPolicy"
+      xlink:href="gaap.xsd#pattern_BankBorrowingsPolicy" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_FinancialInstrumentsPolicyTextBlock" xlink:to="pattern_BankBorrowingsPolicy"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ProvisionsPolicy"
+      xlink:href="gaap.xsd#pattern_ProvisionsPolicy" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_AccountingPoliciesHierarchy" xlink:to="pattern_ProvisionsPolicy"
+      order="4"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_AccountingPoliciesSchedule"
+      xlink:href="gaap.xsd#pattern_AccountingPoliciesSchedule" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/all"
+      xlink:from="pattern_AccountingPolicieslineItemsGroup" xlink:to="pattern_AccountingPoliciesSchedule"
+      order="2"
+      use="optional"
+      xbrldt:contextElement="segment"
+      xbrldt:closed="true" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntityAxis"
+      xlink:href="gaap.xsd#pattern_EntityAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_AccountingPoliciesSchedule" xlink:to="pattern_EntityAxis"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntitiesAllDomain"
+      xlink:href="gaap.xsd#pattern_EntitiesAllDomain" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_EntityAxis" xlink:to="pattern_EntitiesAllDomain"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_SampleCompanyMember"
+      xlink:href="gaap.xsd#pattern_SampleCompanyMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_EntitiesAllDomain" xlink:to="pattern_SampleCompanyMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_BusinessSegmentAxis"
+      xlink:href="gaap.xsd#pattern_BusinessSegmentAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_AccountingPoliciesSchedule" xlink:to="pattern_BusinessSegmentAxis"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ConsolidatedGroupDomain"
+      xlink:href="gaap.xsd#pattern_ConsolidatedGroupDomain" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_BusinessSegmentAxis" xlink:to="pattern_ConsolidatedGroupDomain"
+      order="1"
+      use="optional" />
+  </definitionLink>
+  <definitionLink xlink:type="extended"
+    xlink:role="http://xbrls.org/2008/xbrls/metapattern/combined/PropertyPlantAndEquipmentByComponent">
+    <loc xlink:type="locator"
+      xlink:label="pattern_PropertyPlantAndEquipmentByComponentlineItemsGroup"
+      xlink:href="gaap.xsd#pattern_PropertyPlantAndEquipmentByComponentlineItemsGroup" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_PropertyPlantEquipmentNetCalculation"
+      xlink:href="gaap.xsd#pattern_PropertyPlantEquipmentNetCalculation" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_PropertyPlantAndEquipmentByComponentlineItemsGroup" xlink:to="pattern_PropertyPlantEquipmentNetCalculation"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_Land"
+      xlink:href="gaap.xsd#pattern_Land" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_PropertyPlantEquipmentNetCalculation" xlink:to="pattern_Land"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_BuildingsNet"
+      xlink:href="gaap.xsd#pattern_BuildingsNet" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_PropertyPlantEquipmentNetCalculation" xlink:to="pattern_BuildingsNet"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_FurnitureFixturesNetCalculation"
+      xlink:href="gaap.xsd#pattern_FurnitureFixturesNetCalculation" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_PropertyPlantEquipmentNetCalculation" xlink:to="pattern_FurnitureFixturesNetCalculation"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_FurnitureNet"
+      xlink:href="gaap.xsd#pattern_FurnitureNet" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_FurnitureFixturesNetCalculation" xlink:to="pattern_FurnitureNet"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_FixturesNet"
+      xlink:href="gaap.xsd#pattern_FixturesNet" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_FurnitureFixturesNetCalculation" xlink:to="pattern_FixturesNet"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_FurnitureAndFixturesNet"
+      xlink:href="gaap.xsd#pattern_FurnitureAndFixturesNet" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_FurnitureFixturesNetCalculation" xlink:to="pattern_FurnitureAndFixturesNet"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ComputerEquipmentNet"
+      xlink:href="gaap.xsd#pattern_ComputerEquipmentNet" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_PropertyPlantEquipmentNetCalculation" xlink:to="pattern_ComputerEquipmentNet"
+      order="4"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_OtherPropertyPlantAndEquipmentNet"
+      xlink:href="gaap.xsd#pattern_OtherPropertyPlantAndEquipmentNet" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_PropertyPlantEquipmentNetCalculation" xlink:to="pattern_OtherPropertyPlantAndEquipmentNet"
+      order="5"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_PropertyPlantAndEquipmentNet"
+      xlink:href="gaap.xsd#pattern_PropertyPlantAndEquipmentNet" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_PropertyPlantEquipmentNetCalculation" xlink:to="pattern_PropertyPlantAndEquipmentNet"
+      order="6"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_PropertyPlantAndEquipmentByComponentSchedule"
+      xlink:href="gaap.xsd#pattern_PropertyPlantAndEquipmentByComponentSchedule" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/all"
+      xlink:from="pattern_PropertyPlantAndEquipmentByComponentlineItemsGroup" xlink:to="pattern_PropertyPlantAndEquipmentByComponentSchedule"
+      order="2"
+      use="optional"
+      xbrldt:contextElement="segment"
+      xbrldt:closed="true" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntityAxis"
+      xlink:href="gaap.xsd#pattern_EntityAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_PropertyPlantAndEquipmentByComponentSchedule" xlink:to="pattern_EntityAxis"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntitiesAllDomain"
+      xlink:href="gaap.xsd#pattern_EntitiesAllDomain" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_EntityAxis" xlink:to="pattern_EntitiesAllDomain"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_SampleCompanyMember"
+      xlink:href="gaap.xsd#pattern_SampleCompanyMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_EntitiesAllDomain" xlink:to="pattern_SampleCompanyMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_BusinessSegmentAxis"
+      xlink:href="gaap.xsd#pattern_BusinessSegmentAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_PropertyPlantAndEquipmentByComponentSchedule" xlink:to="pattern_BusinessSegmentAxis"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ConsolidatedGroupDomain"
+      xlink:href="gaap.xsd#pattern_ConsolidatedGroupDomain" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_BusinessSegmentAxis" xlink:to="pattern_ConsolidatedGroupDomain"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CompanyBusinessSegmentAMember"
+      xlink:href="gaap.xsd#pattern_CompanyBusinessSegmentAMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_ConsolidatedGroupDomain" xlink:to="pattern_CompanyBusinessSegmentAMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CompanyBusinessSegmentBMember"
+      xlink:href="gaap.xsd#pattern_CompanyBusinessSegmentBMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_ConsolidatedGroupDomain" xlink:to="pattern_CompanyBusinessSegmentBMember"
+      order="2"
+      use="optional" />
+  </definitionLink>
+  <definitionLink xlink:type="extended"
+    xlink:role="http://xbrls.org/2008/xbrls/metapattern/combined/MovementsInLand">
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandChangesLineItems"
+      xlink:href="gaap.xsd#pattern_LandChangesLineItems" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_MovementInLandMovement"
+      xlink:href="gaap.xsd#pattern_MovementInLandMovement" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LandChangesLineItems" xlink:to="pattern_MovementInLandMovement"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_Land"
+      xlink:href="gaap.xsd#pattern_Land" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_MovementInLandMovement" xlink:to="pattern_Land"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandPeriodIncreaseDecreaseTotalCalculation"
+      xlink:href="gaap.xsd#pattern_LandPeriodIncreaseDecreaseTotalCalculation" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_MovementInLandMovement" xlink:to="pattern_LandPeriodIncreaseDecreaseTotalCalculation"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandAdditionsCalculation"
+      xlink:href="gaap.xsd#pattern_LandAdditionsCalculation" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LandPeriodIncreaseDecreaseTotalCalculation" xlink:to="pattern_LandAdditionsCalculation"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandAdditionsFromAcquisition"
+      xlink:href="gaap.xsd#pattern_LandAdditionsFromAcquisition" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LandAdditionsCalculation" xlink:to="pattern_LandAdditionsFromAcquisition"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandAdditionsFromPurchase"
+      xlink:href="gaap.xsd#pattern_LandAdditionsFromPurchase" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LandAdditionsCalculation" xlink:to="pattern_LandAdditionsFromPurchase"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandAdditions"
+      xlink:href="gaap.xsd#pattern_LandAdditions" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LandAdditionsCalculation" xlink:to="pattern_LandAdditions"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandDisposals"
+      xlink:href="gaap.xsd#pattern_LandDisposals" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LandPeriodIncreaseDecreaseTotalCalculation" xlink:to="pattern_LandDisposals"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandTranslationDifference"
+      xlink:href="gaap.xsd#pattern_LandTranslationDifference" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LandPeriodIncreaseDecreaseTotalCalculation" xlink:to="pattern_LandTranslationDifference"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#pattern_LandPeriodIncreaseDecrease" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LandPeriodIncreaseDecreaseTotalCalculation" xlink:to="pattern_LandPeriodIncreaseDecrease"
+      order="4"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandChangesSchedule"
+      xlink:href="gaap.xsd#pattern_LandChangesSchedule" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/all"
+      xlink:from="pattern_LandChangesLineItems" xlink:to="pattern_LandChangesSchedule"
+      order="2"
+      use="optional"
+      xbrldt:contextElement="segment"
+      xbrldt:closed="true" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntityAxis"
+      xlink:href="gaap.xsd#pattern_EntityAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_LandChangesSchedule" xlink:to="pattern_EntityAxis"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntitiesAllDomain"
+      xlink:href="gaap.xsd#pattern_EntitiesAllDomain" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_EntityAxis" xlink:to="pattern_EntitiesAllDomain"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_SampleCompanyMember"
+      xlink:href="gaap.xsd#pattern_SampleCompanyMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_EntitiesAllDomain" xlink:to="pattern_SampleCompanyMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_BusinessSegmentAxis"
+      xlink:href="gaap.xsd#pattern_BusinessSegmentAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_LandChangesSchedule" xlink:to="pattern_BusinessSegmentAxis"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ConsolidatedGroupDomain"
+      xlink:href="gaap.xsd#pattern_ConsolidatedGroupDomain" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_BusinessSegmentAxis" xlink:to="pattern_ConsolidatedGroupDomain"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CompanyBusinessSegmentAMember"
+      xlink:href="gaap.xsd#pattern_CompanyBusinessSegmentAMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_ConsolidatedGroupDomain" xlink:to="pattern_CompanyBusinessSegmentAMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CompanyBusinessSegmentBMember"
+      xlink:href="gaap.xsd#pattern_CompanyBusinessSegmentBMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_ConsolidatedGroupDomain" xlink:to="pattern_CompanyBusinessSegmentBMember"
+      order="2"
+      use="optional" />
+  </definitionLink>
+  <definitionLink xlink:type="extended"
+    xlink:role="http://xbrls.org/2008/xbrls/metapattern/combined/DirectorCompensation">
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorCompensationLineItems"
+      xlink:href="gaap.xsd#pattern_DirectorCompensationLineItems" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorRecord"
+      xlink:href="gaap.xsd#pattern_DirectorRecord" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_DirectorCompensationLineItems" xlink:to="pattern_DirectorRecord"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorSalary"
+      xlink:href="gaap.xsd#pattern_DirectorSalary" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_DirectorRecord" xlink:to="pattern_DirectorSalary"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorBonuses"
+      xlink:href="gaap.xsd#pattern_DirectorBonuses" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_DirectorRecord" xlink:to="pattern_DirectorBonuses"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorFees"
+      xlink:href="gaap.xsd#pattern_DirectorFees" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_DirectorRecord" xlink:to="pattern_DirectorFees"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorOptionsGrantedAtFairValue"
+      xlink:href="gaap.xsd#pattern_DirectorOptionsGrantedAtFairValue" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_DirectorRecord" xlink:to="pattern_DirectorOptionsGrantedAtFairValue"
+      order="4"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorCompensationSchedule"
+      xlink:href="gaap.xsd#pattern_DirectorCompensationSchedule" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/all"
+      xlink:from="pattern_DirectorCompensationLineItems" xlink:to="pattern_DirectorCompensationSchedule"
+      order="2"
+      use="optional"
+      xbrldt:contextElement="segment"
+      xbrldt:closed="true" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntityAxis"
+      xlink:href="gaap.xsd#pattern_EntityAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_DirectorCompensationSchedule" xlink:to="pattern_EntityAxis"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntitiesAllDomain"
+      xlink:href="gaap.xsd#pattern_EntitiesAllDomain" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_EntityAxis" xlink:to="pattern_EntitiesAllDomain"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_SampleCompanyMember"
+      xlink:href="gaap.xsd#pattern_SampleCompanyMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_EntitiesAllDomain" xlink:to="pattern_SampleCompanyMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorAxis"
+      xlink:href="gaap.xsd#pattern_DirectorAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_DirectorCompensationSchedule" xlink:to="pattern_DirectorAxis"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorsAllDomain"
+      xlink:href="gaap.xsd#pattern_DirectorsAllDomain" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_DirectorAxis" xlink:to="pattern_DirectorsAllDomain"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_JohnDoeMember"
+      xlink:href="gaap.xsd#pattern_JohnDoeMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_DirectorsAllDomain" xlink:to="pattern_JohnDoeMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_JaneDoeMember"
+      xlink:href="gaap.xsd#pattern_JaneDoeMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_DirectorsAllDomain" xlink:to="pattern_JaneDoeMember"
+      order="2"
+      use="optional" />
+  </definitionLink>
+</linkbase>

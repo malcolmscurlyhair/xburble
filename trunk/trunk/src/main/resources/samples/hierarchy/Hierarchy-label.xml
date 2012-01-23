@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Label Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 1.0.0.0 (2008-04-17 05:55).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2008 UBmatrix inc., All Rights Reserved
+Produced on 2008-04-18 10:36:34
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <labelLink xlink:type="extended"
+    xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator"
+      xlink:label="pattern_AccountingPoliciesHierarchy"
+      xlink:href="Hierarchy.xsd#pattern_AccountingPoliciesHierarchy" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_AccountingPoliciesHierarchy" xlink:to="pattern_AccountingPoliciesHierarchy_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_AccountingPoliciesHierarchy_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for Accounting Policies</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_AccountingPoliciesHierarchy_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Accounting Policies [Hierarchy]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_AccountingPoliciesSchedule"
+      xlink:href="Hierarchy.xsd#pattern_AccountingPoliciesSchedule" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_AccountingPoliciesSchedule" xlink:to="pattern_AccountingPoliciesSchedule_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_AccountingPoliciesSchedule_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Company Hypercube</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_AccountingPoliciesSchedule_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Accounting Policies [Schedule]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_AccountingPolicieslineItemsGroup"
+      xlink:href="Hierarchy.xsd#pattern_AccountingPolicieslineItemsGroup" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_AccountingPolicieslineItemsGroup" xlink:to="pattern_AccountingPolicieslineItemsGroup_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_AccountingPolicieslineItemsGroup_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for concept.</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_AccountingPolicieslineItemsGroup_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Accounting Policies [Line Items]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_BankBorrowingsPolicy"
+      xlink:href="Hierarchy.xsd#pattern_BankBorrowingsPolicy" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_BankBorrowingsPolicy" xlink:to="pattern_BankBorrowingsPolicy_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_BankBorrowingsPolicy_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for Bank Borrowings</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_BankBorrowingsPolicy_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Bank Borrowings Policy</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_BasisOfPresentationTextBlock"
+      xlink:href="Hierarchy.xsd#pattern_BasisOfPresentationTextBlock" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_BasisOfPresentationTextBlock" xlink:to="pattern_BasisOfPresentationTextBlock_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_BasisOfPresentationTextBlock_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Basis of Presentation [Text Block]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_BasisOfPresentation"
+      xlink:href="Hierarchy.xsd#pattern_BasisOfPresentation" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_BasisOfPresentation" xlink:to="pattern_BasisOfPresentation_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_BasisOfPresentation_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for Basis of Reporting</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_BasisOfPresentation_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Basis of Presentation</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_BusinessSegmentAxis"
+      xlink:href="Hierarchy.xsd#pattern_BusinessSegmentAxis" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_BusinessSegmentAxis" xlink:to="pattern_BusinessSegmentAxis_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_BusinessSegmentAxis_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: By Product (Placeholder)</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_BusinessSegmentAxis_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Business Segment [Axis]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_ConsolidatedGroupDomain"
+      xlink:href="Hierarchy.xsd#pattern_ConsolidatedGroupDomain" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_ConsolidatedGroupDomain" xlink:to="pattern_ConsolidatedGroupDomain_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_ConsolidatedGroupDomain_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: All Products</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_ConsolidatedGroupDomain_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Consolidated Group [Domain]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_DescriptionNetRealizableValue"
+      xlink:href="Hierarchy.xsd#pattern_DescriptionNetRealizableValue" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_DescriptionNetRealizableValue" xlink:to="pattern_DescriptionNetRealizableValue_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_DescriptionNetRealizableValue_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for Basis for Computing Cost of Inventories</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_DescriptionNetRealizableValue_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Description of Net Realizable Value</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_DescriptionOfInventoryComponents"
+      xlink:href="Hierarchy.xsd#pattern_DescriptionOfInventoryComponents" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_DescriptionOfInventoryComponents" xlink:to="pattern_DescriptionOfInventoryComponents_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_DescriptionOfInventoryComponents_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for Basis for Computing Cost of Inventories</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_DescriptionOfInventoryComponents_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Description of Inventory Components</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntitiesAllDomain"
+      xlink:href="Hierarchy.xsd#pattern_EntitiesAllDomain" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_EntitiesAllDomain" xlink:to="pattern_EntitiesAllDomain_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_EntitiesAllDomain_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: All Products</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_EntitiesAllDomain_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Entities, All [Domain]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntityAxis"
+      xlink:href="Hierarchy.xsd#pattern_EntityAxis" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_EntityAxis" xlink:to="pattern_EntityAxis_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_EntityAxis_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: By Product (Placeholder)</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_EntityAxis_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Entity [Axis]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_FinancialInstrumentsPolicyTextBlock"
+      xlink:href="Hierarchy.xsd#pattern_FinancialInstrumentsPolicyTextBlock" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_FinancialInstrumentsPolicyTextBlock" xlink:to="pattern_FinancialInstrumentsPolicyTextBlock_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_FinancialInstrumentsPolicyTextBlock_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for Financial Instruments</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_FinancialInstrumentsPolicyTextBlock_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Financial Instruments Policy [Text Block]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_InventoryCostMethod"
+      xlink:href="Hierarchy.xsd#pattern_InventoryCostMethod" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_InventoryCostMethod" xlink:to="pattern_InventoryCostMethod_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryCostMethod_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for Basis for Computing Cost of Inventories</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryCostMethod_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Inventory Cost Method</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_InventoryPolicyTextBlock"
+      xlink:href="Hierarchy.xsd#pattern_InventoryPolicyTextBlock" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_InventoryPolicyTextBlock" xlink:to="pattern_InventoryPolicyTextBlock_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryPolicyTextBlock_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for Inventories</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryPolicyTextBlock_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Inventory Policy [Text Block]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_InventoryValuationMethod"
+      xlink:href="Hierarchy.xsd#pattern_InventoryValuationMethod" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_InventoryValuationMethod" xlink:to="pattern_InventoryValuationMethod_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryValuationMethod_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for Basis for Reporting Inventories</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryValuationMethod_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Inventory Valuation Method</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_InvestmentsInSecuritiesPolicy"
+      xlink:href="Hierarchy.xsd#pattern_InvestmentsInSecuritiesPolicy" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_InvestmentsInSecuritiesPolicy" xlink:to="pattern_InvestmentsInSecuritiesPolicy_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_InvestmentsInSecuritiesPolicy_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for Investments in Securities</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_InvestmentsInSecuritiesPolicy_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Investments in Securities Policy</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_ProvisionsPolicy"
+      xlink:href="Hierarchy.xsd#pattern_ProvisionsPolicy" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_ProvisionsPolicy" xlink:to="pattern_ProvisionsPolicy_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_ProvisionsPolicy_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for Provisions</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_ProvisionsPolicy_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Provisions Policy</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_SampleCompanyMember"
+      xlink:href="Hierarchy.xsd#pattern_SampleCompanyMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_SampleCompanyMember" xlink:to="pattern_SampleCompanyMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_SampleCompanyMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for: Pharmaceuticals Segment</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_SampleCompanyMember_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Sample Company [Member]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_TradeReceivablesPolicy"
+      xlink:href="Hierarchy.xsd#pattern_TradeReceivablesPolicy" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_TradeReceivablesPolicy" xlink:to="pattern_TradeReceivablesPolicy_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_TradeReceivablesPolicy_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Documentation for Trade Receivables</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_TradeReceivablesPolicy_lbl" xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Trade Receivables Policy</label>
+  </labelLink>
+</linkbase>

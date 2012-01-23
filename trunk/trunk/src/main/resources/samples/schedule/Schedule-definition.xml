@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Definition Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 1.0.0.0 (2008-04-17 05:55).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2008 UBmatrix inc., All Rights Reserved
+Produced on 2008-04-18 10:35:48
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    http://xbrl.org/2005/xbrldt  http://www.xbrl.org/2005/xbrldt-2005.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="Schedule.xsd#SalesAnalysis"
+    roleURI="http://xbrls.org/2008/xbrls/metapattern/schedule/SalesAnalysis" />
+  <arcroleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"
+    arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" />
+  <arcroleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all"
+    arcroleURI="http://xbrl.org/int/dim/arcrole/all" />
+  <arcroleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"
+    arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension" />
+  <arcroleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"
+    arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain" />
+  <definitionLink xlink:type="extended"
+    xlink:role="http://xbrls.org/2008/xbrls/metapattern/schedule/SalesAnalysis">
+    <loc xlink:type="locator"
+      xlink:label="pattern_SalesAnalysislineItemsGroup"
+      xlink:href="Schedule.xsd#pattern_SalesAnalysislineItemsGroup" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_SalesAnalysisHierarchy"
+      xlink:href="Schedule.xsd#pattern_SalesAnalysisHierarchy" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_SalesAnalysislineItemsGroup" xlink:to="pattern_SalesAnalysisHierarchy"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_Sales"
+      xlink:href="Schedule.xsd#pattern_Sales" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_SalesAnalysisHierarchy" xlink:to="pattern_Sales"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_SalesAnalysisSchedule"
+      xlink:href="Schedule.xsd#pattern_SalesAnalysisSchedule" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/all"
+      xlink:from="pattern_SalesAnalysislineItemsGroup" xlink:to="pattern_SalesAnalysisSchedule"
+      order="2"
+      use="optional"
+      xbrldt:contextElement="segment"
+      xbrldt:closed="true" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntityAxis"
+      xlink:href="Schedule.xsd#pattern_EntityAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_SalesAnalysisSchedule" xlink:to="pattern_EntityAxis"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EntitiesAllDomain"
+      xlink:href="Schedule.xsd#pattern_EntitiesAllDomain" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_EntityAxis" xlink:to="pattern_EntitiesAllDomain"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_SampleCompanyMember"
+      xlink:href="Schedule.xsd#pattern_SampleCompanyMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_EntitiesAllDomain" xlink:to="pattern_SampleCompanyMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_BusinessSegmentAxis"
+      xlink:href="Schedule.xsd#pattern_BusinessSegmentAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_SalesAnalysisSchedule" xlink:to="pattern_BusinessSegmentAxis"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_BusinessSegmentsAllDomain"
+      xlink:href="Schedule.xsd#pattern_BusinessSegmentsAllDomain" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_BusinessSegmentAxis" xlink:to="pattern_BusinessSegmentsAllDomain"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_PharmaceuticalsSegmentMember"
+      xlink:href="Schedule.xsd#pattern_PharmaceuticalsSegmentMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_BusinessSegmentsAllDomain" xlink:to="pattern_PharmaceuticalsSegmentMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_GenericsSegmentMember"
+      xlink:href="Schedule.xsd#pattern_GenericsSegmentMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_BusinessSegmentsAllDomain" xlink:to="pattern_GenericsSegmentMember"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ConsumerHealthSegmentMember"
+      xlink:href="Schedule.xsd#pattern_ConsumerHealthSegmentMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_BusinessSegmentsAllDomain" xlink:to="pattern_ConsumerHealthSegmentMember"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_OtherSegmentsMember"
+      xlink:href="Schedule.xsd#pattern_OtherSegmentsMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_BusinessSegmentsAllDomain" xlink:to="pattern_OtherSegmentsMember"
+      order="4"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_RegionAxis"
+      xlink:href="Schedule.xsd#pattern_RegionAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_SalesAnalysisSchedule" xlink:to="pattern_RegionAxis"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_RegionsAllDomain"
+      xlink:href="Schedule.xsd#pattern_RegionsAllDomain" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_RegionAxis" xlink:to="pattern_RegionsAllDomain"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_USAndCanadaRegionMember"
+      xlink:href="Schedule.xsd#pattern_USAndCanadaRegionMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_RegionsAllDomain" xlink:to="pattern_USAndCanadaRegionMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EuropeRegionMember"
+      xlink:href="Schedule.xsd#pattern_EuropeRegionMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_RegionsAllDomain" xlink:to="pattern_EuropeRegionMember"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_AsiaRegionMember"
+      xlink:href="Schedule.xsd#pattern_AsiaRegionMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_RegionsAllDomain" xlink:to="pattern_AsiaRegionMember"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_OtherRegionsMember"
+      xlink:href="Schedule.xsd#pattern_OtherRegionsMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_RegionsAllDomain" xlink:to="pattern_OtherRegionsMember"
+      order="4"
+      use="optional" />
+  </definitionLink>
+</linkbase>

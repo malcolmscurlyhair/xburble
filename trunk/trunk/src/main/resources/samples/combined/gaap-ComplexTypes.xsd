@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman and Rene van Egmond, 2008-03-27 -->
+<schema 
+   xmlns="http://www.w3.org/2001/XMLSchema" 
+   xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+   xmlns:types="http://www.xbrls.org/xbrls/table/types" 
+   targetNamespace="http://xbrls.org/2008/xbrls/metapattern/combined/types" 
+   elementFormDefault="qualified" 
+   attributeFormDefault="unqualified">
+
+   <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+
+   <complexType name="BasisOfReportingItemType">
+     <simpleContent>
+       <restriction base="xbrli:stringItemType">
+         <enumeration value="Historical Cost" />
+         <enumeration value="Fair Value" />
+       </restriction>
+     </simpleContent>
+   </complexType>
+   <complexType name="InventoryValuationMethodItemType">
+     <simpleContent>
+       <restriction base="xbrli:stringItemType">
+         <enumeration value="Cost" />
+         <enumeration value="NetRealizableValue" />
+         <enumeration value="LowerOfCostOrNetRealizableValue" />
+       </restriction>
+     </simpleContent>
+   </complexType>
+
+</schema>

@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 1.0.0.0 (2008-04-17 05:55).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2008 UBmatrix inc., All Rights Reserved
+Produced on 2008-04-18 10:38:49
+-->
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:pattern="http://xbrls.org/2008/xbrls/metapattern/combined"
+  xmlns:types="http://xbrls.org/2008/xbrls/metapattern/combined/types"
+  xmlns:xbrls="http://xbrls.org/2008/xbrls"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  targetNamespace="http://xbrls.org/2008/xbrls/metapattern/combined"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:roleType
+        roleURI="http://xbrls.org/2008/xbrls/metapattern/combined/SalesAnalysis"
+        id="SalesAnalysis">
+        <link:definition>10000 - Sales Analysis</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xbrls.org/2008/xbrls/metapattern/combined/AccountingPolicies"
+        id="AccountingPolicies">
+        <link:definition>20000 - Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xbrls.org/2008/xbrls/metapattern/combined/PropertyPlantAndEquipmentByComponent"
+        id="PropertyPlantAndEquipmentByComponent">
+        <link:definition>30000 - Property, Plant, and Equipment, by Component</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xbrls.org/2008/xbrls/metapattern/combined/MovementsInLand"
+        id="MovementsInLand">
+        <link:definition>40000 - Movements in Land</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xbrls.org/2008/xbrls/metapattern/combined/DirectorCompensation"
+        id="DirectorCompensation">
+        <link:definition>50000 - Director Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="gaap-label.xml"
+        xlink:title="Label Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="gaap-definition.xml"
+        xlink:title="Definition Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="gaap-presentation.xml"
+        xlink:title="Presentation Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="gaap-calculation.xml"
+        xlink:title="Calculation Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="gaap-reference.xml"
+        xlink:title="Reference Links, all" />
+    </appinfo>
+  </annotation>
+  <import
+    namespace="http://www.xbrl.org/2003/instance"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import
+    namespace="http://xbrls.org/2008/xbrls/metapattern/combined/types"
+    schemaLocation="gaap-ComplexTypes.xsd" />
+  <import
+    namespace="http://xbrls.org/2008/xbrls"
+    schemaLocation="http://xbrl.squarespace.com/storage/xbrls/2008/xbrls-2008.xsd" />
+  <import
+    namespace="http://xbrl.org/2005/xbrldt"
+    schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2004/ref"
+    schemaLocation="http://www.xbrl.org/2004/ref-2004-08-10.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2003/linkbase"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <element
+    id="pattern_AccountingPoliciesHierarchy"
+    name="AccountingPoliciesHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrls:hierarchyGroup"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_AccountingPoliciesSchedule"
+    name="AccountingPoliciesSchedule"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_AccountingPolicieslineItemsGroup"
+    name="AccountingPolicieslineItemsGroup"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrls:lineItemsGroup"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_AsiaRegionMember"
+    name="AsiaRegionMember"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_BankBorrowingsPolicy"
+    name="BankBorrowingsPolicy"
+    type="xbrls:textItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_BasisOfPresentation"
+    name="BasisOfPresentation"
+    type="types:BasisOfReportingItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_BasisOfPresentationTextBlock"
+    name="BasisOfPresentationTextBlock"
+    type="xbrls:textBlockItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_BuildingsNet"
+    name="BuildingsNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_BusinessSegmentAxis"
+    name="BusinessSegmentAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_BusinessSegmentsAllDomain"
+    name="BusinessSegmentsAllDomain"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_CompanyBusinessSegmentAMember"
+    name="CompanyBusinessSegmentAMember"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_CompanyBusinessSegmentBMember"
+    name="CompanyBusinessSegmentBMember"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_ComputerEquipmentNet"
+    name="ComputerEquipmentNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_ConsolidatedGroupDomain"
+    name="ConsolidatedGroupDomain"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_ConsumerHealthSegmentMember"
+    name="ConsumerHealthSegmentMember"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_DescriptionNetRealizableValue"
+    name="DescriptionNetRealizableValue"
+    type="xbrls:textItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_DescriptionOfInventoryComponents"
+    name="DescriptionOfInventoryComponents"
+    type="xbrls:textItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_DirectorAxis"
+    name="DirectorAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_DirectorBonuses"
+    name="DirectorBonuses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_DirectorCompensationLineItems"
+    name="DirectorCompensationLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrls:lineItemsGroup"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_DirectorCompensationSchedule"
+    name="DirectorCompensationSchedule"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_DirectorFees"
+    name="DirectorFees"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_DirectorOptionsGrantedAtFairValue"
+    name="DirectorOptionsGrantedAtFairValue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_DirectorRecord"
+    name="DirectorRecord"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrls:recordGroup"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_DirectorSalary"
+    name="DirectorSalary"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_DirectorsAllDomain"
+    name="DirectorsAllDomain"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_EntitiesAllDomain"
+    name="EntitiesAllDomain"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_EntityAxis"
+    name="EntityAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_EuropeRegionMember"
+    name="EuropeRegionMember"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_FinancialInstrumentsPolicyTextBlock"
+    name="FinancialInstrumentsPolicyTextBlock"
+    type="xbrls:textBlockItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_FixturesNet"
+    name="FixturesNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_FurnitureAndFixturesNet"
+    name="FurnitureAndFixturesNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_FurnitureFixturesNetCalculation"
+    name="FurnitureFixturesNetCalculation"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrls:calculationGroup"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_FurnitureNet"
+    name="FurnitureNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_GenericsSegmentMember"
+    name="GenericsSegmentMember"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_InventoryCostMethod"
+    name="InventoryCostMethod"
+    type="xbrls:textItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_InventoryPolicyTextBlock"
+    name="InventoryPolicyTextBlock"
+    type="xbrls:textBlockItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_InventoryValuationMethod"
+    name="InventoryValuationMethod"
+    type="types:InventoryValuationMethodItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_InvestmentsInSecuritiesPolicy"
+    name="InvestmentsInSecuritiesPolicy"
+    type="xbrls:textItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_JaneDoeMember"
+    name="JaneDoeMember"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_JohnDoeMember"
+    name="JohnDoeMember"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_Land"
+    name="Land"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_LandAdditions"
+    name="LandAdditions"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_LandAdditionsCalculation"
+    name="LandAdditionsCalculation"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrls:calculationGroup"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_LandAdditionsFromAcquisition"
+    name="LandAdditionsFromAcquisition"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_LandAdditionsFromPurchase"
+    name="LandAdditionsFromPurchase"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_LandChangesLineItems"
+    name="LandChangesLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrls:lineItemsGroup"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_LandChangesSchedule"
+    name="LandChangesSchedule"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_LandDisposals"
+    name="LandDisposals"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_LandPeriodIncreaseDecrease"
+    name="LandPeriodIncreaseDecrease"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_LandPeriodIncreaseDecreaseTotalCalculation"
+    name="LandPeriodIncreaseDecreaseTotalCalculation"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrls:calculationGroup"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_LandReconciles"
+    name="LandReconciles"
+    type="xbrli:booleanItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_LandTranslationDifference"
+    name="LandTranslationDifference"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_MovementInLandMovement"
+    name="MovementInLandMovement"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrls:movementGroup"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_OtherPropertyPlantAndEquipmentNet"
+    name="OtherPropertyPlantAndEquipmentNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_OtherRegionsMember"
+    name="OtherRegionsMember"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_OtherSegmentsMember"
+    name="OtherSegmentsMember"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_PharmaceuticalsSegmentMember"
+    name="PharmaceuticalsSegmentMember"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_PropertyPlantAndEquipmentByComponentSchedule"
+    name="PropertyPlantAndEquipmentByComponentSchedule"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_PropertyPlantAndEquipmentByComponentlineItemsGroup"
+    name="PropertyPlantAndEquipmentByComponentlineItemsGroup"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrls:lineItemsGroup"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_PropertyPlantAndEquipmentNet"
+    name="PropertyPlantAndEquipmentNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_PropertyPlantEquipmentNetCalculation"
+    name="PropertyPlantEquipmentNetCalculation"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrls:calculationGroup"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_ProvisionsPolicy"
+    name="ProvisionsPolicy"
+    type="xbrls:textItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_RegionAxis"
+    name="RegionAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_RegionsAllDomain"
+    name="RegionsAllDomain"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_Sales"
+    name="Sales"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_SalesAnalysisHierarchy"
+    name="SalesAnalysisHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrls:hierarchyGroup"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_SalesAnalysisSchedule"
+    name="SalesAnalysisSchedule"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_SalesAnalysislineItemsGroup"
+    name="SalesAnalysislineItemsGroup"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrls:lineItemsGroup"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_SampleCompanyMember"
+    name="SampleCompanyMember"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_TradeReceivablesPolicy"
+    name="TradeReceivablesPolicy"
+    type="xbrls:textItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="pattern_USAndCanadaRegionMember"
+    name="USAndCanadaRegionMember"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+</schema>

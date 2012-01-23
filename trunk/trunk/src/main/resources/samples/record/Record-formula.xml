@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<link:linkbase
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:generic="http://xbrl.org/2008/generic"
+  xmlns:formula="http://xbrl.org/2008/formula"
+  xmlns:validation="http://xbrl.org/2008/validation"
+  xmlns:assertionConsistency="http://xbrl.org/2008/assertion/consistency"
+  xmlns:variable="http://xbrl.org/2008/variable"
+  xmlns:filterConcept="http://xbrl.org/2008/filter/concept"
+  xmlns:filterDimension="http://xbrl.org/2008/filter/dimension"
+  xmlns:label="http://xbrl.org/2008/label"
+  xmlns:xfi="http://www.xbrl.org/2005/function/instance" 
+  xmlns:pattern="http://xbrls.org/2008/xbrls/metapattern/record"  
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xsi:schemaLocation="
+       http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+       http://xbrl.org/2008/generic http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/generic-link.xsd
+       http://xbrl.org/2008/formula http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/formula.xsd
+       http://xbrl.org/2008/assertion/consistency http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/consistency-assertion.xsd
+       http://xbrl.org/2008/variable http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/variable.xsd
+       http://xbrl.org/2008/filter/concept http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/concept-filter.xsd
+       http://xbrl.org/2008/filter/period http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/period-filter.xsd
+       http://xbrl.org/2008/filter/dimension http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/dimension-filter.xsd
+       http://xbrl.org/2008/filter/general http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/general-filter.xsd
+       http://xbrl.org/2008/label http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/generic-label.xsd
+       ">
+  
+    <!-- ArcroleRef declarations.  All these are declared by XBRL Formulas. -->
+    <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/element-label" xlink:href="http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/generic-label.xsd#element-label" xlink:type="simple"/>
+    <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-set" xlink:href="http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/variable.xsd#variable-set" xlink:type="simple"/>
+    <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-filter" xlink:href="http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/variable.xsd#variable-filter" xlink:type="simple"/>
+    <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-set-precondition" xlink:href="http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/variable.xsd#variable-set-precondition" xlink:type="simple"/>
+    <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/consistency-assertion-formula" xlink:href="http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/consistency-assertion.xsd#consistency-assertion-formula" xlink:type="simple"/>
+
+  <!-- _DirectorSalary -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+	    <!-- RESOURCE: (A) ASSERTION-Consistency -->
+	    <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_Foots_DirectorSalary"
+	        id="ASSERTION_Foots_DirectorSalary"
+	        strict="false" 
+	        absoluteAcceptanceRadius="1"
+	        />
+	
+	    <!--  ARC: (A) to (B)(Assertion to Formula) -->
+	    <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula"       
+	      xlink:from="ASSERTION_Foots_DirectorSalary" 
+	      xlink:to="FORMULA_Foots_DirectorSalary" 
+	      order="1.0"
+	      />
+
+	    <!-- RESOURCE: (B) FORMULA -->
+	    <formula:formula xlink:type="resource" xlink:label="FORMULA_Foots_DirectorSalary"
+	      aspectModel="dimensional" 
+	      implicitFiltering="true"
+	      source="VARIABLE_Total_DirectorSalary"
+	      value="sum($VARIABLE_Each_DirectorSalary)"
+	      >
+	      <formula:decimals>'INF'</formula:decimals>
+	    </formula:formula>
+	
+
+	    <!-- ARC: (B) to (C)(Formula to Variable) -->
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="FORMULA_Foots_DirectorSalary" 
+	      xlink:to="VARIABLE_Total_DirectorSalary" 
+	      order="3.0"
+	      name="VARIABLE_Total_DirectorSalary" 
+	      />
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="FORMULA_Foots_DirectorSalary" 
+	      xlink:to="VARIABLE_Each_DirectorSalary" 
+	      order="4.0" 
+	      name="VARIABLE_Each_DirectorSalary" 
+	      />
+	
+	
+	    <!--  RESOURCE: (C) VARIABLES-Fact -->
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Total_DirectorSalary" 
+	      bindAsSequence="false"
+	      />
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Each_DirectorSalary" 
+	      bindAsSequence="true"
+	      />
+
+
+	    <!--  ARC: (C) to (D)(Variables to Filters) -->
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	      xlink:from="VARIABLE_Total_DirectorSalary" 
+	      xlink:to="FILTER_CONCEPT_DirectorSalary" 
+	      order="2.0"
+	      complement="false" 
+	      cover="true"
+	      />
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	      xlink:from="VARIABLE_Each_DirectorSalary" 
+	      xlink:to="FILTER_CONCEPT_DirectorSalary" 
+	      order="3.0"
+	      complement="false" 
+	      cover="true"
+	      />
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	      xlink:from="VARIABLE_Each_DirectorSalary" 
+	      xlink:to="FILTER_DIMENSION_AXIS_DirectorAxis" 
+	      order="3.0"
+	      complement="false" 
+	      cover="true"
+	      />
+
+	
+	    <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+	    <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_DirectorSalary">
+	      <filterConcept:concept>
+	        <filterConcept:qname>pattern:DirectorSalary</filterConcept:qname>
+	      </filterConcept:concept>
+	    </filterConcept:conceptName>
+
+
+	    <!-- RESOURCE: (D) FILTER-Dimension (similar to WHERE statement) -->	
+	    <filterDimension:explicitDimension xlink:type="resource" xlink:label="FILTER_DIMENSION_AXIS_DirectorAxis">
+	      <filterDimension:dimension contextElement="segment">
+	        <filterDimension:qname>pattern:DirectorAxis</filterDimension:qname>
+	      </filterDimension:dimension>
+	      <filterDimension:member axis="child">
+	        <filterDimension:qnameExpression>
+	           xfi:fact-explicit-segment-dimension-value(
+	               $VARIABLE_Total_DirectorSalary,
+	               QName('http://xbrls.org/2008/xbrls/metapattern/record','pattern:DirectorAxis')
+	               )
+	        </filterDimension:qnameExpression>
+	      </filterDimension:member>
+	      <filterDimension:linkrole>http://xbrls.org/2008/xbrls/metapattern/record/DirectorCompensation</filterDimension:linkrole>
+	    </filterDimension:explicitDimension>
+
+  </generic:link>
+
+
+  <!-- _DirectorBonuses -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+	    <!-- RESOURCE: (A) ASSERTION-Consistency -->
+	    <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_Foots_DirectorBonuses"
+	        id="ASSERTION_Foots_DirectorBonuses"
+	        strict="false" 
+	        absoluteAcceptanceRadius="1"
+	        />
+	
+	    <!--  ARC: (A) to (B)(Assertion to Formula) -->
+	    <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula"       
+	      xlink:from="ASSERTION_Foots_DirectorBonuses" 
+	      xlink:to="FORMULA_Foots_DirectorBonuses" 
+	      order="1.0"
+	      />
+
+	    <!-- RESOURCE: (B) FORMULA -->
+	    <formula:formula xlink:type="resource" xlink:label="FORMULA_Foots_DirectorBonuses"
+	      aspectModel="dimensional" 
+	      implicitFiltering="true"
+	      source="VARIABLE_Total_DirectorBonuses"
+	      value="sum($VARIABLE_Each_DirectorBonuses)"
+	      >
+	      <formula:decimals>'INF'</formula:decimals>
+	    </formula:formula>
+	
+
+	    <!-- ARC: (B) to (C)(Formula to Variable) -->
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="FORMULA_Foots_DirectorBonuses" 
+	      xlink:to="VARIABLE_Total_DirectorBonuses" 
+	      order="3.0"
+	      name="VARIABLE_Total_DirectorBonuses" 
+	      />
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="FORMULA_Foots_DirectorBonuses" 
+	      xlink:to="VARIABLE_Each_DirectorBonuses" 
+	      order="4.0" 
+	      name="VARIABLE_Each_DirectorBonuses" 
+	      />
+	
+	
+	    <!--  RESOURCE: (C) VARIABLES-Fact -->
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Total_DirectorBonuses" 
+	      bindAsSequence="false"
+	      />
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Each_DirectorBonuses" 
+	      bindAsSequence="true"
+	      />
+
+
+	    <!--  ARC: (C) to (D)(Variables to Filters) -->
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	      xlink:from="VARIABLE_Total_DirectorBonuses" 
+	      xlink:to="FILTER_CONCEPT_DirectorBonuses" 
+	      order="2.0"
+	      complement="false" 
+	      cover="true"
+	      />
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	      xlink:from="VARIABLE_Each_DirectorBonuses" 
+	      xlink:to="FILTER_CONCEPT_DirectorBonuses" 
+	      order="3.0"
+	      complement="false" 
+	      cover="true"
+	      />
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	      xlink:from="VARIABLE_Each_DirectorBonuses" 
+	      xlink:to="FILTER_DIMENSION_AXIS_DirectorAxis" 
+	      order="3.0"
+	      complement="false" 
+	      cover="true"
+	      />
+
+	
+	    <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+	    <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_DirectorBonuses">
+	      <filterConcept:concept>
+	        <filterConcept:qname>pattern:DirectorBonuses</filterConcept:qname>
+	      </filterConcept:concept>
+	    </filterConcept:conceptName>
+
+
+	    <!-- RESOURCE: (D) FILTER-Dimension (similar to WHERE statement) -->	
+	    <filterDimension:explicitDimension xlink:type="resource" xlink:label="FILTER_DIMENSION_AXIS_DirectorAxis">
+	      <filterDimension:dimension contextElement="segment">
+	        <filterDimension:qname>pattern:DirectorAxis</filterDimension:qname>
+	      </filterDimension:dimension>
+	      <filterDimension:member axis="child">
+	        <filterDimension:qnameExpression>
+	           xfi:fact-explicit-segment-dimension-value(
+	               $VARIABLE_Total_DirectorBonuses,
+	               QName('http://xbrls.org/2008/xbrls/metapattern/record','pattern:DirectorAxis')
+	               )
+	        </filterDimension:qnameExpression>
+	      </filterDimension:member>
+	      <filterDimension:linkrole>http://xbrls.org/2008/xbrls/metapattern/record/DirectorCompensation</filterDimension:linkrole>
+	    </filterDimension:explicitDimension>
+
+  </generic:link>
+
+
+  <!-- _DirectorFees -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+	    <!-- RESOURCE: (A) ASSERTION-Consistency -->
+	    <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_Foots_DirectorFees"
+	        id="ASSERTION_Foots_DirectorFees"
+	        strict="false" 
+	        absoluteAcceptanceRadius="1"
+	        />
+	
+	    <!--  ARC: (A) to (B)(Assertion to Formula) -->
+	    <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula"       
+	      xlink:from="ASSERTION_Foots_DirectorFees" 
+	      xlink:to="FORMULA_Foots_DirectorFees" 
+	      order="1.0"
+	      />
+
+	    <!-- RESOURCE: (B) FORMULA -->
+	    <formula:formula xlink:type="resource" xlink:label="FORMULA_Foots_DirectorFees"
+	      aspectModel="dimensional" 
+	      implicitFiltering="true"
+	      source="VARIABLE_Total_DirectorFees"
+	      value="sum($VARIABLE_Each_DirectorFees)"
+	      >
+	      <formula:decimals>'INF'</formula:decimals>
+	    </formula:formula>
+	
+
+	    <!-- ARC: (B) to (C)(Formula to Variable) -->
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="FORMULA_Foots_DirectorFees" 
+	      xlink:to="VARIABLE_Total_DirectorFees" 
+	      order="3.0"
+	      name="VARIABLE_Total_DirectorFees" 
+	      />
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="FORMULA_Foots_DirectorFees" 
+	      xlink:to="VARIABLE_Each_DirectorFees" 
+	      order="4.0" 
+	      name="VARIABLE_Each_DirectorFees" 
+	      />
+	
+	
+	    <!--  RESOURCE: (C) VARIABLES-Fact -->
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Total_DirectorFees" 
+	      bindAsSequence="false"
+	      />
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Each_DirectorFees" 
+	      bindAsSequence="true"
+	      />
+
+
+	    <!--  ARC: (C) to (D)(Variables to Filters) -->
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	      xlink:from="VARIABLE_Total_DirectorFees" 
+	      xlink:to="FILTER_CONCEPT_DirectorFees" 
+	      order="2.0"
+	      complement="false" 
+	      cover="true"
+	      />
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	      xlink:from="VARIABLE_Each_DirectorFees" 
+	      xlink:to="FILTER_CONCEPT_DirectorFees" 
+	      order="3.0"
+	      complement="false" 
+	      cover="true"
+	      />
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	      xlink:from="VARIABLE_Each_DirectorFees" 
+	      xlink:to="FILTER_DIMENSION_AXIS_DirectorAxis" 
+	      order="3.0"
+	      complement="false" 
+	      cover="true"
+	      />
+
+	
+	    <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+	    <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_DirectorFees">
+	      <filterConcept:concept>
+	        <filterConcept:qname>pattern:DirectorFees</filterConcept:qname>
+	      </filterConcept:concept>
+	    </filterConcept:conceptName>
+
+
+	    <!-- RESOURCE: (D) FILTER-Dimension (similar to WHERE statement) -->	
+	    <filterDimension:explicitDimension xlink:type="resource" xlink:label="FILTER_DIMENSION_AXIS_DirectorAxis">
+	      <filterDimension:dimension contextElement="segment">
+	        <filterDimension:qname>pattern:DirectorAxis</filterDimension:qname>
+	      </filterDimension:dimension>
+	      <filterDimension:member axis="child">
+	        <filterDimension:qnameExpression>
+	           xfi:fact-explicit-segment-dimension-value(
+	               $VARIABLE_Total_DirectorFees,
+	               QName('http://xbrls.org/2008/xbrls/metapattern/record','pattern:DirectorAxis')
+	               )
+	        </filterDimension:qnameExpression>
+	      </filterDimension:member>
+	      <filterDimension:linkrole>http://xbrls.org/2008/xbrls/metapattern/record/DirectorCompensation</filterDimension:linkrole>
+	    </filterDimension:explicitDimension>
+
+  </generic:link>
+
+
+  <!-- _DirectorOptionsGrantedAtFairValue -->
+  <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+	    <!-- RESOURCE: (A) ASSERTION-Consistency -->
+	    <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_Foots_DirectorOptionsGrantedAtFairValue"
+	        id="ASSERTION_Foots_DirectorOptionsGrantedAtFairValue"
+	        strict="false" 
+	        absoluteAcceptanceRadius="1"
+	        />
+	
+	    <!--  ARC: (A) to (B)(Assertion to Formula) -->
+	    <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula"       
+	      xlink:from="ASSERTION_Foots_DirectorOptionsGrantedAtFairValue" 
+	      xlink:to="FORMULA_Foots_DirectorOptionsGrantedAtFairValue" 
+	      order="1.0"
+	      />
+
+	    <!-- RESOURCE: (B) FORMULA -->
+	    <formula:formula xlink:type="resource" xlink:label="FORMULA_Foots_DirectorOptionsGrantedAtFairValue"
+	      aspectModel="dimensional" 
+	      implicitFiltering="true"
+	      source="VARIABLE_Total_DirectorOptionsGrantedAtFairValue"
+	      value="sum($VARIABLE_Each_DirectorOptionsGrantedAtFairValue)"
+	      >
+	      <formula:decimals>'INF'</formula:decimals>
+	    </formula:formula>
+	
+
+	    <!-- ARC: (B) to (C)(Formula to Variable) -->
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="FORMULA_Foots_DirectorOptionsGrantedAtFairValue" 
+	      xlink:to="VARIABLE_Total_DirectorOptionsGrantedAtFairValue" 
+	      order="3.0"
+	      name="VARIABLE_Total_DirectorOptionsGrantedAtFairValue" 
+	      />
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="FORMULA_Foots_DirectorOptionsGrantedAtFairValue" 
+	      xlink:to="VARIABLE_Each_DirectorOptionsGrantedAtFairValue" 
+	      order="4.0" 
+	      name="VARIABLE_Each_DirectorOptionsGrantedAtFairValue" 
+	      />
+	
+	
+	    <!--  RESOURCE: (C) VARIABLES-Fact -->
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Total_DirectorOptionsGrantedAtFairValue" 
+	      bindAsSequence="false"
+	      />
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Each_DirectorOptionsGrantedAtFairValue" 
+	      bindAsSequence="true"
+	      />
+
+
+	    <!--  ARC: (C) to (D)(Variables to Filters) -->
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	      xlink:from="VARIABLE_Total_DirectorOptionsGrantedAtFairValue" 
+	      xlink:to="FILTER_CONCEPT_DirectorOptionsGrantedAtFairValue" 
+	      order="2.0"
+	      complement="false" 
+	      cover="true"
+	      />
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	      xlink:from="VARIABLE_Each_DirectorOptionsGrantedAtFairValue" 
+	      xlink:to="FILTER_CONCEPT_DirectorOptionsGrantedAtFairValue" 
+	      order="3.0"
+	      complement="false" 
+	      cover="true"
+	      />
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	      xlink:from="VARIABLE_Each_DirectorOptionsGrantedAtFairValue" 
+	      xlink:to="FILTER_DIMENSION_AXIS_DirectorAxis" 
+	      order="3.0"
+	      complement="false" 
+	      cover="true"
+	      />
+
+	
+	    <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+	    <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_DirectorOptionsGrantedAtFairValue">
+	      <filterConcept:concept>
+	        <filterConcept:qname>pattern:DirectorOptionsGrantedAtFairValue</filterConcept:qname>
+	      </filterConcept:concept>
+	    </filterConcept:conceptName>
+
+
+	    <!-- RESOURCE: (D) FILTER-Dimension (similar to WHERE statement) -->	
+	    <filterDimension:explicitDimension xlink:type="resource" xlink:label="FILTER_DIMENSION_AXIS_DirectorAxis">
+	      <filterDimension:dimension contextElement="segment">
+	        <filterDimension:qname>pattern:DirectorAxis</filterDimension:qname>
+	      </filterDimension:dimension>
+	      <filterDimension:member axis="child">
+	        <filterDimension:qnameExpression>
+	           xfi:fact-explicit-segment-dimension-value(
+	               $VARIABLE_Total_DirectorOptionsGrantedAtFairValue,
+	               QName('http://xbrls.org/2008/xbrls/metapattern/record','pattern:DirectorAxis')
+	               )
+	        </filterDimension:qnameExpression>
+	      </filterDimension:member>
+	      <filterDimension:linkrole>http://xbrls.org/2008/xbrls/metapattern/record/DirectorCompensation</filterDimension:linkrole>
+	    </filterDimension:explicitDimension>
+
+  </generic:link>
+
+</link:linkbase>

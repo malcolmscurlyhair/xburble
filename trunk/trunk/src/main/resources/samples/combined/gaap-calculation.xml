@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Calculation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 1.0.0.0 (2008-04-17 05:55).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2008 UBmatrix inc., All Rights Reserved
+Produced on 2008-04-18 10:38:49
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#PropertyPlantAndEquipmentByComponent"
+    roleURI="http://xbrls.org/2008/xbrls/metapattern/combined/PropertyPlantAndEquipmentByComponent" />
+  <roleRef xlink:type="simple"
+    xlink:href="gaap.xsd#MovementsInLand"
+    roleURI="http://xbrls.org/2008/xbrls/metapattern/combined/MovementsInLand" />
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xbrls.org/2008/xbrls/metapattern/combined/PropertyPlantAndEquipmentByComponent">
+    <loc xlink:type="locator"
+      xlink:label="pattern_PropertyPlantAndEquipmentNet"
+      xlink:href="gaap.xsd#pattern_PropertyPlantAndEquipmentNet" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_Land"
+      xlink:href="gaap.xsd#pattern_Land" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_PropertyPlantAndEquipmentNet" xlink:to="pattern_Land"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_BuildingsNet"
+      xlink:href="gaap.xsd#pattern_BuildingsNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_PropertyPlantAndEquipmentNet" xlink:to="pattern_BuildingsNet"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_FurnitureAndFixturesNet"
+      xlink:href="gaap.xsd#pattern_FurnitureAndFixturesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_PropertyPlantAndEquipmentNet" xlink:to="pattern_FurnitureAndFixturesNet"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_FurnitureNet"
+      xlink:href="gaap.xsd#pattern_FurnitureNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_FurnitureAndFixturesNet" xlink:to="pattern_FurnitureNet"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_FixturesNet"
+      xlink:href="gaap.xsd#pattern_FixturesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_FurnitureAndFixturesNet" xlink:to="pattern_FixturesNet"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ComputerEquipmentNet"
+      xlink:href="gaap.xsd#pattern_ComputerEquipmentNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_PropertyPlantAndEquipmentNet" xlink:to="pattern_ComputerEquipmentNet"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_OtherPropertyPlantAndEquipmentNet"
+      xlink:href="gaap.xsd#pattern_OtherPropertyPlantAndEquipmentNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_PropertyPlantAndEquipmentNet" xlink:to="pattern_OtherPropertyPlantAndEquipmentNet"
+      order="5"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xbrls.org/2008/xbrls/metapattern/combined/MovementsInLand">
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandPeriodIncreaseDecrease"
+      xlink:href="gaap.xsd#pattern_LandPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandAdditions"
+      xlink:href="gaap.xsd#pattern_LandAdditions" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_LandPeriodIncreaseDecrease" xlink:to="pattern_LandAdditions"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandAdditionsFromPurchase"
+      xlink:href="gaap.xsd#pattern_LandAdditionsFromPurchase" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_LandAdditions" xlink:to="pattern_LandAdditionsFromPurchase"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandAdditionsFromAcquisition"
+      xlink:href="gaap.xsd#pattern_LandAdditionsFromAcquisition" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_LandAdditions" xlink:to="pattern_LandAdditionsFromAcquisition"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandDisposals"
+      xlink:href="gaap.xsd#pattern_LandDisposals" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_LandPeriodIncreaseDecrease" xlink:to="pattern_LandDisposals"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LandTranslationDifference"
+      xlink:href="gaap.xsd#pattern_LandTranslationDifference" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_LandPeriodIncreaseDecrease" xlink:to="pattern_LandTranslationDifference"
+      order="3"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+</linkbase>

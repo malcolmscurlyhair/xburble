@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<link:linkbase
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:link="http://www.xbrl.org/2003/linkbase"
+    xmlns:generic="http://xbrl.org/2008/generic"
+    xmlns:formula="http://xbrl.org/2008/formula"
+    xmlns:variable="http://xbrl.org/2008/variable"
+    xmlns:filterConcept="http://xbrl.org/2008/filter/concept" 
+    xmlns:filterPeriod="http://xbrl.org/2008/filter/period"
+    xmlns:assertionConsistency="http://xbrl.org/2008/assertion/consistency"
+    xmlns:label="http://xbrl.org/2008/label"
+    xmlns:xfi="http://xbrl.org/2008/function/instance"
+    xmlns:pattern="http://xbrls.org/2008/xbrls/metapattern/movement"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+            http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+            http://xbrl.org/2008/generic http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/generic-link.xsd
+            http://xbrl.org/2008/formula http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/formula.xsd
+            http://xbrl.org/2008/variable http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/variable.xsd
+            http://xbrl.org/2008/filter/concept http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/concept-filter.xsd
+            http://xbrl.org/2008/filter/period http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/period-filter.xsd
+            http://xbrl.org/2008/label http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/generic-label.xsd
+            http://xbrl.org/2008/assertion/consistency http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/consistency-assertion.xsd
+            ">
+  
+    <!-- ArcroleRef declarations.  All these are declared by XBRL Formulas. -->
+    <link:arcroleRef xlink:href="http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/variable.xsd#variable-set" arcroleURI="http://xbrl.org/arcrole/2008/variable-set" xlink:type="simple"/>
+    <link:arcroleRef xlink:href="http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/variable.xsd#variable-filter" arcroleURI="http://xbrl.org/arcrole/2008/variable-filter" xlink:type="simple"/>
+    <link:arcroleRef xlink:href="http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/consistency-assertion.xsd#consistency-assertion-formula" arcroleURI="http://xbrl.org/arcrole/2008/consistency-assertion-formula" xlink:type="simple"/>
+    <link:arcroleRef xlink:href="http://www.xbrl.org/Specification/formula/CR-2008-03-28/xml/core_schemas/generic-label.xsd#element-label" arcroleURI="http://xbrl.org/arcrole/2008/element-label" xlink:type="simple"/>
+
+    <generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+	    <!-- RESOURCE: (A) ASSERTION-Consistency -->
+	    <assertionConsistency:consistencyAssertion xlink:type="resource" xlink:label="ASSERTION_MovementReconciles" 
+	             strict="false" 
+	             absoluteAcceptanceRadius="1" 
+	             />
+	
+	    <!--  ARC: (A) to (B)(Assertion to Formula) -->
+	    <generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/consistency-assertion-formula" 
+	             xlink:from="ASSERTION_MovementReconciles" 
+	             xlink:to="FORMULA_MovementReconciles" 
+	             order="1.0"
+	             />
+
+
+	    <!-- RESOURCE: (B) FORMULA -->
+	    <formula:formula xlink:type="resource" xlink:label="FORMULA_MovementReconciles" 
+	             aspectModel="dimensional" 
+	             implicitFiltering="true" 
+	             source="VARIABLE_Balance"
+	             value="$VARIABLE_Balance + $VARIABLE_Change" 
+	             >
+	      <formula:decimals>'INF'</formula:decimals>
+	      <formula:aspects>
+	        <formula:period>
+	          <formula:instant value="xfi:period-end(xfi:period($VARIABLE_Change))"/>
+	        </formula:period>
+	      </formula:aspects>
+	    </formula:formula>
+	
+
+	    <!-- ARC: (B) to (C)(Formula to Variable) -->
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	             xlink:from="FORMULA_MovementReconciles" 
+	             xlink:to="VARIABLE_Balance" 
+	             order="1.0" 
+	             name="VARIABLE_Balance" 
+	             />
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	             xlink:from="FORMULA_MovementReconciles" 
+	             xlink:to="VARIABLE_Change" 
+	             order="2.0"
+	             name="VARIABLE_Change" 
+	             />
+		
+
+	    <!--  RESOURCE: (C) VARIABLES-Fact -->
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change" 
+	             bindAsSequence="false"  
+	             />
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Balance" 
+	             bindAsSequence="false" 
+	             />
+
+	
+	    <!--  ARC: (C) to (D)(Variables to Filters) -->
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	             xlink:from="VARIABLE_Balance" 
+	             xlink:to="FILTER_Balance" 
+	             order="1.0"
+	             complement="false" 
+	             cover="true" 
+	             />
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	             xlink:from="VARIABLE_Change" 
+	             xlink:to="FILTER_Change" 
+	             order="1.0"
+	             complement="false" 
+	             cover="true" 
+	             />
+	
+	
+	    <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+	    <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Balance">
+	      <filterConcept:concept>
+	        <filterConcept:qname>pattern:Land</filterConcept:qname>
+	      </filterConcept:concept>
+	    </filterConcept:conceptName>
+	
+	    <filterConcept:conceptName xlink:type="resource" xlink:label="FILTER_Change">
+	      <filterConcept:concept>
+	        <filterConcept:qname>pattern:LandPeriodIncreaseDecrease</filterConcept:qname>
+	      </filterConcept:concept>
+	    </filterConcept:conceptName>
+
+
+	    <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+	    <filterPeriod:instantDuration xlink:type="resource" xlink:label="FILTER_Balance" 
+	             variable="VARIABLE_Change" 
+	             boundary="start" 
+	             />
+
+  </generic:link>
+</link:linkbase>
