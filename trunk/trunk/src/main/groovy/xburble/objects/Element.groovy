@@ -38,35 +38,4 @@ class Element
    {
       "of type ${typeName} [${groupName}] ${isAbstract ? "<ABSTRACT>" : ""}"
    }
-
-   Element clone()
-   {
-       Map<Context, Datapoint> clonedDatapoints = [:]
-
-       datapoints.each
-       {
-          Context ctx, Datapoint datapoint ->
-
-          Context contextClone = ctx?.clone()
-          Datapoint datapointClone = datapoint?.clone(contextClone, null)
-
-          clonedDatapoints[ contextClone ] = datapointClone
-       }
-
-       Element e = new Element([
-               id: id,
-               name: name,
-               typeName: typeName,
-               groupName: groupName,
-               periodType: periodType,
-               deprecated: deprecated,
-               isAbstract: isAbstract,
-               label: label?.clone(),
-               datapoints: clonedDatapoints
-       ])
-
-       e.datapoints.values().each { it.element =  e }
-
-       return e
-   }
 }

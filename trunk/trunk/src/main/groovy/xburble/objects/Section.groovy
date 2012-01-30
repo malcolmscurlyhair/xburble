@@ -84,22 +84,4 @@ class Section
 
       return description
    }
-
-   Section clone()
-   {
-       clone(null)
-   }
-
-   Section clone(Section parent)
-   {
-      new Section([
-              name: name,
-              role: role,
-              element: element?.clone(),
-              parent: parent,
-              children: children.collect { Section section -> section?.clone(this) },
-              labels: labels != null ? new LinkedHashMap(labels) : null,
-              annotation: annotation
-      ])
-   }
 }

@@ -21,6 +21,8 @@
   elementFormDefault="qualified" attributeFormDefault="unqualified">
   <annotation>
     <appinfo>
+
+      <!-- Unambiguously defines (inline) the entity information section. -->
       <link:roleType roleURI="http://www.0001527728.com/taxonomy/role/DocumentDocumentandEntityInformation" id="DocumentDocumentandEntityInformation">
         <link:definition>101 - Document - Document and Entity Information</link:definition>
         <link:usedOn>link:calculationLink</link:usedOn>

@@ -63,18 +63,4 @@ class Context implements Comparable
 
        return id.compareTo(ctx.id)
    }
-
-   Context clone()
-   {
-       Map<Element, String> clonedSegments = [:]
-
-       segments.each
-       {
-           Element element, String domain ->
-
-           clonedSegments [ element?.clone() ] = domain
-       }
-
-       new Context([ id: id, entity: entity?.clone(), period: period?.clone(), segments: clonedSegments ])
-   }
 }

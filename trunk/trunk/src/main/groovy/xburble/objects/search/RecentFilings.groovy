@@ -7,7 +7,7 @@ class RecentFilings extends SearchResults
 {
    String[] getColumnNames()
    {
-      [ "Company", "CIK", "Filing Date" ]
+      [ "CIK", "Company", "Filing Date" ]
    }
 
    String getLink(int index)

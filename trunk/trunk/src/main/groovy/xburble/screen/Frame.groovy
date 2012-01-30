@@ -403,7 +403,7 @@ class Frame extends JFrame
          }
 
          // Build the results table - the first row back will be the column headings.
-         DefaultTableModel model = new DefaultTableModel(results.columnNames, 0)
+         DefaultTableModel model = new DefaultTableModel(results.columnNames[0..-2].toArray(), 0)
 
          if (results.size() > 0)
          {
@@ -423,8 +423,8 @@ class Frame extends JFrame
 
          table.rowHeight = 50
 
-         table.columnModel.getColumn(0).preferredWidth = 90
-         table.columnModel.getColumn(1).preferredWidth = 600
+         table.columnModel.getColumn(0).preferredWidth = 120
+         table.columnModel.getColumn(1).preferredWidth = 550
 
          /**
           * If the user searched for a CIK, we will be showing filings.  We might also have matched one company
@@ -641,8 +641,8 @@ class Frame extends JFrame
 
       table.rowHeight = 50
 
-      table.columnModel.getColumn(0).preferredWidth = 90
-      table.columnModel.getColumn(1).preferredWidth = 600
+      table.columnModel.getColumn(0).preferredWidth = 120
+      table.columnModel.getColumn(1).preferredWidth = 450
 
       Closure mouseClicked = { e ->
 
@@ -720,8 +720,8 @@ class Frame extends JFrame
       {
          row ->
 
-         // Wrap the first column in a tag, so it line wraps.
-         row[0] = "<html><b>" + row[0] + "</b></html>"
+         // Wrap the company name column in a tag, so it line wraps.
+         row[1] = "<html><b>" + row[1] + "</b></html>"
 
          model.addRow( row[0..-2].toArray() )
       }
@@ -730,8 +730,7 @@ class Frame extends JFrame
 
       table.rowHeight = 50
 
-      table.columnModel.getColumn(0).preferredWidth = 300
-      table.columnModel.getColumn(1).preferredWidth = 100
+      table.columnModel.getColumn(1).preferredWidth = 450
 
       Closure mouseClicked = { e ->
 

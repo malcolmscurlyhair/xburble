@@ -62,11 +62,39 @@ abstract class AbstractRenderer implements Renderer
 
             List<Period> periods = info.contexts.collectAll { Context ctx -> ctx.period }.unique()
 
+            // If all the periods are a durations, render the durations in a separate row.
+            if (!periods.any { Period p -> p.instant != null })
+            {
+               Map<String, List<Period>> splitByDuration = periods.groupBy { Period p -> p.gap() }
+
+               splitByDuration.each
+               {
+                  String duration, List<Period> values ->
+
+                  renderHeading(duration + " ending", values.size())
+               }
+
+               endRow()
+               startRow()
+               nextColumn()
+
+               periods.each
+               {
+                  Period p ->
+
+                  renderHeading(p.endDate.format("ddMMMyyyy"), 1)
+               }
+
+               endRow()
+
+               return
+            }
+
             periods.each
             {
-                Period period ->
+                Period p ->
 
-                renderHeading(period.toString(), 1)
+                renderHeading(p.toString(), 1)
             }
         }
 
@@ -95,22 +123,35 @@ abstract class AbstractRenderer implements Renderer
                         return
                     }
 
-                    startRow(depth)
-
-                    renderLabel(row.element?.label?.toString())
-
-                    info.contexts.each
+                    if (row.name != "StatementTable" && row.name != "StatementLineItems")
                     {
-                        Context ctx ->
+                        boolean rowHasData = info.contexts.any { Context ctx ->
 
-                        if (row.element == null) return
+                            if (row.element == null) return false
 
-                        Datapoint data = row.element.datapoints[ ctx ]
+                            return row.element.datapoints[ ctx ] != null
+                        }
 
-                        renderDatapoint(data)
+                        if (rowHasData || row.children.size() > 0)
+                        {
+                            startRow(depth)
+
+                            renderLabel(row.element?.label?.toString())
+
+                            info.contexts.each
+                            {
+                                Context ctx ->
+
+                                if (row.element == null) return
+
+                                Datapoint data = row.element.datapoints[ ctx ]
+
+                                renderDatapoint(data)
+                            }
+
+                            endRow()
+                        }
                     }
-
-                    endRow()
 
                     renderRow(row, depth + 1)
                 }

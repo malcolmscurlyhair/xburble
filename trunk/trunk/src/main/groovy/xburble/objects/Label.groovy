@@ -24,9 +24,4 @@ class Label
    {
       text
    }
-
-   Label clone()
-   {
-      new Label([ id: id, language: language, text: text, role: role ])
-   }
 }

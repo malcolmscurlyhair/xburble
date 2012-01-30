@@ -31,25 +31,17 @@ package xburble.objects
  */
 class Datapoint
 {
-   String  name     // Tag name.
-   String  value    // Text within the tag.
-   Element element  // Element definition, pulled from the xsd.
-   Context context  // Back link to corresponding context this datapoint sits within.
+   String  name      // Tag name.
+   String  value     // Text within the tag.
+   Element element   // Element definition, pulled from the xsd.
+   Context context   // Back link to corresponding context this datapoint sits within.
 
-   Unit unit        // Units for this datapoints.
+   Unit    unit      // Units for this datapoints.
+
+   Integer decimals  // Number of decimal places to render.  (Only present of certain types.)
 
    String toString()
    {
       "${name} ${element.toStringMinusName()} \n\n       ${value.trim()}\n"
-   }
-
-   Datapoint clone()
-   {
-      new Datapoint([ name: name, value: value, element: element?.clone(), context: context?.clone(), unit: unit?.clone() ])
-   }
-
-   Datapoint clone(Context context, Element element)
-   {
-      new Datapoint([ name: name, value: value, element: element, context: context, unit: unit?.clone() ])
    }
 }

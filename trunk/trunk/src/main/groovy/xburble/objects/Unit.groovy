@@ -11,9 +11,4 @@ class Unit
 
    String numerator    // e.g. "iso4217:USD"
    String denominator  // e.g. "shares"
-
-   Unit clone()
-   {
-       new Unit([ measure: measure, numerator: numerator, denominator: denominator ])
-   }
 }

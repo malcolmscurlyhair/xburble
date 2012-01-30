@@ -27,15 +27,4 @@ class Filing
    {
        return getDescription()
    }
-
-   Filing clone()
-   {
-       new Filing([
-               company: company,
-               cik: cik,
-               filingDate: filingDate,
-               onlineViewer: onlineViewer,
-               sections: sections.containsAll { it?.clone() }
-       ])
-   }
 }
