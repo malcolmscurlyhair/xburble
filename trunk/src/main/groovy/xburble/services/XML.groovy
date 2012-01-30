@@ -50,7 +50,8 @@ class XML extends DataProvider
 
       CompanyList results = new CompanyList()
 
-      // Find all the relevant details.
+      // Find the 'Results' table, (a <table> tag with a 'summary' attribute of 'Results'), and extract the
+      // contents into a CompanyList object.
       html.body.'**'.findAll
                      {
                         tag -> tag.name() == 'table' && tag.@summary == 'Results'
@@ -85,21 +86,27 @@ class XML extends DataProvider
    }
 
    /**
-    * Find a list of filings from the supplied URL.
+    * Search for filings for the company with the supplied CIK.
     */
-   FilingList findFilingsForCompany(String pattern)
+   FilingList findFilingsForCompany(String cik)
    {
-      loadFilingsFromURL( "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=${ encode(pattern) }&type=&dateb=&owner=exclude&count=100" )
+      loadFilingsFromURL( "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=${ encode(cik) }&type=&dateb=&owner=exclude&count=100" )
    }
 
-   FilingList loadFilingsFromURL(String url)
+   /**
+    * Scrape a list of filings from the supplied URL.
+    */
+   private FilingList loadFilingsFromURL(String url)
    {
       NodeChild html = parseHTML( url )
 
       extractFilingsFromHTML(html)
    }
 
-   FilingList extractFilingsFromHTML(NodeChild html)
+   /**
+    * Scrape a list of filings from the supplied (parsed) HTML.
+    */
+   private FilingList extractFilingsFromHTML(NodeChild html)
    {
       FilingList results = new FilingList()
 
@@ -138,7 +145,10 @@ class XML extends DataProvider
       return results
    }
 
-   public RecentFilings getRecentFilings()
+   /**
+    * Retrieve a list of recently submitted filings from the RSS feed on the EDGAR site.
+    */
+   RecentFilings getRecentFilings()
    {
        RecentFilings recent = new RecentFilings()
 
@@ -148,8 +158,8 @@ class XML extends DataProvider
        {
            NodeChild item ->
 
-           recent.add([ item.xbrlFiling.companyName.text(),
-                        item.xbrlFiling.cikNumber.text(),
+           recent.add([ item.xbrlFiling.cikNumber.text(),
+                        item.xbrlFiling.companyName.text(),
                         item.xbrlFiling.filingDate.text(),
                         item.link.text() ])
        }
@@ -491,11 +501,15 @@ class XML extends DataProvider
 
             String tagName = datapoint.name()
 
+            String decimals = datapoint.@decimals.text()
+
             Datapoint data = new Datapoint(
-                                            name:    tagName,
-                                            value:   datapoint.text(),
-                                            element: element,
-                                            unit:    units [ datapoint.@unitRef.text() ]
+                                            name:     tagName,
+                                            value:    datapoint.text(),
+                                            element:  element,
+                                            unit:     units [ datapoint.@unitRef.text() ],
+                                            decimals: decimals != null && decimals.length() > 0 && decimals.toUpperCase() != "INF"
+                                                         ? new Integer(decimals) : null
                                           )
 
             datapointCount++

@@ -16,9 +16,4 @@ class Entity implements Comparable
    {
       return cik.compareTo(e.cik)
    }
-
-   Entity clone()
-   {
-      new Entity([cik: cik])
-   }
 }

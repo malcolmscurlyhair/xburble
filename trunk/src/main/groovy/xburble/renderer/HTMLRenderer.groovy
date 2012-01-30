@@ -344,7 +344,12 @@ class HTMLRenderer extends AbstractRenderer
 
     protected void renderLabel(String label)
     {
-        html << """      <th>${ label }</th>\n"""
+       if (label == null)
+       {
+          label = ""
+       }
+
+       html << """      <th>${ label.split("\\[")[0].trim() }</th>\n"""
     }
 
     NumberFormat format = new DecimalFormat("###,###,###,###,##0.######")
@@ -360,7 +365,30 @@ class HTMLRenderer extends AbstractRenderer
             {
                 type = type.split(":")[-1]
 
-                if (type == "monetaryItemType" || type == "sharesItemType")
+                if (type == "monetaryItemType")
+                {
+                   BigDecimal decimal = new BigDecimal(text)
+
+                   if (data.decimals != null && data.decimals < 0)
+                   {
+                      // Make sure we are rounding to thousands or millions.  Anything else doesn't really make sense.
+                      int multiplier = data.decimals
+
+                      if (multiplier >= -3)
+                      {
+                         multiplier = -3
+                      }
+                      else
+                      {
+                         multiplier = -6
+                      }
+
+                      decimal = decimal * Math.pow(10, multiplier)
+                   }
+
+                   text = format.format(decimal)
+                }
+                else if (type == "sharesItemType")
                 {
                    BigDecimal decimal = new BigDecimal(text)
 
@@ -427,7 +455,7 @@ class HTMLRenderer extends AbstractRenderer
         StyleSheet styleSheet = kit.getStyleSheet();
 
         styleSheet.addRule("body { color: black; background-color: white; font-family: calibri, helvetica; font-size: 11px; margin: 10px; }")
-        styleSheet.addRule("th   { background-color: #9f9f9f; color: #e0e0e0; padding-top: 10px; padding-bottom: 5px; font-weight: bold; border-width: 2px; border-style: solid; border-color: #f8f8ff  }")
+        styleSheet.addRule("th   { background-color: #9f9f9f; color: #e0e0e0; padding-top: 5px; padding-bottom: 5px; font-weight: bold; border-width: 2px; border-style: solid; border-color: #f8f8ff  }")
 
         // Right-align data points for balance sheets.
         String name = section.toString().toUpperCase()

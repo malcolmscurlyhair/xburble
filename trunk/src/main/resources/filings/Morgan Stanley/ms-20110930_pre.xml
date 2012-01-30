@@ -18,7 +18,10 @@
   <roleRef roleURI="http://www.morganstanley.com/role/DisclosureEarningsPerCommonShareCalculationOfBasicAndDilutedEPSDetails" xlink:type="simple" xlink:href="ms-20110930.xsd#DisclosureEarningsPerCommonShareCalculationOfBasicAndDilutedEpsDetails" />
   <roleRef roleURI="http://www.morganstanley.com/taxonomy/role/DisclosureInterestIncomeAndInterestExpenseDetails" xlink:type="simple" xlink:href="ms-20110930.xsd#DisclosureInterestIncomeAndInterestExpenseDetails" />
   <roleRef roleURI="http://www.morganstanley.com/role/DisclosureEmployeeBenefitPlansComponentsOfNetPeriodicBenefitExpenseDetails" xlink:type="simple" xlink:href="ms-20110930.xsd#DisclosureEmployeeBenefitPlansComponentsOfNetPeriodicBenefitExpenseDetails" />
+
+  <!-- Links presentation section to an element in the schema. -->
   <roleRef roleURI="http://www.morganstanley.com/role/DocumentDocumentAndEntityInformation" xlink:type="simple" xlink:href="ms-20110930.xsd#DocumentDocumentAndEntityInformation" />
+
   <roleRef roleURI="http://www.morganstanley.com/taxonomy/role/StatementCondensedConsolidatedStatementsOfFinancialConditionParenthetical" xlink:type="simple" xlink:href="ms-20110930.xsd#StatementCondensedConsolidatedStatementsOfFinancialConditionParenthetical" />
   <roleRef roleURI="http://www.morganstanley.com/taxonomy/role/StatementCondensedConsolidatedStatementsOfComprehensiveIncomeParenthetical" xlink:type="simple" xlink:href="ms-20110930.xsd#StatementCondensedConsolidatedStatementsOfComprehensiveIncomeParenthetical" />
   <roleRef roleURI="http://www.morganstanley.com/taxonomy/role/StatementConsolidatedStatementsOfCashFlowsParenthetical" xlink:type="simple" xlink:href="ms-20110930.xsd#StatementConsolidatedStatementsOfCashFlowsParenthetical" />
@@ -1285,6 +1288,8 @@
     <loc xlink:type="locator" xlink:href="ms-20110930.xsd#ms_PensionAndPostretirementMember" xlink:label="Locator_ms_PensionAndPostretirementMember_1472" />
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="Locator_us-gaap_DefinedBenefitPlansDomain_1471" xlink:to="Locator_ms_PensionAndPostretirementMember_1472" order="0.0" />
   </presentationLink>
+
+  <!-- Defines section with top level information about the filing. -->
   <presentationLink xlink:type="extended" xlink:role="http://www.morganstanley.com/role/DocumentDocumentAndEntityInformation">
     <loc xlink:type="locator" xlink:href="ms-20110930.xsd#ms_DocumentAndEntityInformationAbstract" xlink:label="Locator_ms_DocumentAndEntityInformationAbstract_1473" />
     <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_DocumentType" xlink:label="Locator_dei_DocumentType_1474" />

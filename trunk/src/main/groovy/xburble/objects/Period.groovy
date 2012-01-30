@@ -35,12 +35,36 @@ class Period implements Comparable
 
       String description = endDate.format(OUTPUT_FORMAT)
 
-      if (startDate != null)
+      if (startDate != null && endDate != null)
       {
-         description = ((Math.round((endDate - startDate) / 30).intValue())  + "M ending ") + description
+         description = gap() + " ending "+ description
       }
 
       return description
+   }
+
+   String gap()
+   {
+      if (startDate != null && endDate != null)
+      {
+          return "" + monthsBetween(startDate, endDate) + "M"
+      }
+
+      return null
+   }
+
+   int monthsBetween(from, to)
+   {
+      def first  = new GregorianCalendar(time: from)
+      def second = new GregorianCalendar(time: to)
+
+      int a = (second.get(Calendar.YEAR)  - first.get(Calendar.YEAR)) * 12
+      int b = (second.get(Calendar.MONTH) - first.get(Calendar.MONTH))
+      int c = Math.round((second.get(Calendar.DAY_OF_MONTH) - first.get(Calendar.DAY_OF_MONTH)) / 30)
+
+      // println "${ startDate.format("ddMMMyyyy") } - ${ endDate.format("ddMMMyyyy") } =  $a + $b + $c = ${ a + b + c}"
+
+      return a + b + c
    }
 
    boolean equals(Period p)
@@ -61,22 +85,29 @@ class Period implements Comparable
       if (endDate != null && period.endDate == null) return -1
       if (endDate == null && period.endDate != null) return 1
 
+      if (startDate != null && period.startDate == null) return -1
+      if (startDate == null && period.startDate != null) return 1
+
+      // Check gap between start and end dates.
+      if (endDate != null && startDate != null && period.endDate != null && period.startDate != null)
+      {
+         int gap_1 = endDate - startDate
+         int gap_2 = period.endDate - period.startDate
+
+         if (gap_1 != gap_2)
+         {
+            return gap_1 > gap_2 ? 1 : -1
+         }
+      }
+
       if (endDate != null && period.endDate != null && endDate != period.endDate)
       {
          return -endDate.compareTo(period.endDate)
       }
 
-      if (startDate != null && period.startDate == null) return -1
-      if (startDate == null && period.startDate != null) return 1
-
       if (startDate != null && period.startDate != null && startDate != period.startDate)
       {
          return -startDate.compareTo(period.startDate)
       }
-   }
-
-   Period clone()
-   {
-      new Period(startDate, endDate, instant)
    }
 }

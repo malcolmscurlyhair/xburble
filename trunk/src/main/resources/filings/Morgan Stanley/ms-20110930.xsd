@@ -101,6 +101,8 @@
         <link:usedOn>link:calculationLink</link:usedOn>
         <link:usedOn>link:definitionLink</link:usedOn>
       </link:roleType>
+
+      <!-- Unambiguously defines (inline) the entity information section. -->
       <link:roleType roleURI="http://www.morganstanley.com/role/DocumentDocumentAndEntityInformation" id="DocumentDocumentAndEntityInformation">
         <link:definition>000090 - Document - Document And Entity Information</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>

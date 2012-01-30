@@ -22,6 +22,8 @@
   <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_NotesToFinancialStatementsPreferredStockTextBlock" roleURI="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsPreferredStockTextBlock"/>
   <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_NotesToFinancialStatementsRelatedPartyTransactionsDisclosureTextBlock" roleURI="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsRelatedPartyTransactionsDisclosureTextBlock"/>
   <roleRef xlink:type="simple" xlink:href="ck0001527728-20110930.xsd#Role_NotesToFinancialStatementsSubsequentEventsTextBlock" roleURI="http://www.0001527728.com/taxonomy/role/NotesToFinancialStatementsSubsequentEventsTextBlock"/>
+
+  <!-- Defines section with top level information about the filing. -->
   <presentationLink xlink:type="extended" xlink:role="http://www.0001527728.com/taxonomy/role/DocumentDocumentandEntityInformation">
     <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_AmendmentFlag" xlink:label="dei_AmendmentFlag"/>
     <loc xlink:type="locator" xlink:href="http://xbrl.sec.gov/dei/2011/dei-2011-01-31.xsd#dei_CurrentFiscalYearEndDate" xlink:label="dei_CurrentFiscalYearEndDate"/>
